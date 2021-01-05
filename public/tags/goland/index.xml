@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>goland on 阳明的博客</title>
+    <link>https://www.qikqiak.com/tags/goland/</link>
+    <description>Recent content in goland on 阳明的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.qikqiak.com/tags/goland/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>真香！使用 VSCode 远程开发调试</title>
+      <link>https://www.qikqiak.com/post/use-vscode-remote-dev-debug/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-vscode-remote-dev-debug/</guid>
+      <description>&lt;p&gt;对于大型的 Golang 项目往往我都会使用 Goland 这样的专业 IDE，但是由于我本地开发环境硬件资源偏低，不能很顺畅的使用 Goland，这个时候我们就可以使用 VSCode 来代替 Goland，另外 VSCode 同样还支持远程开发，所以我索性将开发环境放在远程机器上，然后用 VSCode 远程开发模式进行连接，最主要的是大部分我们的项目都是直接跑在 Linux 上面的，这个时候我们就可以直接在 VSCode 中运行 Linux 环境下面的应用，而且我们还可以很好地进行调试。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>免费获取 JetBrains 全系产品正版 License</title>
+      <link>https://www.qikqiak.com/post/free-use-jetbrains-ide/</link>
+      <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/free-use-jetbrains-ide/</guid>
+      <description>&lt;p&gt;要说现在最好用的 IDE 工具，可能除了微软系列的就得算 jetbrains 系列了，几乎支持所有主流的编程语言，可以说是目前最好用的 IDE 工具，比如 IntelliJ IDEA、PyCharm、GoLand、WebStorm，这些 IDE 工具其实平时我都有使用，但是我们也知道这些工具都属于商业产品，价格是非常昂贵的，虽然说这些工具给我们带来的便利远远不是金钱能来衡量的，但是毕竟对于我们大部分个人用户来说还是一笔不小的开支。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

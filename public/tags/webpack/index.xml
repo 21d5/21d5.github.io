@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>webpack on 阳明的博客</title>
+    <link>https://www.qikqiak.com/tags/webpack/</link>
+    <description>Recent content in webpack on 阳明的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.qikqiak.com/tags/webpack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>利用 Hugo Pipes 处理资源文件</title>
+      <link>https://www.qikqiak.com/post/hugo-pipes-process-assets/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/hugo-pipes-process-assets/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/tags/hugo/&#34;&gt;Hugo&lt;/a&gt;是一个非常强大的静态博客生成工具，没错你们正在看的本博客也是用&lt;code&gt;Hugo&lt;/code&gt;来生成的博客文章。作为一个对速度有着强烈要求的博主，整个网站使用的阿里云的全站加速功能，虽然博客上图片资源不算少，但是大部分用户访问的时候应该速度不算太慢，为了能够进一步提升访问速度，自然而然想到的就是对 CSS 样式或者 JS 文件进行合并压缩了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>webpack3入门到放肆视频教程</title>
+      <link>https://www.qikqiak.com/post/webpack3-get-started/</link>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/webpack3-get-started/</guid>
+      <description>&lt;p&gt;前段时间花了点时间做了一个视频教学网站：&lt;a href=&#34;https://www.haimaxy.com?utm_source=blog&amp;amp;utm_campaign=webpack-started&amp;amp;utm_medium=article&#34;&gt;海马学院&lt;/a&gt;，该产品的核心是围绕&lt;code&gt;python&lt;/code&gt;全栈(也会涉及到&lt;code&gt;nodejs&lt;/code&gt;、&lt;code&gt;golang&lt;/code&gt;等)相关的知识教学，基础的一些教学视频全免费的，但是也会推出很多付费的教学视频，付费的以实际的实战项目为主，如果你愿意的话，只需要花费一顿饭钱就可以学习到很多项目实战的经验。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

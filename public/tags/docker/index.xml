@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>docker on 阳明的博客</title>
+    <link>https://www.qikqiak.com/tags/docker/</link>
+    <description>Recent content in docker on 阳明的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.qikqiak.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用 KinD 加速 CI/CD 流水线</title>
+      <link>https://www.qikqiak.com/post/accelerate-ci-cd-pipelines-with-kind/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/accelerate-ci-cd-pipelines-with-kind/</guid>
+      <description>&lt;p&gt;现在安装 Kubernetes 集群已经变得越来越简单了，出现了很多方案，各种方案都有自己适合的使用场景。虽然我们可以很快速在云环境下面启动一个 Kubernetes 集群，但是对于开发人员通常更喜欢能够快速上手的东西，&lt;a href=&#34;https://kind.sigs.k8s.io/&#34;&gt;Kubernetes in Docker（KinD）&lt;/a&gt;这个工具就可以通过创建容器来作为 Kubernetes 的节点，我们只需要在机器上安装 Docker 就可以使用，它允许我们在很短的时间内就启动一个多节点的集群，而不依赖任何其他工具或云服务商，这就使得它不仅对本地开发非常有用，而且对 CI/CD 也很有帮助。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 中运行 Kubernetes</title>
+      <link>https://www.qikqiak.com/post/k8s-in-k8s/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-in-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/deploy-k8s-on-win-use-wsl2/&#34;&gt;前面其实我们在 Windows 系统的 WSL2 下面使用 KinD 搭建了一套 Kubernetes 集群&lt;/a&gt;，KinD 是一个非常轻量级的 Kubernetes 安装工具，他将 Docker 容器当成 Kubernetes 的节点，使用非常方便。既然在 Docker 容器中可以运行 Kubernetes 集群，那么我们自然就会想到是否可以在 Pod 中来运行呢？在 Pod 中运行会遇到哪些问题呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>加速开发流程的 Dockerfile 最佳实践</title>
+      <link>https://www.qikqiak.com/post/speed-up-develop-flow-dockerfile-best-practices/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/speed-up-develop-flow-dockerfile-best-practices/</guid>
+      <description>&lt;p&gt;Dockerfile 是创建 Docker 镜像的起点，该文件提供了一组定义良好的指令，可以让我们复制文件或文件夹，运行命令，设置环境变量以及执行创建容器镜像所需的其他任务。编写 Dockerfile 来确保生成的镜像安全、小巧、快速构建和快速更新非常重要。&lt;/p&gt;
+
+&lt;p&gt;本文我们将看到如何编写良好的 Dockerfile 来加快开发流程，确保构建的可重用性，并生成可放心部署到生产中的镜像。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>获取客户端访问真实 IP</title>
+      <link>https://www.qikqiak.com/post/get-client-realip/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/get-client-realip/</guid>
+      <description>&lt;p&gt;通常，当集群内的客户端连接到服务的时候，是支持服务的 Pod 可以获取到客户端的 IP 地址的，但是，当通过节点端口接收到连接时，由于对数据包执行了源网络地址转换（SNAT），因此数据包的源 IP 地址会发生变化，后端的 Pod 无法看到实际的客户端 IP，对于某些应用来说是个问题，比如，nginx 的请求日志就无法获取准确的客户端访问 IP 了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 中配置 Container Capabilities</title>
+      <link>https://www.qikqiak.com/post/capabilities-on-k8s/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/capabilities-on-k8s/</guid>
+      <description>&lt;p&gt;我们在使用 Kubernetes 过程中，偶尔会遇到如下所示的一段配置：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;securityContext:
+  capabilities:
+    drop:
+    - ALL
+    add:
+    - NET_BIND_SERVICE&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;实际上这是配置对应的容器的 &lt;code&gt;Capabilities&lt;/code&gt;，在我们使用 &lt;code&gt;docker run&lt;/code&gt; 的时候可以通过 &lt;code&gt;--cap-add&lt;/code&gt; 和 &lt;code&gt;--cap-drop&lt;/code&gt; 命令来给容器添加 &lt;code&gt;Linux Capabilities&lt;/code&gt;。对于大部分同学可能又要疑问 &lt;code&gt;Linux Capabilities&lt;/code&gt; 是什么呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Configuration-As-Code 运行 Jenkins</title>
+      <link>https://www.qikqiak.com/post/use-casc-run-jenkins/</link>
+      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-casc-run-jenkins/</guid>
+      <description>&lt;p&gt;今天了解到一个名为&lt;code&gt;Configuration as Code (JcasC)&lt;/code&gt;的插件可以来创建&lt;code&gt;Jenkins&lt;/code&gt;，这个插件允许你用 YAML 文件来定义 Jenkins 配置。一般我们在使用 Jenkins 的时候多少知道我们需要哪些插件或者其他配置来配合我们的 CI/CD 工作，使用 JcasC 插件，我们就可以将这些信息配置在可读性更高的 YAML 文件中。在本文中，我们会为大家演示如何使用&lt;code&gt;Configuration as Code&lt;/code&gt;插件来创建 Jenkins，然后使用 Git、Maven 等工具来编写一个声明式的 Pipeline 去构建一个 Java 应用，另外还会展示如何使用&lt;code&gt;Vault&lt;/code&gt;来管理一些私密数据。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于 Jenkins、Gitlab、Harbor、Helm 和 Kubernetes 的 CI/CD(二)</title>
+      <link>https://www.qikqiak.com/post/complete-cicd-demonstrate-2/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/complete-cicd-demonstrate-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/complete-cicd-demonstrate-1/&#34;&gt;上节课我们完成了最基本的流水线流程&lt;/a&gt;，接下来的工作就是来实现之前的具体 Pipeline 脚本了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于 Jenkins、Gitlab、Harbor、Helm 和 Kubernetes 的 CI/CD(一)</title>
+      <link>https://www.qikqiak.com/post/complete-cicd-demonstrate-1/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/complete-cicd-demonstrate-1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/gitlab-ci-k8s-cluster-feature/&#34;&gt;上节课和大家介绍了&lt;code&gt;Gitlab CI&lt;/code&gt;结合&lt;code&gt;Kubernetes&lt;/code&gt;进行 CI/CD 的完整过程&lt;/a&gt;。这节课结合前面所学的知识点给大家介绍一个完整的示例：使用 Jenkins + Gitlab + Harbor + Helm + Kubernetes 来实现一个完整的 CI/CD 流水线作业。&lt;/p&gt;
+
+&lt;p&gt;其实前面的课程中我们就&lt;a href=&#34;https://www.qikqiak.com/post/kubernetes-jenkins1/&#34;&gt;已经学习了 Jenkins Pipeline 与 Kubernetes 的完美结合&lt;/a&gt;，我们利用 Kubernetes 来动态运行 Jenkins 的 Slave 节点，可以和好的来解决传统的 Jenkins Slave 浪费大量资源的缺点。之前的示例中我们是将项目放置在 Github 仓库上的，将 Docker 镜像推送到了 Docker Hub，这节课我们来结合我们前面学习的知识点来综合运用下，使用 Jenkins、Gitlab、Harbor、Helm、Kubernetes 来实现一个完整的持续集成和持续部署的流水线作业。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 上安装 Gitlab</title>
+      <link>https://www.qikqiak.com/post/gitlab-install-on-k8s/</link>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/gitlab-install-on-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/gitlab-install-on-k8s/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/vTUWg8.jpg&#34; alt=&#34;gitlab on k8s&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Gitlab&lt;/code&gt;官方提供了 Helm 的方式在 Kubernetes 集群中来快速安装，但是在使用的过程中发现 Helm 提供的 Chart 包中有很多其他额外的配置，所以我们这里使用自定义的方式来安装，也就是自己来定义一些资源清单文件。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Gitlab&lt;/code&gt;主要涉及到3个应用：Redis、Postgresql、Gitlab 核心程序，实际上我们只要将这3个应用分别启动起来，然后加上对应的配置就可以很方便的安装 Gitlab 了，我们这里选择使用的镜像不是官方的，而是 Gitlab 容器化中使用非常多的一个第三方镜像：&lt;code&gt;sameersbn/gitlab&lt;/code&gt;，基本上和官方保持同步更新，地址：&lt;a href=&#34;http://www.damagehead.com/docker-gitlab/&#34;&gt;http://www.damagehead.com/docker-gitlab/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 在快速安装 Harbor</title>
+      <link>https://www.qikqiak.com/post/harbor-quick-install/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/harbor-quick-install/</guid>
+      <description>&lt;p&gt;前面我们和大家简单分析了&lt;a href=&#34;https://www.qikqiak.com/post/harbor-code-analysis/&#34;&gt;Harbor 的实现原理和部分源代码&lt;/a&gt;，这节课给大家介绍下如何快速安装并使用 Harbor。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Harbor 源码浅析</title>
+      <link>https://www.qikqiak.com/post/harbor-code-analysis/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/harbor-code-analysis/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/harbor-code-analysis/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/Q2xt5X.jpg&#34; alt=&#34;harbor&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/goharbor/harbor&#34;&gt;Harbor&lt;/a&gt; 是一个&lt;code&gt;CNCF&lt;/code&gt;基金会托管的开源的可信的云原生&lt;code&gt;docker registry&lt;/code&gt;项目，可以用于存储、签名、扫描镜像内容，Harbor 通过添加一些常用的功能如安全性、身份权限管理等来扩展 docker registry 项目，此外还支持在 registry 之间复制镜像，还提供更加高级的安全功能，如用户管理、访问控制和活动审计等，在新版本中还添加了&lt;code&gt;Helm&lt;/code&gt;仓库托管的支持。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker 镜像分析工具 Dive(附视频)</title>
+      <link>https://www.qikqiak.com/post/docker-image-explore-tool-dive/</link>
+      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/docker-image-explore-tool-dive/</guid>
+      <description>&lt;p&gt;我们知道用&lt;code&gt;docker inspect&lt;/code&gt;命令可以查看一个 docker 镜像的 meta 信息，用&lt;code&gt;docker history&lt;/code&gt;命令可以了解一个镜像的构建历史，但是这些信息对我们去分析一个镜像的具体一层的组成来说还是不太够，不够清晰明了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dockerfile 最佳实践</title>
+      <link>https://www.qikqiak.com/post/dockerfile-best-practice/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/dockerfile-best-practice/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Docker&lt;/code&gt;官方关于&lt;code&gt;Dockerfile&lt;/code&gt;最佳实践原文链接地址：&lt;a href=&#34;https://docs.docker.com/develop/develop-images/dockerfile_best-practices/&#34;&gt;https://docs.docker.com/develop/develop-images/dockerfile_best-practices/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Docker&lt;/code&gt;可以通过从&lt;code&gt;Dockerfile&lt;/code&gt;包含所有命令的文本文件中读取指令自动构建镜像，以便构建给定镜像。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Dockerfiles&lt;/code&gt;使用特定的格式并使用一组特定的指令。您可以在 &lt;a href=&#34;https://docs.docker.com/engine/reference/builder/&#34;&gt;Dockerfile Reference&lt;/a&gt; 页面上了解基础知识 。如果你是新手写作&lt;code&gt;Dockerfile&lt;/code&gt;，你应该从那里开始。&lt;/p&gt;
+
+&lt;p&gt;本文档介绍了由 Docker，Inc. 和 Docker 社区推荐的用于构建高效镜像的最佳实践和方法。要查看更多实践和建议，请查看 &lt;a href=&#34;https://github.com/docker-library/buildpack-deps/blob/master/jessie/Dockerfile&#34;&gt;Dockerfile for buildpack-deps&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>名称解释OCI、runc、containerd、Docker、CRI、CRI-O</title>
+      <link>https://www.qikqiak.com/post/what-is-oci-runc-containerd-cri-docker/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/what-is-oci-runc-containerd-cri-docker/</guid>
+      <description>TODO</description>
+    </item>
+    
+    <item>
+      <title>初始化容器</title>
+      <link>https://www.qikqiak.com/post/pod-init-container/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/pod-init-container/</guid>
+      <description>&lt;p&gt;上节课我们学习了容器的健康检查的两个探针：&lt;a href=&#34;https://www.haimaxy.com/course/6n8xd6/mg0106/&#34;&gt;liveness probe（存活探针）和 readiness probe（可读性探针）&lt;/a&gt;的使用方法，我们说在这两个探针是可以影响容器的生命周期的，包括我们之前提到的容器的&lt;a href=&#34;https://www.haimaxy.com/course/6n8xd6/m2kvjm/&#34;&gt;两个钩子函数 PostStart 和 PreStop &lt;/a&gt;。我们今天要给大家介绍的是&lt;code&gt;Init Container&lt;/code&gt;（初始化容器）。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手摸手教你写 Kubernetes 的 golang 服务</title>
+      <link>https://www.qikqiak.com/post/write-kubernets-golang-service-step-by-step/</link>
+      <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/write-kubernets-golang-service-step-by-step/</guid>
+      <description>&lt;p&gt;我们前面介绍了很多关于&lt;code&gt;kubernetes&lt;/code&gt;本身的操作，但是对于如何写一个完整的&lt;code&gt;kubernetes&lt;/code&gt;应用还没有介绍过。在这篇文章中我们将介绍如何一步一步的写一个&lt;code&gt;kubernetes&lt;/code&gt;的&lt;code&gt;golang&lt;/code&gt;服务。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker 的多阶段构建</title>
+      <link>https://www.qikqiak.com/post/multi-stage-build-for-docker/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/multi-stage-build-for-docker/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Docker&lt;/code&gt;的口号是 &lt;strong&gt;Build,Ship,and Run Any App,Anywhere&lt;/strong&gt;，在我们使用 Docker 的大部分时候，的确能感觉到其优越性，但是往往在我们 Build 一个应用的时候，是将我们的源代码也构建进去的，这对于类似于 golang 这样的编译型语言肯定是不行的，因为实际运行的时候我只需要把最终构建的二进制包给你就行，把源码也一起打包在镜像中，需要承担很多风险，即使是脚本语言，在构建的时候也可能需要使用到一些上线的工具，这样无疑也增大了我们的镜像体积。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TDD开发容器化的Python微服务应用(二)</title>
+      <link>https://www.qikqiak.com/post/tdd-develop-python-microservice-app-part2/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/tdd-develop-python-microservice-app-part2/</guid>
+      <description>&lt;p&gt;本节课我们将我们的项目拆分成3个工程，我们也会增加一些集成测试来确保每一个服务都能够正确的运行，引入持续集成概念，最后，我们还将添加一个&lt;code&gt;ReactJS&lt;/code&gt;的客户端。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python 虚拟环境全知道</title>
+      <link>https://www.qikqiak.com/post/python-virtualenv-all-know/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/python-virtualenv-all-know/</guid>
+      <description>&lt;p&gt;对于每个&lt;code&gt;python&lt;/code&gt;项目依赖的库版本都有可能不一样，如果将依赖包都安装到公共环境的话显然是没法进行区分的，甚至是不同的项目使用的&lt;code&gt;python&lt;/code&gt;版本都不尽相同，有的用&lt;code&gt;python2.7&lt;/code&gt;，有的用&lt;code&gt;python3.6&lt;/code&gt;，所以对于&lt;code&gt;python&lt;/code&gt;项目的环境进行隔离管理就成为一个必然的需求了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TDD开发容器化的Python微服务应用(一)</title>
+      <link>https://www.qikqiak.com/post/tdd-develop-python-microservice-app/</link>
+      <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/tdd-develop-python-microservice-app/</guid>
+      <description>&lt;p&gt;在这个课程中，你将学习如何使用&lt;code&gt;Docker&lt;/code&gt;快速创建开发环境、管理多个微服务，应用程序在本地运行后，您将学习怎样在生产环境部署应用。我们也会练习&lt;code&gt;TDD&lt;/code&gt;(测试驱动开发)，在你的项目中测试先行，我们重点将放在服务端的单元测试、功能和集成测试以及端到端的测试上面，以确保整个系统按预期工作。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在kubernetes 集群上搭建docker 私有仓库Harbor</title>
+      <link>https://www.qikqiak.com/post/install-docker-registry-harbor-in-kubernetes/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/install-docker-registry-harbor-in-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Harbor&lt;/code&gt;是一个用于存储和分发Docker 镜像的企业级Registry 服务器，通过添加一些企业必需的功能特性，例如安全、标识和管理等，扩展了开源Docker Distribution。作为一个企业级私有Registry 服务器，Harbor 提供了更好的性能和安全。提升用户使用Registry构建和运行环境传输镜像的效率。Harbor 支持安装在多个Registry节点的镜像资源复制，镜像全部保存在私有Registry 中， 确保数据和知识产权在公司内部网络中管控。另外，Harbor也提供了高级的安全特性，诸如用户管理，访问控制和活动审计等。&lt;/p&gt;
+
+&lt;p&gt;本文将介绍如何在kubernetes 集群上搭建一个高可用的Harbor 服务。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手动搭建高可用的kubernetes 集群</title>
+      <link>https://www.qikqiak.com/post/manual-install-high-available-kubernetes-cluster/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/manual-install-high-available-kubernetes-cluster/</guid>
+      <description>&lt;p&gt;之前按照&lt;a href=&#34;https://github.com/opsnull/follow-me-install-kubernetes-cluster&#34;&gt;和我一步步部署 kubernetes 集群&lt;/a&gt;的步骤一步一步的成功的使用二进制的方式安装了&lt;code&gt;kubernetes&lt;/code&gt;集群，在该文档的基础上重新部署了最新的&lt;code&gt;v1.8.2&lt;/code&gt;版本，实现了&lt;code&gt;kube-apiserver&lt;/code&gt;的高可用、&lt;code&gt;traefik ingress&lt;/code&gt; 的部署、在&lt;code&gt;kubernetes&lt;/code&gt;上安装&lt;code&gt;docker&lt;/code&gt;的私有仓库&lt;code&gt;harbor&lt;/code&gt;、容器化&lt;code&gt;kubernetes&lt;/code&gt;部分组建、使用阿里云日志服务收集日志。&lt;/p&gt;
+
+&lt;p&gt;部署完成后，你将理解系统各组件的交互原理，进而能快速解决实际问题，所以本文档主要适合于那些有一定&lt;code&gt;kubernetes&lt;/code&gt;基础，想通过一步步部署的方式来学习和了解系统配置、运行原理的人。&lt;/p&gt;
+
+&lt;p&gt;本系列系文档适用于 &lt;code&gt;CentOS 7&lt;/code&gt;、&lt;code&gt;Ubuntu 16.04&lt;/code&gt; 及以上版本系统，由于启用了 &lt;code&gt;TLS&lt;/code&gt; 双向认证、&lt;code&gt;RBAC&lt;/code&gt; 授权等严格的安全机制，建议&lt;strong&gt;从头开始部署&lt;/strong&gt;，否则可能会认证、授权等失败！&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1794 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kubernetes on 阳明的博客</title>
+    <link>https://www.qikqiak.com/tags/kubernetes/</link>
+    <description>Recent content in kubernetes on 阳明的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.qikqiak.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes 进阶训练营</title>
+      <link>https://www.qikqiak.com/post/promotion-51/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/promotion-51/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/promotion-51&#34;&gt;&lt;img src=&#34;https://sdn.youdianzhishi.com/images/2019/10/24/65f2cfb229184268a18745fe202b281b.jpg?imageView2/2/format/webp&#34; alt=&#34;Kubernetes 进阶训练营&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自己动手写一个 Kubernetes YAML 模板化工具</title>
+      <link>https://www.qikqiak.com/post/code-k8s-yaml-templating/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/code-k8s-yaml-templating/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/use-go-code-k8s-yaml-template.png&#34; alt=&#34;自己动手写一个 Kubernetes YAML 模板化工具&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我们在使用 Kubernetes 编写资源清单文件的时候，往往会使用类似于 &lt;code&gt;Helm&lt;/code&gt; 或者 &lt;code&gt;Kustomize&lt;/code&gt; 这样的工具来进行模板化处理，一来是提高了资源清单的灵活性，另一方面也确实降低了我们安装复杂的 Kubernetes 应用的门槛。本文我们尝试自己使用 Golang 来实现一个 YAML 资源清单文件模板化的方案。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>图解 Kubernetes Ingress</title>
+      <link>https://www.qikqiak.com/post/visually-explained-k8s-ingress/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/visually-explained-k8s-ingress/</guid>
+      <description>&lt;p&gt;Kubernetes Ingress 只是 Kubernetes 中的一个普通资源对象，需要一个对应的 Ingress Controller 来解析 Ingress 的规则，暴露服务到外部，比如 ingress-nginx，本质上来说它只是一个 Nginx Pod，然后将请求重定向到其他内部（ClusterIP）服务去，这个 Pod 本身也是通过 Kubernetes 服务暴露出去，最常见的方式是通过 LoadBalancer 来实现的。&lt;/p&gt;
+
+&lt;p&gt;同样本文希望用一个简单清晰的概述，让你来了解 Kubernetes Ingress 背后的东西，让你更容易理解使用的 Ingress。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>图解 Kubernetes Service</title>
+      <link>https://www.qikqiak.com/post/visually-explained-k8s-service/</link>
+      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/visually-explained-k8s-service/</guid>
+      <description>&lt;p&gt;在 Kubernetes 中 Service 主要有4种不同的类型，其中的 ClusterIP 是最基础的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/20201105105016.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;上图解释了 Kubernetes 的 Service 的基本关系，当我们创建一个 NodePort 的 Service 时，它也会创建一个 ClusterIP，而如果你创建一个 LoadBalancer，它就会创建一个 NodePort，然后创建一个 ClusterIP&lt;/p&gt;
+
+&lt;p&gt;此外我们还需要明白 Service 是指向 pods 的，Service 不是直接指向 Deployments 或 ReplicaSets，而是直接使用 labels 标签指向 Pod，这种方式就提供了极大的灵活性，因为通过什么方式创建的 Pod 其实并不重要。接下来我们通过一个简单的例子开始，我们用不同的 Service 类型来逐步扩展，看看这些 Service 是如何建立的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 上运行高可用的 Kafka 集群</title>
+      <link>https://www.qikqiak.com/post/deploy-kafka-ha-on-k8s/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/deploy-kafka-ha-on-k8s/</guid>
+      <description>&lt;p&gt;Apache Kafka 是目前最流行的分布式消息发布订阅系统，虽然 Kafka 非常强大，但它同样复杂，需要一个高可用的强大平台来运行。在微服务盛行，大多数公司都采用分布式计算的今天，将 Kafka 作为核心的消息系统使用还是非常有优势的。&lt;/p&gt;
+
+&lt;p&gt;如果你在 Kubernetes 集群中运行你的微服务，那么在 Kubernetes 中运行 Kafka 集群也是很有意义的，这样可以利用其内置的弹性和高可用，我们可以使用内置的 Kubernetes 服务发现轻松地与集群内的 Kafka Pods 进行交互。&lt;/p&gt;
+
+&lt;p&gt;下面我们将来介绍下如何在 Kubernetes 上构建分布式的 Kafka 集群，这里我们将使用 Helm Chart 和 StatefulSet 来进行部署，当然如果想要动态生成持久化数据卷，还需要提前配置一个 StorageClass 资源，比如基于 Ceph RBD 的，如果你集群中没有配置动态卷，则需要提前创建3个未绑定的 PV 用于数据持久化。&lt;/p&gt;
+
+&lt;p&gt;当前基于 Helm 官方仓库的 &lt;code&gt;chartincubator/kafka&lt;/code&gt; 在 Kubernetes 上部署的 Kafka，使用的镜像是 &lt;code&gt;confluentinc/cp-kafka:5.0.1&lt;/code&gt;，即部署的是Confluent 公司提供的 Kafka 版本，Confluent Platform Kafka(简称CP Kafka)提供了一些 Apache Kafka 没有的高级特性，例如跨数据中心备份、Schema 注册中心以及集群监控工具等。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 KinD 加速 CI/CD 流水线</title>
+      <link>https://www.qikqiak.com/post/accelerate-ci-cd-pipelines-with-kind/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/accelerate-ci-cd-pipelines-with-kind/</guid>
+      <description>&lt;p&gt;现在安装 Kubernetes 集群已经变得越来越简单了，出现了很多方案，各种方案都有自己适合的使用场景。虽然我们可以很快速在云环境下面启动一个 Kubernetes 集群，但是对于开发人员通常更喜欢能够快速上手的东西，&lt;a href=&#34;https://kind.sigs.k8s.io/&#34;&gt;Kubernetes in Docker（KinD）&lt;/a&gt;这个工具就可以通过创建容器来作为 Kubernetes 的节点，我们只需要在机器上安装 Docker 就可以使用，它允许我们在很短的时间内就启动一个多节点的集群，而不依赖任何其他工具或云服务商，这就使得它不仅对本地开发非常有用，而且对 CI/CD 也很有帮助。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Kustomize 定制 Helm Charts</title>
+      <link>https://www.qikqiak.com/post/use-kustomize-custom-helm-charts/</link>
+      <pubDate>Wed, 23 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-kustomize-custom-helm-charts/</guid>
+      <description>&lt;p&gt;如果你经常使用 Kubernetes，那么应该对 Helm 和 Kustomize 不陌生，这两个工具都是用来管理 Kubernetes 的资源清单的，但是二者有着不同的工作方式。&lt;/p&gt;
+
+&lt;p&gt;Helm 使用的是模板，一个 Helm Chart 包中包含了很多模板和值文件，当被渲染时模板中的变量会使用值文件中对应的值替换。而 Kustomize 使用的是一种无模板的方式，它对 YAML 文件进行修补和合并操作，此外 Kustomize 也已经被原生内置到 kubectl 中了。这两个工具在 Kubernetes 的生态系统中都被广泛使用，而且这两个工具也可以一起结合使用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>更新一个10年有效期的 Kubernetes 证书</title>
+      <link>https://www.qikqiak.com/post/update-k8s-10y-expire-certs/</link>
+      <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/update-k8s-10y-expire-certs/</guid>
+      <description>&lt;p&gt;使用 kubeadm 安装 kubernetes 集群非常方便，但是也有一个比较烦人的问题就是默认的证书有效期只有一年时间，所以需要考虑证书升级的问题，本文的演示集群版本为 v1.16.2 版本，不保证下面的操作对其他版本也适用，&lt;strong&gt;在操作之前一定要先对证书目录进行备份，防止操作错误进行回滚&lt;/strong&gt;。本文主要介绍两种方式来更新集群证书。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Grafana Loki 简明教程</title>
+      <link>https://www.qikqiak.com/post/grafana-loki-usage/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/grafana-loki-usage/</guid>
+      <description>&lt;p&gt;Loki 是 Grafana Labs 团队最新的开源项目，是一个水平可扩展，高可用性，多租户的日志聚合系统。它的设计非常经济高效且易于操作，因为它不会为日志内容编制索引，而是为每个日志流配置一组标签。项目受 Prometheus 启发，官方的介绍就是：&lt;code&gt;Like Prometheus, but for logs&lt;/code&gt;，类似于 Prometheus 的日志系统。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Elastic 技术栈构建 K8S 全栈监控(1/4)</title>
+      <link>https://www.qikqiak.com/post/k8s-monitor-use-elastic-stack-1/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-monitor-use-elastic-stack-1/</guid>
+      <description>&lt;p&gt;在本系列文章中，我们将学习如何使用 Elastic 技术栈来为 Kubernetes 构建监控环境。可观测性的目标是为生产环境提供运维工具来检测服务不可用的情况（比如服务宕机、错误或者响应变慢等），并且保留一些可以排查的信息，以帮助我们定位问题。总的来说主要包括3个方面：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;监控指标提供系统各个组件的时间序列数据，比如 CPU、内存、磁盘、网络等信息，通常可以用来显示系统的整体状况以及检测某个时间的异常行为&lt;/li&gt;
+&lt;li&gt;日志为运维人员提供了一个数据来分析系统的一些错误行为，通常将系统、服务和应用的日志集中收集在同一个数据库中&lt;/li&gt;
+&lt;li&gt;追踪或者 APM（应用性能监控）提供了一个更加详细的应用视图，可以将服务执行的每一个请求和步骤都记录下来（比如 HTTP 调用、数据库查询等），通过追踪这些数据，我们可以检测到服务的性能，并相应地改进或修复我们的系统。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Elastic 技术栈构建 K8S 全栈监控(2/4)</title>
+      <link>https://www.qikqiak.com/post/k8s-monitor-use-elastic-stack-2/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-monitor-use-elastic-stack-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/k8s-monitor-use-elastic-stack-1/&#34;&gt;前面文章我们已经安装配置了 ElasticSearch 的集群&lt;/a&gt;，本文我们将来使用 Metricbeat 对 Kubernetes 集群进行监控。Metricbeat 是一个服务器上的轻量级采集器，用于定期收集主机和服务的监控指标。这也是我们构建 Kubernetes 全栈监控的第一个部分。&lt;/p&gt;
+
+&lt;p&gt;Metribeat 默认采集系统的指标，但是也包含了大量的其他模块来采集有关服务的指标，比如 Nginx、Kafka、MySQL、Redis 等等，支持的完整模块可以在 Elastic 官方网站上查看到 &lt;a href=&#34;https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-modules.html&#34;&gt;https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-modules.html&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Elastic 技术栈构建 K8S 全栈监控(3/4)</title>
+      <link>https://www.qikqiak.com/post/k8s-monitor-use-elastic-stack-3/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-monitor-use-elastic-stack-3/</guid>
+      <description>&lt;p&gt;在本节中我们将要安装配置 &lt;a href=&#34;https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html&#34;&gt;Filebeat&lt;/a&gt; 来收集 Kubernetes 集群中的日志数据，然后发送到 ElasticSearch 去中，Filebeat 是一个轻量级的日志采集代理，还可以配置特定的&lt;a href=&#34;https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-modules.html&#34;&gt;模块&lt;/a&gt;来解析和可视化应用（比如数据库、Nginx 等）的日志格式。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Elastic 技术栈构建 K8S 全栈监控(4/4)</title>
+      <link>https://www.qikqiak.com/post/k8s-monitor-use-elastic-stack-4/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-monitor-use-elastic-stack-4/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Elastic APM&lt;/strong&gt; 是 Elastic Stack 上用于应用性能监控的工具，它允许我们通过收集传入请求、数据库查询、缓存调用等方式来实时监控应用性能。这可以让我们更加轻松快速定位性能问题。&lt;/p&gt;
+
+&lt;p&gt;Elastic APM 是兼容 OpenTracing 的，所以我们可以使用大量现有的库来跟踪应用程序性能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prometheus 监控外部 Kubernetes 集群</title>
+      <link>https://www.qikqiak.com/post/monitor-external-k8s-on-prometheus/</link>
+      <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/monitor-external-k8s-on-prometheus/</guid>
+      <description>&lt;p&gt;前面我们的文章中都是将 Prometheus 安装在 Kubernetes 集群中来采集数据，但是在实际环境中很多企业是将 Prometheus 单独部署在集群外部的，甚至直接监控多个 Kubernetes 集群，虽然不推荐这样去做，因为 Prometheus 采集的数据量太大，或大量消耗资源，比较推荐的做法是用不同的 Prometheus 实例监控不同的集群，然后用联邦的方式进行汇总。但是使用 Prometheus 监控外部的 Kubernetes 集群这个需求还是非常有必要的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Sealed Secrets 加密 Kubernetes Secrets</title>
+      <link>https://www.qikqiak.com/post/encrypt-k8s-secrets-with-sealed-secrets/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/encrypt-k8s-secrets-with-sealed-secrets/</guid>
+      <description>&lt;p&gt;前面我们和大家提到过 GitOps 的实践，我们知道 GitOps 是提倡通过 Git 来管理所有的配置，通过声明式代码来对环境配置和基础设施进行版本管理。&lt;/p&gt;
+
+&lt;p&gt;在 Kubernetes 中我们知道可以使用资源清单文件来管理集群中的一资源对象，但是讲 Kubernetes 的 Secrets 数据存储在 Git 仓库中还是非常不妥的，毕竟也是非常不安全的。&lt;/p&gt;
+
+&lt;p&gt;Kubernetes Secrets 是用来帮助我们存储敏感信息的资源对象，比如密码、密钥、证书、OAuth Token、SSH KEY 等等。管理员可以通过创建 Secrets 对象，然后开发人员就可以在资源清单文件中非常方便的引用 Secrets 对象，而不用直接将这些敏感信息硬编码。&lt;/p&gt;
+
+&lt;p&gt;虽然这看上去非常方便，但是有 Secrets 的问题是它们只是简单的将这些敏感信息做了一次 base64 编码而已，任何人都可以非常容易对其进行解密获得原始的数据。所以我们说 Secrets 清单文件不能直接存储在 Git 源码仓库中，但是如果每次都去手工创建的话，这又使得我们的 GitOps 不是很流畅了。&lt;/p&gt;
+
+&lt;p&gt;为此 Bitnami Labs 创建了一个名为 &lt;a href=&#34;https://github.com/bitnami-labs/sealed-secrets&#34;&gt;Sealed Secrets&lt;/a&gt; 的开源工具来解决这个问题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 中 PV 和 PVC 的状态变化</title>
+      <link>https://www.qikqiak.com/post/status-in-pv-pvc/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/status-in-pv-pvc/</guid>
+      <description>&lt;p&gt;我们对 PV 和 PVC 的几种状态应该不算陌生，但是在使用过程中可能也会产生一些疑问，比如为什么 PV 变成 Failed 状态了，新创建的 PVC 如何能够绑定之前的 PV，我可以恢复之前的 PV 吗？这里我们就来对 PV 和 PVC 中的几种状态变化再次进行说明。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 中运行 Kubernetes</title>
+      <link>https://www.qikqiak.com/post/k8s-in-k8s/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-in-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/deploy-k8s-on-win-use-wsl2/&#34;&gt;前面其实我们在 Windows 系统的 WSL2 下面使用 KinD 搭建了一套 Kubernetes 集群&lt;/a&gt;，KinD 是一个非常轻量级的 Kubernetes 安装工具，他将 Docker 容器当成 Kubernetes 的节点，使用非常方便。既然在 Docker 容器中可以运行 Kubernetes 集群，那么我们自然就会想到是否可以在 Pod 中来运行呢？在 Pod 中运行会遇到哪些问题呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Windows 下使用 WSL2 搭建 Kubernetes 集群</title>
+      <link>https://www.qikqiak.com/post/deploy-k8s-on-win-use-wsl2/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/deploy-k8s-on-win-use-wsl2/</guid>
+      <description>&lt;p&gt;本文我们将介绍如何在 Windows10 下使用 WSL2 和 KinD 来搭建一套 Kubernetes 集群。在过去几年，Kubernetes 已经成为了容器编排领域事实上的标准。虽然现在已经有各种各样的 Kubernetes 发行版本和安装程序来部署 Kubernetes 环境了，除了云环境或者裸机环境下面之外，我们仍然需要在本地部署和运行 Kubernetes 集群，特别是对于相关的开发人员。&lt;/p&gt;
+
+&lt;p&gt;但是 Kubernetes 最开始是被设计在 Linux 环境中来部署和使用的，然而还是有不少用户平时工作还是使用的是 Windows 操作系统，为了降低 Windows 用户使用 Linux 的困难程度，微软推出了 WSL (Windows Subsystem for Linux)，该工具相当于一个运行在 Windows 下面的 Linux 子系统，这让 Windows 和 Linux 之间的环境界限变得更加不明显了，特别是 WSL2 版本推出以后，完全具有了在 WSL2 中运行 Docker 的能力了，所以现在我们几乎可以无缝地在 WSL2 上面运行 Kubernetes。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Loki 进行日志监控和报警</title>
+      <link>https://www.qikqiak.com/post/use-loki-monitor-alert/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-loki-monitor-alert/</guid>
+      <description>&lt;p&gt;对于生产环境以及一个有追求的运维人员来说，哪怕是毫秒级别的宕机也是不能容忍的。对基础设施及应用进行适当的日志记录和监控非常有助于解决问题，还可以帮助优化成本和资源，以及帮助检测以后可能会发生的一些问题。前面我们介绍了使用 EFK 技术栈来收集和监控日志，本文我们将使用更加轻量级的 Grafana Loki 来实现日志的监控和报警，一般来说 Grafana Loki 包括3个主要的组件：Promtail、Loki 和 Grafana（简称 PLG），最为关键的是如果你熟悉使用 Prometheus 的话，对于 Loki 的使用也完全没问题，因为他们的使用方法基本一致的，如果是在 Kubernetes 集群中自动发现的还具有相同的 Label 标签。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Tekton 创建 CI/CD 流水线（3/4）</title>
+      <link>https://www.qikqiak.com/post/create-ci-pipeline-with-tekton-3/</link>
+      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/create-ci-pipeline-with-tekton-3/</guid>
+      <description>&lt;p&gt;前面我们都是通过手动创建一个 &lt;code&gt;TaskRun&lt;/code&gt; 或者一个 &lt;code&gt;PipelineRun&lt;/code&gt; 对象来触发任务。但是在实际的工作中更多的是开发人员提交代码过后来触发任务，这个时候就需要用到 Tekton 里面的 Triggers 了。&lt;/p&gt;
+
+&lt;p&gt;Triggers 同样通过下面的几个 CRD 对象对 Tekton 进行了一些扩展：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;TriggerTemplate: 创建资源的模板，比如用来创建 PipelineResource 和 PipelineRun&lt;/li&gt;
+&lt;li&gt;TriggerBinding: 校验事件并提取相关字段属性&lt;/li&gt;
+&lt;li&gt;ClusterTriggerBinding: 和 TriggerBinding 类似，只是是全局的&lt;/li&gt;
+&lt;li&gt;EventListener: 连接 TriggerBinding 和 TriggerTemplate 到事件接收器，使用从各个 TriggerBinding 中提取的参数来创建 TriggerTemplate 中指定的 resources，同样通过 &lt;code&gt;interceptor&lt;/code&gt; 字段来指定外部服务对事件属性进行预处理&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>GitOps - 在 Kubernetes 中进行 DevOps 的方式</title>
+      <link>https://www.qikqiak.com/post/gitops-devops-on-k8s/</link>
+      <pubDate>Wed, 27 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/gitops-devops-on-k8s/</guid>
+      <description>&lt;p&gt;从我们第一次听到持续交付这个词，到现在估计差不多有10年时间了吧。Humble Jez 和 Farley David 在2010年的时候，通过他们的新书《Continuous Delivery: Reliable Software Releases Through Build, Test and Deployment Automation》提出的。在过去10年中，持续交付改变了我们软件发布的方式。现在随着围绕 Kubernetes 生态系统不断演变出的一套新的工具，让我们在持续交付的旅程中实现了又一次飞跃。这些工具基本上都是围绕着 GitOps 这个概念展开的，本文将尝试来解释下 “GitOps” 的 Why? What? 以及 How?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>解决 CoreDNS 自定义域名失效的问题</title>
+      <link>https://www.qikqiak.com/post/resolve-coredns-hosts-invalid/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/resolve-coredns-hosts-invalid/</guid>
+      <description>&lt;p&gt;前几天我们在解决 CoreDNS 的5秒超时问题的时候，使用了 &lt;a href=&#34;https://www.qikqiak.com/post/use-nodelocal-dns-cache/&#34;&gt;NodeLocal DNSCache&lt;/a&gt; 来解决这个问题，集群 DNS 的解析性能也明显大幅提升了。但是今天确遇到一个很大的坑，我们在做 DevOps 实验的时候，相关的工具都使用的是自定义的域名，这个时候要互相访问的话就需要添加自定义的域名解析，我们可以通过给 Pod 添加 &lt;code&gt;hostAlias&lt;/code&gt; 来解决，但是在使用 Jenkins 的 Kubernetes 插件的时候却不支持这个参数，需要使用 YAML 来自定义，比较麻烦，所以想着通过 CoreDNS 来添加 A 记录解决这个问题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>请使用 JSON 格式记录日志[译]</title>
+      <link>https://www.qikqiak.com/post/record-log-as-json/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/record-log-as-json/</guid>
+      <description>&lt;p&gt;日志和监控就像 Tony Stark 和他的 Iron Man 西装一样，两者需要一起使用才能发挥最大的威力，因为它们可以很好互补。&lt;/p&gt;
+
+&lt;p&gt;日志一直是应用程序和基础框架性能和故障诊断的重要手段，但是现在我们已经意识到日志不仅可以用于故障诊断，还可以用于大数据分析以及业务的一些可视化和性能分析等等。&lt;/p&gt;
+
+&lt;p&gt;所以，记录应用程序日志是非常非常重要的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 PyCharm、Okteto 和 Kubernetes 搭建远程开发环境</title>
+      <link>https://www.qikqiak.com/post/remote-deploy-env-with-okteto/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/remote-deploy-env-with-okteto/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://okteto.com/&#34;&gt;Okteto&lt;/a&gt; 是一个通过在 Kubernetes 中来开发和测试代码的应用程序开发工具。可以通过 &lt;code&gt;Okteto&lt;/code&gt; 在 Kubernetes 中一键为我们启动一个开发环境，非常简单方便。前面我们也介绍过 Google 推出的 &lt;a href=&#34;https://www.qikqiak.com/post/skaffold-simple-local-develop-k8s-app-tools/&#34;&gt;Skaffold&lt;/a&gt; 工具，今天我们演示下如何使用 &lt;code&gt;Okteto&lt;/code&gt; 来搭建 Python 应用开发环境。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>可视化创建 Kubernetes 微服务应用</title>
+      <link>https://www.qikqiak.com/post/visualize-kubernetes-app/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/visualize-kubernetes-app/</guid>
+      <description>&lt;p&gt;刚刚发现一款看上去非常厉害的工具：&lt;a href=&#34;https://icepanel.io/&#34;&gt;icepanel&lt;/a&gt;，可以用来快速创建和可视化我们的 Kubernetes 微服务应用程序。使用也是非常简单，只需要安装一款 VSCODE 插件即可。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Tekton 创建 CI/CD 流水线（2/4）</title>
+      <link>https://www.qikqiak.com/post/create-ci-pipeline-with-tekton-2/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/create-ci-pipeline-with-tekton-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/create-ci-pipeline-with-tekton-1/&#34;&gt;在前面文章中&lt;/a&gt;，我们在 Kubernetes 集群中安装了 Tekton，通过 Tekton 克隆 GitHub 代码仓库并执行了应用测试命令。接着前面的内容，本文我们将创建一个新的 Task 来构建一个 Docker 镜像并将其推送到 Docker Hub，最后，我们将这些任务组合成一个流水线。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Tekton 创建 CI/CD 流水线（1/4）</title>
+      <link>https://www.qikqiak.com/post/create-ci-pipeline-with-tekton-1/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/create-ci-pipeline-with-tekton-1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://tekton.dev/&#34;&gt;Tekton&lt;/a&gt; 是一款功能非常强大而灵活的 CI/CD 开源的云原生框架。Tekton 的前身是 Knative 项目的 build-pipeline 项目，这个项目是为了给 build 模块增加 pipeline 的功能，但是随着不同的功能加入到 Knative build 模块中，build 模块越来越变得像一个通用的 CI/CD 系统，于是，索性将 build-pipeline 剥离出 Knative，就变成了现在的 Tekton，而 Tekton 也从此致力于提供全功能、标准化的云原生 CI/CD 解决方案。&lt;/p&gt;
+
+&lt;p&gt;本文将通过一个简单的示例来创建一个构建流水线，在流水线中将运行应用程序的单元测试、&lt;a href=&#34;https://www.qikqiak.com/post/create-ci-pipeline-with-tekton-2/&#34;&gt;构建 Docker 镜像然后推送到 Docker Hub&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>加速开发流程的 Dockerfile 最佳实践</title>
+      <link>https://www.qikqiak.com/post/speed-up-develop-flow-dockerfile-best-practices/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/speed-up-develop-flow-dockerfile-best-practices/</guid>
+      <description>&lt;p&gt;Dockerfile 是创建 Docker 镜像的起点，该文件提供了一组定义良好的指令，可以让我们复制文件或文件夹，运行命令，设置环境变量以及执行创建容器镜像所需的其他任务。编写 Dockerfile 来确保生成的镜像安全、小巧、快速构建和快速更新非常重要。&lt;/p&gt;
+
+&lt;p&gt;本文我们将看到如何编写良好的 Dockerfile 来加快开发流程，确保构建的可重用性，并生成可放心部署到生产中的镜像。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 上搭建 EFK 日志收集系统[更新]</title>
+      <link>https://www.qikqiak.com/post/install-efk-stack-on-k8s/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/install-efk-stack-on-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/kubernetes-logs-architecture/&#34;&gt;上节课和大家介绍了 &lt;code&gt;Kubernetes&lt;/code&gt; 集群中的几种日志收集方案&lt;/a&gt;，Kubernetes 中比较流行的日志收集解决方案是 &lt;code&gt;Elasticsearch&lt;/code&gt;、&lt;code&gt;Fluentd&lt;/code&gt; 和 &lt;code&gt;Kibana&lt;/code&gt;（EFK）技术栈，也是官方现在比较推荐的一种方案。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Elasticsearch&lt;/code&gt; 是一个实时的、分布式的可扩展的搜索引擎，允许进行全文、结构化搜索，它通常用于索引和搜索大量日志数据，也可用于搜索许多不同类型的文档。&lt;/p&gt;
+
+&lt;p&gt;Elasticsearch 通常与 &lt;code&gt;Kibana&lt;/code&gt; 一起部署，Kibana 是 Elasticsearch 的一个功能强大的数据可视化 Dashboard，Kibana 允许你通过 web 界面来浏览 Elasticsearch 日志数据。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Fluentd&lt;/code&gt;是一个流行的开源数据收集器，我们将在 Kubernetes 集群节点上安装 Fluentd，通过获取容器日志文件、过滤和转换日志数据，然后将数据传递到 Elasticsearch 集群，在该集群中对其进行索引和存储。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用编程语言描述 Kubernetes 应用 - cdk8s</title>
+      <link>https://www.qikqiak.com/post/use-cdk8s-define-k8s-apps/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-cdk8s-define-k8s-apps/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/awslabs/cdk8s&#34;&gt;cdk8s&lt;/a&gt; 是 AWS Labs 发布的一个使用 TypeScript 编写的新框架，它允许我们使用一些面向对象的编程语言来定义 Kubernetes 的资源清单，cdk8s 最终也是生成原生的 Kubernetes YAML 文件，所以我们可以在任何地方使用 cdk8s 来定义运行的 Kubernetes 应用资源。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 集群中使用 NodeLocal DNSCache</title>
+      <link>https://www.qikqiak.com/post/use-nodelocal-dns-cache/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-nodelocal-dns-cache/</guid>
+      <description>&lt;p&gt;之前在解决 CoreDNS 的5秒超时问题的时候，除了通过 &lt;code&gt;dnsConfig&lt;/code&gt; 去强制使用 tcp 方式解析之外，我们提到过使用 &lt;code&gt;NodeLocal DNSCache&lt;/code&gt; 来解决这个问题。&lt;code&gt;NodeLocal DNSCache&lt;/code&gt; 通过在集群节点上运行一个 DaemonSet 来提高 clusterDNS 性能和可靠性。处于 &lt;code&gt;ClusterFirst&lt;/code&gt; 的 DNS 模式下的 Pod 可以连接到 &lt;code&gt;kube-dns&lt;/code&gt; 的 serviceIP 进行 DNS 查询。通过 &lt;code&gt;kube-proxy&lt;/code&gt; 组件添加的 &lt;code&gt;iptables&lt;/code&gt; 规则将其转换为 &lt;code&gt;CoreDNS&lt;/code&gt; 端点。通过在每个集群节点上运行 DNS 缓存，NodeLocal DNSCache 可以缩短 DNS 查找的延迟时间、使 DNS 查找时间更加一致，以及减少发送到 kube-dns 的 DNS 查询次数。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes HPA 使用详解</title>
+      <link>https://www.qikqiak.com/post/k8s-hpa-usage/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-hpa-usage/</guid>
+      <description>&lt;p&gt;在前面的学习中我们使用用一个 &lt;code&gt;kubectl scale&lt;/code&gt; 命令可以来实现 Pod 的扩缩容功能，但是这个毕竟是完全手动操作的，要应对线上的各种复杂情况，我们需要能够做到自动化去感知业务，来自动进行扩缩容。为此，Kubernetes 也为我们提供了这样的一个资源对象：&lt;code&gt;Horizontal Pod Autoscaling（Pod 水平自动伸缩）&lt;/code&gt;，简称&lt;code&gt;HPA&lt;/code&gt;，HPA 通过监控分析一些控制器控制的所有 Pod 的负载变化情况来确定是否需要调整 Pod 的副本数量，这是 HPA 最基本的原理：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.qikqiak.com/k8strain/assets/img/controller/horizontal-pod-autoscaler.svg&#34; alt=&#34;HPA&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我们可以简单的通过 &lt;code&gt;kubectl autoscale&lt;/code&gt; 命令来创建一个 HPA 资源对象，&lt;code&gt;HPA Controller&lt;/code&gt;默认&lt;code&gt;30s&lt;/code&gt;轮询一次（可通过 &lt;code&gt;kube-controller-manager&lt;/code&gt; 的&lt;code&gt;--horizontal-pod-autoscaler-sync-period&lt;/code&gt; 参数进行设置），查询指定的资源中的 Pod 资源使用率，并且与创建时设定的值和指标做对比，从而实现自动伸缩的功能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Envoy 简单入门示例</title>
+      <link>https://www.qikqiak.com/post/envoy-usage-demo/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/envoy-usage-demo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.envoyproxy.io/&#34;&gt;Envoy&lt;/a&gt; 是为云原生应用而设计的开源边缘和服务代理，也是 Istio Service Mesh 默认的数据平面，本文我们通过一个简单的示例来介绍 Envoy 的基本使用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ingress-nginx 控制器工作原理[译]</title>
+      <link>https://www.qikqiak.com/post/ingress-nginx-how-to-work/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/ingress-nginx-how-to-work/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/ingress-nginx-how-to-work/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/20200331110423.png&#34; alt=&#34;ingress-nginx 控制器工作原理&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本文的目的是解释 Nginx Ingress 控制器的工作原理，特别是 Nginx 模型的构建方式以及我们为何需要这个模型。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>用 Kubernetes 资源对象创建 Grafana Dashboard</title>
+      <link>https://www.qikqiak.com/post/use-crd-create-grafana-dashboard/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-crd-create-grafana-dashboard/</guid>
+      <description>&lt;p&gt;我们在使用 Grafana Dashboard 来展示我们的监控图表的时候，很多时候我们都是去找别人已经做好的 Dashboard 拿过来改一改，但是这样也造成了很多使用 Grafana 的人员压根不知道如何去自定义一个 Dashboard，虽然这并不是很困难。这里我们介绍一个比较新颖（骚）的工具：&lt;a href=&#34;https://github.com/K-Phoen/dark&#34;&gt;DARK&lt;/a&gt;，全称 &lt;code&gt;Dashboards As Resources in Kubernetes.&lt;/code&gt;，意思就是通过 Kubernetes 的资源对象来定义 Grafana Dashboard，实现原理也很简单，也就是通过 CRD 来定义 Dashboard，然后通过和 Grafana 的 API Token 进行交互实现 Dashboard 的 CRUD。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AlertManager 何时报警</title>
+      <link>https://www.qikqiak.com/post/alertmanager-when-alert/</link>
+      <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/alertmanager-when-alert/</guid>
+      <description>&lt;p&gt;在使用 Prometheus 进行监控的时候，通过 AlertManager 来进行告警，但是有很多人对报警的相关配置比较迷糊，不太清楚具体什么时候会进行告警。下面我们来简单介绍下 AlertManager 中的几个容易混淆的参数。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>优秀的 Grafana K8S 插件 - DevOpsProdigy KubeGraf</title>
+      <link>https://www.qikqiak.com/post/grafana-k8s-plugin-kubegraf/</link>
+      <pubDate>Thu, 19 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/grafana-k8s-plugin-kubegraf/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/devopsprodigy/kubegraf/&#34;&gt;DevOpsProdigy KubeGraf&lt;/a&gt; 是一个非常优秀的 Grafana Kubernetes 插件，是 Grafana 官方的 &lt;a href=&#34;https://grafana.com/plugins/grafana-kubernetes-app&#34;&gt;Kubernetes 插件&lt;/a&gt; 的升级版本，该插件可以用来可视化和分析 Kubernetes 集群的性能，通过各种图形直观的展示了 Kubernetes 集群的主要服务的指标和特征，还可以用于检查应用程序的生命周期和错误日志。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 集群上部署 Kafka</title>
+      <link>https://www.qikqiak.com/post/install-kafka-in-kubernetes/</link>
+      <pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/install-kafka-in-kubernetes/</guid>
+      <description>&lt;p&gt;最近在测试日志采集的时候，发现日志数据量稍微大一点，Elasticsearch 就有点抗不住了，对于 ES 的优化可能不是一朝一夕能够完成的，所以打算加一个中间层，将日志输出到 Kafka，然后通过 Logstash 从 Kafka 里面去消费日志存入 Elasticsearch。在测试环境现在并没有一套 Kafka 集群，所以我们来先在测试环境搭建一套 Kafka 集群。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 集群均衡器 Descheduler</title>
+      <link>https://www.qikqiak.com/post/k8s-cluster-balancer/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-cluster-balancer/</guid>
+      <description>&lt;p&gt;在介绍 &lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;Kubernetes&lt;/a&gt; 集群均衡器之前我们还是非常有必要再来回顾下 &lt;code&gt;kube-scheduler&lt;/code&gt; 组件的概念。我们知道基本上所有的分布式系统都需要一个流程或应用来调度集群中的任务来执行，同样 Kubernetes 也需要这样一个调度器来执行任务，我们熟知的 &lt;code&gt;kube-scheduler&lt;/code&gt; 组件就是扮演这个角色的，该组件是作为 Kubernetes 整个&lt;a href=&#34;https://kubernetes.io/docs/reference/glossary/?all=true#term-control-plane&#34;&gt;控制面板&lt;/a&gt;的一部分来运行的，并监听所有未分配节点新创建的 Pod，为其选择一个最合适的节点绑定运行。&lt;code&gt;kube-scheduler&lt;/code&gt; 是如何来选择最合适的节点的呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>带时光机的 Kubernetes Dashboard - Kubevious</title>
+      <link>https://www.qikqiak.com/post/k8s-ui-kubevious/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-ui-kubevious/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/kubevious/kubevious&#34;&gt;Kubevious&lt;/a&gt; 是一个开源的 Kubernetes Dashboard，但是和我们主流的 Dashboard 却不太一样，可以说非常有特色，他将应用程序相关得所有配置都集中在一起，这可以大大节省操作人员得时间，其实这都不是最主要的，主要的是他具有一个 &lt;code&gt;Time Machine&lt;/code&gt;（时光机）功能，允许我们回到之前的时间去查看应用的错误信息。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>获取客户端访问真实 IP</title>
+      <link>https://www.qikqiak.com/post/get-client-realip/</link>
+      <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/get-client-realip/</guid>
+      <description>&lt;p&gt;通常，当集群内的客户端连接到服务的时候，是支持服务的 Pod 可以获取到客户端的 IP 地址的，但是，当通过节点端口接收到连接时，由于对数据包执行了源网络地址转换（SNAT），因此数据包的源 IP 地址会发生变化，后端的 Pod 无法看到实际的客户端 IP，对于某些应用来说是个问题，比如，nginx 的请求日志就无法获取准确的客户端访问 IP 了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 上部署 Vault</title>
+      <link>https://www.qikqiak.com/post/deploy-vault-on-k8s/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/deploy-vault-on-k8s/</guid>
+      <description>&lt;p&gt;很多时候我们可能都是直接将应用程序的密码或者 API Token 之类的私密信息直接暴露在源代码中的，显然直接暴露这些私密信息不是一个好的方式。在 Kubernetes 系统中提供了一个 Secret 对象来存储私密的数据，但是也只是简单的做了一次 Base64 编码而已，虽然比直接暴露要好点了，但是如果是一些安全性要求非常高的应用直接用 Secret 显然也还是不够的。本文就将来介绍如何使用 &lt;a href=&#34;https://www.vaultproject.io/&#34;&gt;HashiCorp Vault&lt;/a&gt; 在 Kubernetes 集群中进行秘钥管理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 上部署 Spinnaker</title>
+      <link>https://www.qikqiak.com/post/deploy-spinnaker-on-k8s/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/deploy-spinnaker-on-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/deploy-spinnaker-on-k8s/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/spinnaker-on-k8s.png&#34; alt=&#34;在 Kubernetes 上部署 Spinnaker&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.spinnaker.io/&#34;&gt;Spinnaker&lt;/a&gt; 是一种持续交付平台，最初由 Netflix 开发，用于快速、可靠地发布软件变更。Spinnaker 使开发人员可以更轻松地专注于编写代码，而无需担心底层的云基础设施，它可以和 Jenkins 以及其他流行的构建工具无缝集成。很早就想要体验下 Spinnaker 了，但是由于 GFW 的原因尝试了很多次都无功而返，这次解决了代理的问题终于顺利的在 Kubernetes 集群上成功部署上了 Spinnaker。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 零宕机滚动更新</title>
+      <link>https://www.qikqiak.com/post/zero-downtime-rolling-update-k8s/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/zero-downtime-rolling-update-k8s/</guid>
+      <description>&lt;p&gt;软件世界的发展比以往任何时候都快，为了保持竞争力需要尽快推出新的软件版本，而又不影响在线得用户。许多企业已将工作负载迁移到了 Kubernetes 集群，Kubernetes 集群本身就考虑到了一些生产环境的实践，但是要让 Kubernetes 实现真正的零停机不中断或丢失请求，我们还需要做一些额外的操作才行。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 集群上部署 VSCode</title>
+      <link>https://www.qikqiak.com/post/deploy-vscode-on-k8s/</link>
+      <pubDate>Tue, 04 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/deploy-vscode-on-k8s/</guid>
+      <description>&lt;p&gt;近来由于武汉冠状病毒疫情的扩散，很多公司不得不开始了远程办公的模式，远程办公最大的成本自然是沟通成本了，对于我们开发人员来说最重要的自然也是有一个顺手的 IDE 工具，现在在云端作业的工具也在逐渐增长，比如最近比较流行的设计应用 Figma，就完全是云端操作的方式，大有要取代 Sketch 的趋势，对于开发工具来说云端 IDE 也逐渐受到大家重视，特别是对于远程办公的团队，Cloud IDE 允许开发团队在一个统一的开发环境中实时协作的工具，这可以大大提高生产效率。而且只需要通过 web 浏览器就可以访问，还有一个优点就是可以利用集群的能力，这可以大大超过我们之前的个人 PC 的处理能力，我们也不用为本地 IDE 占用了电脑大量资源而苦恼了。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/cdr/code-server&#34;&gt;code-server&lt;/a&gt; 就是一个可以运行在服务器上面直接通过浏览器来访问的 &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;VSCode&lt;/a&gt;，VSCode 是一个现代化的代码编辑器，支持 Git、代码调试器、智能代码提示以及各种定制和扩展功能。接下来我们来介绍下如何在我们的 Kubernetes 集群上运行一个 VSCode。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自定义 Traefik2 中间件</title>
+      <link>https://www.qikqiak.com/post/custom-traefik2-middleware/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/custom-traefik2-middleware/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/tags/traefik/&#34;&gt;Traefik 2.X&lt;/a&gt; 版本发布以来受到了很大的关注，特别是提供的中间件机制非常受欢迎，但是目前对于用户来说能使用的也只有官方提供的中间件，这对于某些特殊场景可能就满足不了需求了，自然而然就想到了自定义中间件，然而现在要想自定义中间件不是一件容易的事情，虽然实现一个中间件很简单，因为目前官方没有提供方法可以将我们自定义的中间件配置到 Traefik 中，所以只能采用比较 low 的一种方法，那就是直接更改官方的源代码了，下面我们以一个简单的示例来说明下如何自定义一个 Traefik 中间件。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于 Jenkins 的 DevOps 流水线实践</title>
+      <link>https://www.qikqiak.com/post/devops-base-on-jenkins/</link>
+      <pubDate>Mon, 13 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/devops-base-on-jenkins/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/devops-base-on-jenkins/&#34;&gt;&lt;img src=&#34;https://sdn.youdianzhishi.com/images/2020/3/7/9461711bff5a4f5b999ebcc0f65bb12b.jpg?imageView2/2/format/webp&#34; alt=&#34;devops jenkins&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Traefik2.X 版本 中 URL Rewrite 的使用</title>
+      <link>https://www.qikqiak.com/post/url-rewrite-on-traefik2.x/</link>
+      <pubDate>Fri, 10 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/url-rewrite-on-traefik2.x/</guid>
+      <description>&lt;p&gt;前面我们介绍了在 &lt;a href=&#34;https://www.qikqiak.com/post/url-rewrite-on-ingress-nginx/&#34;&gt;ingress-nginx 中 URL Rewrite 的使用&lt;/a&gt;，其中重写路径大部分还是和传统的 nginx 方式差不多，如果我们使用的是比较云原生的 Traefik 来作为我们的网关的话，在遇到有 URL Rewrite 需求的时候又改怎么做呢？前面我们用一篇文章 &lt;a href=&#34;https://www.qikqiak.com/post/traefik-2.1-101/&#34;&gt;一文搞懂 Traefik2.1 的使用&lt;/a&gt; 介绍了 Traefik2.1 的基本的功能，唯独没有提到 URL Rewrite 这一点，在 Traefik2.1 中我们依然可以很方便的用中间件的方式来完成这个功能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>自定义 Kubernetes 调度器</title>
+      <link>https://www.qikqiak.com/post/custom-kube-scheduler/</link>
+      <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/custom-kube-scheduler/</guid>
+      <description>&lt;p&gt;&lt;code&gt;kube-scheduler&lt;/code&gt; 是 kubernetes 的核心组件之一，主要负责整个集群资源的调度功能，根据特定的调度算法和策略，将 Pod 调度到最优的工作节点上面去，从而更加合理、更加充分的利用集群的资源，这也是我们选择使用 kubernetes 一个非常重要的理由。如果一门新的技术不能帮助企业节约成本、提供效率，我相信是很难推进的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>一文搞懂 Traefik2.1 的使用</title>
+      <link>https://www.qikqiak.com/post/traefik-2.1-101/</link>
+      <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/traefik-2.1-101/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/containous/traefik&#34;&gt;Traefik&lt;/a&gt; 是一个开源的可以使服务发布变得轻松有趣的边缘路由器。它负责接收你系统的请求，然后使用合适的组件来对这些请求进行处理。&lt;/p&gt;
+
+&lt;p&gt;除了众多的功能之外，Traefik 的与众不同之处还在于它会自动发现适合你服务的配置。当 Traefik 在检查你的服务时，会找到服务的相关信息并找到合适的服务来满足对应的请求。&lt;/p&gt;
+
+&lt;p&gt;Traefik 兼容所有主流的集群技术，比如 Kubernetes，Docker，Docker Swarm，AWS，Mesos，Marathon，等等；并且可以同时处理多种方式。（甚至可以用于在裸机上运行的比较旧的软件。）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://www.qikqiak.com/k8strain/assets/img/network/traefik-architecture.png&#34; alt=&#34;traefik architecture&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;使用 Traefik，不需要维护或者同步一个独立的配置文件：因为一切都会自动配置，实时操作的（无需重新启动，不会中断连接）。使用 Traefik，你可以花更多的时间在系统的开发和新功能上面，而不是在配置和维护工作状态上面花费大量时间。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prometheus 记录规则的使用</title>
+      <link>https://www.qikqiak.com/post/recording-rules-on-prometheus/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/recording-rules-on-prometheus/</guid>
+      <description>&lt;p&gt;Prometheus 作为现在最火的云原生监控工具，它的优秀表现是毋庸置疑的。但是在我们使用过程中，随着时间的推移，存储在 Prometheus 中的监控指标数据越来越多，查询的频率也在不断的增加，当我们用 Grafana 添加更多的 Dashboard 的时候，可能慢慢地会体验到 Grafana 已经无法按时渲染图表，并且偶尔还会出现超时的情况，特别是当我们在长时间汇总大量的指标数据的时候，Prometheus 查询超时的情况可能更多了，这时就需要一种能够类似于后台批处理的机制在后台完成这些复杂运算的计算，对于使用者而言只需要查询这些运算结果即可。Prometheus 提供一种&lt;strong&gt;记录规则（Recording Rule）&lt;/strong&gt; 来支持这种后台计算的方式，可以实现对复杂查询的 PromQL 语句的性能优化，提高查询效率。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prometheus 黑盒监控</title>
+      <link>https://www.qikqiak.com/post/blackbox-exporter-on-prometheus/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/blackbox-exporter-on-prometheus/</guid>
+      <description>&lt;p&gt;前面我们主要介绍了 Prometheus 下如何进行白盒监控，我们监控主机的资源用量、容器的运行状态、数据库中间件的运行数据、自动发现 Kubernetes 集群中的资源等等，这些都是支持业务和服务的基础设施，通过白盒能够了解其内部的实际运行状态，通过对监控指标的观察能够预判可能出现的问题，从而对潜在的不确定因素进行优化。而从完整的监控逻辑的角度，除了大量的应用白盒监控以外，还应该添加适当的 &lt;code&gt;Blackbox（黑盒）&lt;/code&gt;监控，黑盒监控即以用户的身份测试服务的外部可见性，常见的黑盒监控包括&lt;code&gt;HTTP 探针&lt;/code&gt;、&lt;code&gt;TCP 探针&lt;/code&gt; 等用于检测站点或者服务的可访问性，以及访问效率等。&lt;/p&gt;
+
+&lt;p&gt;黑盒监控相较于白盒监控最大的不同在于黑盒监控是以故障为导向当故障发生时，黑盒监控能快速发现故障，而白盒监控则侧重于主动发现或者预测潜在的问题。一个完善的监控目标是要能够从白盒的角度发现潜在问题，能够在黑盒的角度快速发现已经发生的问题。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/prometheus/blackbox_exporter&#34;&gt;Blackbox Exporter&lt;/a&gt; 是 Prometheus 社区提供的官方黑盒监控解决方案，其允许用户通过：&lt;code&gt;HTTP&lt;/code&gt;、&lt;code&gt;HTTPS&lt;/code&gt;、&lt;code&gt;DNS&lt;/code&gt;、&lt;code&gt;TCP&lt;/code&gt; 以及 &lt;code&gt;ICMP&lt;/code&gt; 的方式对网络进行探测。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Deployment 故障排查常见方法[译]</title>
+      <link>https://www.qikqiak.com/post/troubleshooting-deployments/</link>
+      <pubDate>Tue, 10 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/troubleshooting-deployments/</guid>
+      <description>&lt;p&gt;本文翻译自 &lt;a href=&#34;https://learnk8s.io/troubleshooting-deployments&#34;&gt;A visual guide on troubleshooting Kubernetes deployments&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;下面示意图可以帮助你调试 Kubernetes Deployment（你可以在此处&lt;a href=&#34;https://learnk8s.io/a/troubleshooting-kubernetes.pdf&#34;&gt;【下载它的 PDF 版本】&lt;/a&gt;），另外在微信群里面也看到有朋友分享了一个对应的中文版（你可以在此处&lt;a href=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/trouble-deploy-cn.png&#34;&gt;【下载它的中文版本】&lt;/a&gt;）：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/trouble-deploy.png&#34; alt=&#34;troubleshooting deployments&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;当你希望在 Kubernetes 中部署应用程序时，你通常会定义三个组件：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Deployment – 用于创建你的应用程序的 Pod 副本的清单；&lt;/li&gt;
+&lt;li&gt;Service – 一个内部负载均衡器，用于将流量路由到内部的 Pod 上；&lt;/li&gt;
+&lt;li&gt;Ingress – 描述流量如何从集群外部流入到集群内部的服务上。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;下面的示意图可以来简单说明：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ingress-nginx 中 Rewrite 的使用</title>
+      <link>https://www.qikqiak.com/post/url-rewrite-on-ingress-nginx/</link>
+      <pubDate>Thu, 28 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/url-rewrite-on-ingress-nginx/</guid>
+      <description>&lt;p&gt;由于 nginx 的优秀性能表现，所以很多企业在 &lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;Kubernetes&lt;/a&gt; 中选择 Ingress Controller 的时候依然会选择基于 nginx 的 &lt;a href=&#34;https://kubernetes.github.io/ingress-nginx&#34;&gt;ingress-nginx&lt;/a&gt;，前面文章中我们更多的是介绍更加云原生配置更加灵活的 &lt;a href=&#34;https://www.qikqiak.com/tags/traefik/&#34;&gt;Traefik&lt;/a&gt;，特别是 Traefik 2.0 版本新增中间件概念以后，在配置上就更加方便了，各种需求都可以通过中间件来实现，对于 &lt;code&gt;ingress-nginx&lt;/code&gt; 来说配置就稍微麻烦一点，一些复杂的需求需要通过 &lt;code&gt;Ingress&lt;/code&gt; 的 &lt;code&gt;annotation&lt;/code&gt; 来实现，比如我们现在需要实现一个 url rewrite 的功能，简单来说就是我们之前的应用在 &lt;code&gt;todo.qikqiak.com&lt;/code&gt; 下面，现在我们需要通过 &lt;code&gt;todo.qikqiak.com/app/&lt;/code&gt; 来进行访问。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 OAM 部署 Kubernetes 应用</title>
+      <link>https://www.qikqiak.com/post/deploy-k8s-app-with-oam/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/deploy-k8s-app-with-oam/</guid>
+      <description>&lt;p&gt;前段时间阿里云和微软云联合发布了 &lt;code&gt;Open Application Model（OAM）&lt;/code&gt;，简单来说就是利用一个规范对应用程序进行建模以区分开发和运维人员的职责。开发人员负责描述微服务或组件的功能，以及如何配置它；运维负责配置其中一个或多个微服务的运行时环境；基础设施工程师负责建立和维护应用程序运行的基础设施。其中 &lt;a href=&#34;https://github.com/oam-dev/rudr&#34;&gt;Rudr&lt;/a&gt; 是针对 Kubernetes 上面的 &lt;code&gt;OAM&lt;/code&gt; 的参考实现。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Rudr&lt;/code&gt; 的应用程序有三个元素：Components（组件）、Configuration（配置）、Traits（特征）：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;组件定义一个或多个面向操作系统的容器镜像以及硬件需求，如 &lt;code&gt;CPU&lt;/code&gt;、内存和存储等&lt;/li&gt;
+&lt;li&gt;配置处理运行时的参数，比如环境变量&lt;/li&gt;
+&lt;li&gt;特征声明运行时的属性，比如 Volume、Ingress、伸缩等等。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 中配置 Container Capabilities</title>
+      <link>https://www.qikqiak.com/post/capabilities-on-k8s/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/capabilities-on-k8s/</guid>
+      <description>&lt;p&gt;我们在使用 Kubernetes 过程中，偶尔会遇到如下所示的一段配置：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;securityContext:
+  capabilities:
+    drop:
+    - ALL
+    add:
+    - NET_BIND_SERVICE&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;实际上这是配置对应的容器的 &lt;code&gt;Capabilities&lt;/code&gt;，在我们使用 &lt;code&gt;docker run&lt;/code&gt; 的时候可以通过 &lt;code&gt;--cap-add&lt;/code&gt; 和 &lt;code&gt;--cap-drop&lt;/code&gt; 命令来给容器添加 &lt;code&gt;Linux Capabilities&lt;/code&gt;。对于大部分同学可能又要疑问 &lt;code&gt;Linux Capabilities&lt;/code&gt; 是什么呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gloo 1.0 正式版发布</title>
+      <link>https://www.qikqiak.com/post/gloo-1.0-release/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/gloo-1.0-release/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://www.solo.io/gloo&#34;&gt;Gloo&lt;/a&gt; 是一个基于 &lt;code&gt;Envovy&lt;/code&gt; 代理构建的下一代 API 网关和 Kubernetes Ingress 控制器，具有 Kubernetes 原生架构，也可以支持非 Kubernetes 环境。Gloo 是一个控制平面，可以轻松管理 Envovy 的配置，保护传入的流量并将其路由到应用程序。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Rook 快速搭建 Ceph 集群</title>
+      <link>https://www.qikqiak.com/post/deploy-ceph-cluster-with-rook/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/deploy-ceph-cluster-with-rook/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://rook.io&#34;&gt;Rook&lt;/a&gt; 是一个开源的云原生存储编排工具，提供平台、框架和对各种存储解决方案的支持，以和云原生环境进行本地集成。&lt;/p&gt;
+
+&lt;p&gt;Rook 将存储软件转变成自我管理、自我扩展和自我修复的存储服务，通过自动化部署、启动、配置、供应、扩展、升级、迁移、灾难恢复、监控和资源管理来实现。Rook 底层使用云原生容器管理、调度和编排平台提供的能力来提供这些功能。&lt;/p&gt;
+
+&lt;p&gt;Rook 利用扩展功能将其深度集成到云原生环境中，并为调度、生命周期管理、资源管理、安全性、监控等提供了无缝的体验。有关 Rook 当前支持的存储解决方案的状态的更多详细信息，可以参考 &lt;a href=&#34;https://github.com/rook/rook/blob/master/README.md#project-status&#34;&gt;Rook 仓库&lt;/a&gt; 的项目介绍。不过目前 Rook 已经很好地提供了对 &lt;a href=&#34;https://ceph.io/&#34;&gt;Ceph&lt;/a&gt; 的支持，本文简单为大家介绍如何使用 Rook 来快速搭建 Ceph 集群。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>双11精品课程限时优惠活动</title>
+      <link>https://www.qikqiak.com/post/course-11-promotion/</link>
+      <pubDate>Sun, 10 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/course-11-promotion/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/course-11-promotion/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/promotion-11-course.png&#34; alt=&#34;k8s course&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;双11马上就要到了，我特别想买优点知识上面的几门课程，阳明老师难道都不给点优惠吗？啊？双11就真的要给优惠吗？当然啊，多多少少安慰下单身🐶受伤的心灵噻，我：&amp;hellip;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>k8s技术圈一周精选[第6期]</title>
+      <link>https://www.qikqiak.com/post/k8s-tech-weekly-collection-phase6/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-tech-weekly-collection-phase6/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/k8s-tech-weekly-collection-phase6/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/k8s-weekly-phase6.png&#34; alt=&#34;k8s技术圈一周精选&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本周的&lt;code&gt;k8s技术圈&lt;/code&gt;的几个精选的问题，分享给大家。另外，也欢迎大家加入我们的&lt;code&gt;【微信群】&lt;/code&gt;和&lt;code&gt;【知识星球】&lt;/code&gt;共同探讨，共同进步。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Golang 自定义 Kubernetes Ingress Controller</title>
+      <link>https://www.qikqiak.com/post/custom-k8s-ingress-controller-with-go/</link>
+      <pubDate>Thu, 31 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/custom-k8s-ingress-controller-with-go/</guid>
+      <description>&lt;p&gt;在 Kubernetes 中通过 Ingress 来暴露服务到集群外部，这个已经是一个很普遍的方式了，而真正扮演请求转发的角色是背后的 Ingress Controller，比如我们经常使用的 traefik、ingress-nginx 等就是一个 Ingress Controller。本文我们将通过 golang 来实现一个简单的自定义的 Ingress Controller，可以加深我们对 Ingress 的理解。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Traefik 2.0 实现灰度发布</title>
+      <link>https://www.qikqiak.com/post/canary-with-traefik2/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/canary-with-traefik2/</guid>
+      <description>&lt;p&gt;前面的文章中我们已经使用 Traefik2.0 实现了 &lt;a href=&#34;https://www.qikqiak.com/post/expose-redis-by-traefik2&#34;&gt;暴露 Redis(TCP) 服务&lt;/a&gt; 以及 &lt;a href=&#34;https://www.qikqiak.com/post/automatic-https-with-traefik2&#34;&gt;自动化 HTTPS&lt;/a&gt; 得功能，在 &lt;a href=&#34;https://www.qikqiak.com/post/traefik2-ga/&#34;&gt;Traefik2.0 发布的特性&lt;/a&gt; 中我们了解到除了这些基础功能之外，还支持一些其他的特性，本文就将来实现灰度发布的高级功能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Traefik 2.0 实现自动化 HTTPS</title>
+      <link>https://www.qikqiak.com/post/automatic-https-with-traefik2/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/automatic-https-with-traefik2/</guid>
+      <description>&lt;p&gt;上一篇文章我们实现了 &lt;a href=&#34;https://www.qikqiak.com/post/expose-redis-by-traefik2/&#34;&gt;Traefik 2.0 暴露 Redis(TCP) 服务&lt;/a&gt;，我们了解到 Traefik 中使用 TCP 路由配置需要 SNI，而 SNI 又是依赖 TLS 的，所以需要配置证书才能正常访问 TCP 服务，其实 Traefik 除了支持我们手动配置 TLS 证书之外，还支持自动生成 TLS 证书，本文就来为大家介绍如何在 Traefik 2.0 中配置自动化 HTTPS 服务。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Traefik 2.0 暴露 Redis(TCP) 服务</title>
+      <link>https://www.qikqiak.com/post/expose-redis-by-traefik2/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/expose-redis-by-traefik2/</guid>
+      <description>&lt;p&gt;前面我们已经提到了 &lt;a href=&#34;https://www.qikqiak.com/post/traefik2-ga/&#34;&gt;Traefik2.0 已经正式发布了&lt;/a&gt;，Traefik2.0 已经支持了 TCP 服务的，但是 Traefik 的官方文档实在是有点混乱，特别是在 Kubernetes 下面的使用更不详细，我在业余时间已经在尝试对官方文档进行翻译，地址：&lt;a href=&#34;https://www.qikqiak.com/traefik-book/&#34;&gt;https://www.qikqiak.com/traefik-book&lt;/a&gt;，去掉了一些多余的文档，增加一些在 Kubernetes 下面的使用案例。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>对 Kubernetes 应用进行自定义指标扩缩容</title>
+      <link>https://www.qikqiak.com/post/build-k8s-app-with-custom-metrics/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/build-k8s-app-with-custom-metrics/</guid>
+      <description>&lt;p&gt;前面我们学习了很多关于 Prometheus 的内容，也学习了 HPA 对象的使用，但是一直没有对自定义指标来对应用进行扩缩容做过讲解，本篇文章我们就来了解下如何通过自定义指标来做应用的动态伸缩功能。当前前提是你需要熟悉 &lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;Kubernetes&lt;/a&gt; 和 &lt;a href=&#34;https://www.qikqiak.com/tags/prometheus/&#34;&gt;Prometheus&lt;/a&gt;，如果不熟悉的话可以查看我们前面的一系列文章，或者直接查看我们的 &lt;a href=&#34;https://www.qikqiak.com/post/promotion-51&#34;&gt;Kubernetes 进阶视频课程&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 inlets 和 kubernetes 访问本地服务</title>
+      <link>https://www.qikqiak.com/post/k8s-inlets-local-endpoinsts/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-inlets-local-endpoinsts/</guid>
+      <description>&lt;p&gt;我们经常有在外网访问我们本地服务的需求，特别是在开发调试阶段，比如做微信登录或者微信支付的时候就需要使用外网正式的域名，然而我们很多时候都是在本地进行开发，我们不可能频繁的部署到外网环境去进行测试，因为这样效率太低了，这是我们开发会经常面临的一个问题。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Traefik 2.0 正式版发布</title>
+      <link>https://www.qikqiak.com/post/traefik2-ga/</link>
+      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/traefik2-ga/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/traefik2-ga/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/traefik2.png&#34; alt=&#34;traefik 2.0&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;寄予厚望的 &lt;a href=&#34;https://traefik.io/&#34;&gt;Traefik 2.0&lt;/a&gt; 经过了一年的等待，今天终于正式发布了，此次大版本的更新添加了许多新功能，特别是大家都期望的支持 TCP 的功能。接下来我们就来探索下 Traefik 2.0 中有哪些新增的功能呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Helm V2 迁移到 V3 版本</title>
+      <link>https://www.qikqiak.com/post/migrate-helm-to-v3/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/migrate-helm-to-v3/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://v3.helm.sh/&#34;&gt;Helm V3 版本&lt;/a&gt;已经发布了第三个 Beta 版本了，由于 V2 和 V3 版本之间的架构变化较大，所以如果我们现在正在使用 V2 版本的话，要迁移到 V3 版本了就有点小麻烦，其中最重要的当然就是数据迁移的问题，为了解决这个版本迁移问题，官方提供了一个名为 &lt;a href=&#34;https://github.com/helm/helm-2to3&#34;&gt;helm-2to3&lt;/a&gt; 的插件可以来简化我们的迁移工作。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Pod 安全策略(PSP)配置</title>
+      <link>https://www.qikqiak.com/post/setup-psp-in-k8s/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/setup-psp-in-k8s/</guid>
+      <description>&lt;p&gt;默认情况下，Kubernetes 允许创建一个有特权容器的 Pod，这些容器很可能会危机系统安全，而 Pod 安全策略（PSP）则通过确保请求者有权限按配置来创建 Pod，从而来保护集群免受特权 Pod 的影响。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 工作流引擎：Argo（1）</title>
+      <link>https://www.qikqiak.com/post/argo-workflow-engine-for-k8s/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/argo-workflow-engine-for-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://applatix.com/open-source/argo/&#34;&gt;Argo&lt;/a&gt; 是 &lt;a href=&#34;https://applatix.com/&#34;&gt;Applatix&lt;/a&gt; 推出的一个开源项目，为 Kubernetes 提供 container-native（工作流中的每个步骤是通过容器实现）工作流程。Argo 可以让用户用一个类似于传统的 YAML 文件定义的 DSL 来运行多个步骤的 Pipeline。该框架提供了复杂的循环、条件判断、依赖管理等功能，这有助于提高部署应用程序的灵活性以及配置和依赖的灵活性。使用 Argo，用户可以定义复杂的依赖关系，以编程方式构建复杂的工作流、制品管理，可以将任何步骤的输出结果作为输入链接到后续的步骤中去，并且可以在可视化 UI 界面中监控调度的作业任务。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/argo-workflow-engine-for-k8s/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/argo-k8s.png&#34; alt=&#34;Argo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VMWare 开源的 Kubernetes 可视化工具 Octant</title>
+      <link>https://www.qikqiak.com/post/vmware-k8s-dashboard-octant/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/vmware-k8s-dashboard-octant/</guid>
+      <description>&lt;p&gt;上午看新闻发现 VMWare 开源了一款 Kubernetes Dashboard 的可视化工具 &lt;a href=&#34;https://github.com/vmware/octant&#34;&gt;Octant&lt;/a&gt; ，这是一款帮助开发人员了解应用程序在 Kubernetes 集群中如何运行的工具。它通过可视化的方式，呈现 Kubernetes 对象的依赖关系，可将本地端口请求转发到正在运行的 pod，查看 pod 日志，浏览不同的集群。此外，用户还可以通过安装或编写插件来扩展 Octant 的功能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 kubeadm 搭建 v1.15.3 版本 Kubernetes 集群</title>
+      <link>https://www.qikqiak.com/post/use-kubeadm-install-kubernetes-1.15.3/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-kubeadm-install-kubernetes-1.15.3/</guid>
+      <description>&lt;p&gt;以前文章和视频中都是&lt;a href=&#34;https://www.qikqiak.com/use-kubeadm-install-kubernetes-1.10/&#34;&gt;使用的 Kubeadm 搭建的 Kubernetes 集群&lt;/a&gt;，但是版本比较低了（1.10.0版本），近期有不少反馈让更新下版本，本文将通过 Kubeadm 来搭建最新版本的 Kubernetes 1.15.3 集群，其实和以前搭建的方式方法基本一致，我们这里准备使用 calico 网络插件以及 ipvs 模式的 kube-proxy。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Kustomize 配置 Kubernetes 应用</title>
+      <link>https://www.qikqiak.com/post/kustomize-101/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kustomize-101/</guid>
+      <description>&lt;p&gt;如果你经常使用 Kubernetes，那么你肯定就有定制资源清单文件的需求，但是貌似现在大家都比较喜欢使用 Helm，Helm 很好用，但也有很多缺点，比如需要一个 tiller 服务端，需要超高的权限，最重要的是如果你要想自己做一个 Helm Chart 包的话，则不是那么容易的，需要你了解一些 go template 的相关知识，它抛弃了我们在 Docker 和 Kubernetes 上面学到的一些逻辑，今天我们将为大家介绍另外一种名为&lt;code&gt;Kustomize❤️&lt;/code&gt;的替代工具。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在现有 Kubernetes 集群上安装 KubeSphere</title>
+      <link>https://www.qikqiak.com/post/install-kubesphere-on-k8s/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/install-kubesphere-on-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kubesphere.io&#34;&gt;KubeSphere&lt;/a&gt;是在 Kubernetes 之上构建的企业级分布式多租户容器管理平台，提供简单易用的操作界面以及向导式操作方式，在降低用户使用容器调度平台学习成本的同时，极大减轻开发、测试、运维的日常工作的复杂度，旨在解决 Kubernetes 本身存在的存储、网络、安全和易用性等痛点。除此之外，平台已经整合并优化了多个适用于容器场景的功能模块，以完整的解决方案帮助企业轻松应对敏捷开发与自动化运维、微服务治理、多租户管理、工作负载和集群管理、服务与网络管理、应用编排与管理、镜像仓库管理和存储管理等业务场景。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Drone 结合 Helm 部署 Kubernetes 应用</title>
+      <link>https://www.qikqiak.com/post/drone-with-k8s-3/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/drone-with-k8s-3/</guid>
+      <description>&lt;p&gt;本文是 &lt;a href=&#34;https://www.qikqiak.com/tags/drone/&#34;&gt;Drone 系列文章&lt;/a&gt;的第三篇，在&lt;a href=&#34;https://www.qikqiak.com/post/drone-with-k8s-1/&#34;&gt;第一篇文章中我们介绍了如何在 Kubernetes 集群中使用 Helm 来快速安装 Drone&lt;/a&gt;，并且用 &lt;a href=&#34;https://www.qikqiak.com/post/automatic-kubernetes-ingress-https-with-lets-encrypt/&#34;&gt;cert-manager&lt;/a&gt; 给 Drone 应用做了自动化 HTTPS，在&lt;a href=&#34;https://www.qikqiak.com/post/drone-with-k8s-2/&#34;&gt;第二篇文章中我们介绍了如何在 Drone 中使用 Pipeline 来自动化构建 Docker 镜像&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本文我们将创建一个 Helm Chart 包，然后使用 Drone Pipeline 来进行自动部署或更新应用到 Kubernetes 集群中。&lt;/p&gt;
+
+&lt;p&gt;如果对 Helm 如何部署应用还不熟悉的，同样的，可以查看我们前面的 &lt;a href=&#34;https://www.qikqiak.com/tags/helm/&#34;&gt;Helm 系列文章&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Drone Pipeline 构建 Docker 镜像</title>
+      <link>https://www.qikqiak.com/post/drone-with-k8s-2/</link>
+      <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/drone-with-k8s-2/</guid>
+      <description>&lt;p&gt;本文是 &lt;a href=&#34;https://www.qikqiak.com/tags/drone/&#34;&gt;Drone 系列文章&lt;/a&gt;的第二篇，在&lt;a href=&#34;https://www.qikqiak.com/post/drone-with-k8s-1/&#34;&gt;第一篇文章中我们介绍了如何在 Kubernetes 集群中使用 Helm 来快速安装 Drone&lt;/a&gt;，并且用 &lt;a href=&#34;https://www.qikqiak.com/post/automatic-kubernetes-ingress-https-with-lets-encrypt/&#34;&gt;cert-manager&lt;/a&gt; 给 Drone 应用做了自动化 HTTPS。&lt;/p&gt;
+
+&lt;p&gt;本文我们将创建一个简单的 Golang 应用，通过 Drone 的 Pipeline 来自动化构建 Docker 镜像。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 Kubernetes Helm 安装 Drone</title>
+      <link>https://www.qikqiak.com/post/drone-with-k8s-1/</link>
+      <pubDate>Mon, 05 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/drone-with-k8s-1/</guid>
+      <description>&lt;p&gt;我们知道 CI/CD 是 devops 中最重要的环节，特别是对于现在的云原生应用，CI/CD 更是不可或缺的部分，对于 CI/CD 工具有很多优秀的开源工具，比如前面我们介绍的&lt;a href=&#34;https://www.qikqiak.com/tags/jenkins/&#34;&gt;Jenkins&lt;/a&gt;以及&lt;a href=&#34;https://www.qikqiak.com/post/gitlab-runner-install-on-k8s/&#34;&gt;gitlab ci&lt;/a&gt;都是非常流行常用的 CI/CD 工具，但是这两个工具整体使用来说有点陈旧和笨重，本文将为大家介绍一个比较热门的轻量级 CI/CD 开源工具：&lt;a href=&#34;https://drone.io/&#34;&gt;Drone&lt;/a&gt;，介绍如何将 Drone 和 Kubernetes 进行结合使用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>提高 kubectl 使用生产力[译]</title>
+      <link>https://www.qikqiak.com/post/boosting-kubeclt-productivity/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/boosting-kubeclt-productivity/</guid>
+      <description>&lt;p&gt;我们知道在使用 Kubernetes 的过程中，kubectl 工具可能是最常用的工具了（可能还没有之一），所以当我们花费大量的时间在使用 kubectl 上面的时候，那么我们就非常有必要去了解下如何高效的使用它了。&lt;/p&gt;
+
+&lt;p&gt;本文包含一系列提示和技巧，可以让你更加高效的使用 kubectl，同时还可以加深你对 Kubernetes 各方面工作原理的理解。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>深入理解 Kubernetes Admission Webhook</title>
+      <link>https://www.qikqiak.com/post/k8s-admission-webhook/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-admission-webhook/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;Kubernetes&lt;/a&gt; 提供了需要扩展其内置功能的方法，最常用的可能是自定义资源类型和自定义控制器了，除此之外，&lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;Kubernetes&lt;/a&gt; 还有一些其他非常有趣的功能，比如 &lt;a href=&#34;https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#admission-webhooks&#34;&gt;admission webhooks&lt;/a&gt; 或者 &lt;a href=&#34;https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#initializers&#34;&gt;initializers&lt;/a&gt;，这些也可以用于扩展 API，它们可以用于修改某些 Kubernetes 资源的基本行为，接下来我们来看看那些引入了 admission webhooks 的动态准入控制。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用Elasticsearch Operator快速部署Elasticsearch集群</title>
+      <link>https://www.qikqiak.com/post/elastic-cloud-on-k8s/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/elastic-cloud-on-k8s/</guid>
+      <description>&lt;p&gt;随着 &lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;kubernetes&lt;/a&gt; 的快速发展，很多应用都在往 &lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;kubernetes&lt;/a&gt; 上面迁移，现阶段对于无状态应用的迁移是非常容易做到的，但是对于有状态应用的迁移还是有一定门槛的，主要是有状态应用的运行方式各有不同，比如 MySQL、MongoDB、Redis 这些应用运行的方式方法都不太相同，特别是对于线上环境需要高可用的集群模式的时候，则差别就更大了，这就导致了有状态应用向 Kubernetes 的迁移必然进度会很慢。现在比较好的解决方案就是针对有状态应用开发对应的 &lt;a href=&#34;https://www.qikqiak.com/tags/operator/&#34;&gt;Operator&lt;/a&gt; 应用，比如 prometheus-operator、etcd-operator 等等，关于 Operator 的开发，可以查看前面的一篇入门文章：&lt;a href=&#34;https://www.qikqiak.com/post/k8s-operator-101/&#34;&gt;Kubernetes Operator 快速入门教程&lt;/a&gt; 以了解更多信息。&lt;/p&gt;
+
+&lt;p&gt;同样的，对于 Elasticsearch 应用，现在官方也推出了基于 Kubernetes Operator 的应用：Elastic Cloud on Kubernetes (ECK)，用户可使用该产品在 Kubernetes 上配置、管理和运行 Elasticsearch 集群。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>通过 GitHub OAuth 和 Dex 访问 Kubernetes 集群</title>
+      <link>https://www.qikqiak.com/post/k8s-auth-via-oidc/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-auth-via-oidc/</guid>
+      <description>&lt;p&gt;我们知道可以&lt;a href=&#34;(/post/use-rbac-in-k8s/)&#34;&gt;通过 RBAC 为操作 kubectl 的用户或组来进行权限控制&lt;/a&gt;，但是我们往往是通过 &lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;kubernetes&lt;/a&gt; 集群的超级管理员手动为这些用户进行分配的，并没有一个开箱即用的 kubectl 身份验证工具。&lt;/p&gt;
+
+&lt;p&gt;现在参加 &lt;a href=&#34;https://youdianzhishi.com/course/6n8xd6/&#34;&gt;kubernetes 进阶课程&lt;/a&gt;的学生比较多，其中可能有一部分学生暂时还没有一套可用的集群环境，那么我们就可以为这部分学生授权访问我们的集群，但是如果这么多学生都手动去给他们创建身份认证必然非常麻烦。&lt;/p&gt;
+
+&lt;p&gt;那么我们可以用什么办法来可以很方便的为用户进行授权访问 &lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;kubernetes&lt;/a&gt; 集群呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Operator 快速入门教程</title>
+      <link>https://www.qikqiak.com/post/k8s-operator-101/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-operator-101/</guid>
+      <description>&lt;p&gt;在 Kubernetes 的监控方案中我们经常会使用到一个&lt;a href=&#34;https://www.qikqiak.com/tags/operator/&#34;&gt;Promethues Operator&lt;/a&gt;的项目，该项目可以让我们更加方便的去使用 Prometheus，而不需要直接去使用最原始的一些资源对象，比如 Pod、Deployment，随着 Prometheus Operator 项目的成功，CoreOS 公司开源了一个比较厉害的工具：&lt;a href=&#34;https://github.com/operator-framework&#34;&gt;Operator Framework&lt;/a&gt;，该工具可以让开发人员更加容易的开发 Operator 应用。&lt;/p&gt;
+
+&lt;p&gt;在本篇文章中我们会为大家介绍一个简单示例来演示如何使用 Operator Framework 框架来开发一个 Operator 应用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Metrics Server 安装</title>
+      <link>https://www.qikqiak.com/post/install-metrics-server/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/install-metrics-server/</guid>
+      <description>&lt;p&gt;kubernetes 集群资源监控之前可以通过 heapster 来获取数据，在 1.11 开始开始逐渐废弃 heapster 了，采用 metrics-server 来代替，metrics-server 是集群的核心监控数据的聚合器，它从 kubelet 公开的 Summary API 中采集指标信息，metrics-server 是扩展的 APIServer，依赖于&lt;a href=&#34;https://github.com/kubernetes/kube-aggregator&#34;&gt;kube-aggregator&lt;/a&gt;，因为我们需要在 APIServer 中开启相关参数。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 kubeadm 更新 kubernetes 集群</title>
+      <link>https://www.qikqiak.com/post/use-kubeadm-upgrade-k8s/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-kubeadm-upgrade-k8s/</guid>
+      <description>&lt;p&gt;由于课程中的集群版本是 v1.10.0，这个版本相对有点旧了，最新版本都已经 v1.14.x 了，为了尽量保证课程内容的更新度，所以我们需要将集群版本更新。我们的集群是使用的 kubeadm 搭建的，我们知道使用 kubeadm 搭建的集群来更新是非常方便的，但是由于我们这里版本跨度太大，不能直接从 1.10.x 更新到 1.14.x，kubeadm 的更新是不支持跨多个主版本的，所以我们现在是 1.10，只能更新到 1.11 版本了，然后再重 1.11 更新到 1.12&amp;hellip;&amp;hellip; 不过版本更新的方式方法基本上都是一样的，所以后面要更新的话也挺简单了，下面我们就先将集群更新到 v1.11.0 版本。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubelet 状态更新机制</title>
+      <link>https://www.qikqiak.com/post/kubelet-sync-node-status/</link>
+      <pubDate>Wed, 15 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubelet-sync-node-status/</guid>
+      <description>&lt;p&gt;当 Kubernetes 中 Node 节点出现状态异常的情况下，节点上的 Pod 会被重新调度到其他节点上去，但是有的时候我们会发现节点 Down 掉以后，Pod 并不会立即触发重新调度，这实际上就是和 Kubelet 的状态更新机制密切相关的，Kubernetes 提供了一些参数配置来触发重新调度到嗯时间，下面我们来分析下 Kubelet 状态更新的基本流程。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于 Jenkins、Gitlab、Harbor、Helm 和 Kubernetes 的 CI/CD(二)</title>
+      <link>https://www.qikqiak.com/post/complete-cicd-demonstrate-2/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/complete-cicd-demonstrate-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/complete-cicd-demonstrate-1/&#34;&gt;上节课我们完成了最基本的流水线流程&lt;/a&gt;，接下来的工作就是来实现之前的具体 Pipeline 脚本了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Helm Chart 模板开发技巧</title>
+      <link>https://www.qikqiak.com/post/helm-chart-tips-and-tricks/</link>
+      <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/helm-chart-tips-and-tricks/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/tags/helm/&#34;&gt;Helm&lt;/a&gt; Chart 在我们使用的时候非常方便的，但是对于开发人员来说 Helm Chart 模板就并不一定显得那么友好了，本文主要介绍了 Helm Chart 模板开发人员在构建生产级的 Chart 包时的一些技巧和窍门。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 网络故障常见排查方法</title>
+      <link>https://www.qikqiak.com/post/troubleshooting-k8s-network/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/troubleshooting-k8s-network/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/troubleshooting-k8s-network&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/lbpr6.png?x-oss-process=image/resize,w_800&#34; alt=&#34;troubleshooting kubernetes&#34; /&gt;&lt;/a&gt;
+网络可以说是 Kubernetes 部署和使用过程中最容易出问题的了，最主要的是对网络技术非常熟悉的人员相对较少，和 Kubernetes 结合后能搞透彻网络这块的就更加稀少了，导致我们在部署使用过程中经常遇到一些网络问题。本文将重点关注网络，列出我们遇到的一些问题，包括解决和发现问题的简单方法，并就如何避免这些故障提供一些建议。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>nginx-ingress 的安装使用</title>
+      <link>https://www.qikqiak.com/post/install-nginx-ingress/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/install-nginx-ingress/</guid>
+      <description>&lt;p&gt;nginx-ingress 和 traefik 都是比如热门的 ingress-controller，作为反向代理将外部流量导入集群内部，将 Kubernetes 内部的 Service 暴露给外部，在 Ingress 对象中通过域名匹配 Service，这样就可以直接通过域名访问到集群内部的服务了。相对于 traefik 来说，nginx-ingress 性能更加优秀，但是配置比 traefik 要稍微复杂一点，当然功能也要强大一些，支持的功能多许多，前面我们为大家介绍了 traefik 的使用，今天为大家介绍下 nginx-ingress 在 Kubernetes 中的安装使用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何保护对外暴露的 Kubernetes 服务</title>
+      <link>https://www.qikqiak.com/post/how-to-protect-exposed-k8s-server/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/how-to-protect-exposed-k8s-server/</guid>
+      <description>&lt;p&gt;有时候我们需要在 Kubernetes 中暴露一些没有任何安全验证机制的服务，比如没有安装 xpack 的 Kibana，没有开启登录认证的 Jenkins 服务之类的，我们也想通过域名来进行访问，比较域名比较方便，更主要的是对于 Kubernetes 里面的服务，通过 Ingress 暴露一个服务太方便了，而且还可以通过 cert-manager 来自动的完成&lt;code&gt;HTTPS&lt;/code&gt;化。所以就非常有必要对这些服务进行一些安全验证了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于 Jenkins、Gitlab、Harbor、Helm 和 Kubernetes 的 CI/CD(一)</title>
+      <link>https://www.qikqiak.com/post/complete-cicd-demonstrate-1/</link>
+      <pubDate>Fri, 12 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/complete-cicd-demonstrate-1/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/gitlab-ci-k8s-cluster-feature/&#34;&gt;上节课和大家介绍了&lt;code&gt;Gitlab CI&lt;/code&gt;结合&lt;code&gt;Kubernetes&lt;/code&gt;进行 CI/CD 的完整过程&lt;/a&gt;。这节课结合前面所学的知识点给大家介绍一个完整的示例：使用 Jenkins + Gitlab + Harbor + Helm + Kubernetes 来实现一个完整的 CI/CD 流水线作业。&lt;/p&gt;
+
+&lt;p&gt;其实前面的课程中我们就&lt;a href=&#34;https://www.qikqiak.com/post/kubernetes-jenkins1/&#34;&gt;已经学习了 Jenkins Pipeline 与 Kubernetes 的完美结合&lt;/a&gt;，我们利用 Kubernetes 来动态运行 Jenkins 的 Slave 节点，可以和好的来解决传统的 Jenkins Slave 浪费大量资源的缺点。之前的示例中我们是将项目放置在 Github 仓库上的，将 Docker 镜像推送到了 Docker Hub，这节课我们来结合我们前面学习的知识点来综合运用下，使用 Jenkins、Gitlab、Harbor、Helm、Kubernetes 来实现一个完整的持续集成和持续部署的流水线作业。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>《深入浅出Prometheus》</title>
+      <link>https://www.qikqiak.com/post/prometheus-book/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/prometheus-book/</guid>
+      <description>&lt;p&gt;千呼万唤始出来，国内第一本全方位讲解&lt;code&gt;Prometheus&lt;/code&gt;的书籍&lt;code&gt;《深入浅出Prometheus》&lt;/code&gt;终于出版了，非常荣幸能和陈晓宇、陈啸两位老师参与本书的编写，这也是我参与的第一本严格意义上的书籍，另外两位老师对于&lt;code&gt;Prometheus&lt;/code&gt;研究的深度让我非常佩服，在编写本书的过程中也学习到了很多专业的知识，特别是关于&lt;code&gt;Prometheus&lt;/code&gt;原理和源码方面的认识，之前都只是局限于应用层面，在了解了原理过后显然可以让我们更加有信心去使用&lt;code&gt;Prometheus&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gitlab CI 与 Kubernetes 的结合</title>
+      <link>https://www.qikqiak.com/post/gitlab-ci-k8s-cluster-feature/</link>
+      <pubDate>Thu, 21 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/gitlab-ci-k8s-cluster-feature/</guid>
+      <description>&lt;p&gt;上节课我们将 &lt;a href=&#34;https://www.qikqiak.com/post/gitlab-runner-install-on-k8s/&#34;&gt;Gitlab CI Runner 安装到了 Kubernetes&lt;/a&gt; 集群中，接下来看看如何结合 Kubernetes 和 Gitlab CI 进行持续集成和持续部署。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 上安装 Gitlab CI Runner</title>
+      <link>https://www.qikqiak.com/post/gitlab-runner-install-on-k8s/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/gitlab-runner-install-on-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/gitlab-install-on-k8s/&#34;&gt;上节课我们使用 Helm 快速的将 Gitlab 安装到了我们的 Kubernetes 集群中&lt;/a&gt;，这节课来和大家介绍如何使用 Gitlab CI 来做持续集成，首先先给大家介绍一些关于 Gitlab CI 的一些基本概念，以及如何在 Kubernetes 上安装 Gitlab CI Runner。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 上安装 Gitlab</title>
+      <link>https://www.qikqiak.com/post/gitlab-install-on-k8s/</link>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/gitlab-install-on-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/gitlab-install-on-k8s/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/vTUWg8.jpg&#34; alt=&#34;gitlab on k8s&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Gitlab&lt;/code&gt;官方提供了 Helm 的方式在 Kubernetes 集群中来快速安装，但是在使用的过程中发现 Helm 提供的 Chart 包中有很多其他额外的配置，所以我们这里使用自定义的方式来安装，也就是自己来定义一些资源清单文件。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Gitlab&lt;/code&gt;主要涉及到3个应用：Redis、Postgresql、Gitlab 核心程序，实际上我们只要将这3个应用分别启动起来，然后加上对应的配置就可以很方便的安装 Gitlab 了，我们这里选择使用的镜像不是官方的，而是 Gitlab 容器化中使用非常多的一个第三方镜像：&lt;code&gt;sameersbn/gitlab&lt;/code&gt;，基本上和官方保持同步更新，地址：&lt;a href=&#34;http://www.damagehead.com/docker-gitlab/&#34;&gt;http://www.damagehead.com/docker-gitlab/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在 Kubernetes 在快速安装 Harbor</title>
+      <link>https://www.qikqiak.com/post/harbor-quick-install/</link>
+      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/harbor-quick-install/</guid>
+      <description>&lt;p&gt;前面我们和大家简单分析了&lt;a href=&#34;https://www.qikqiak.com/post/harbor-code-analysis/&#34;&gt;Harbor 的实现原理和部分源代码&lt;/a&gt;，这节课给大家介绍下如何快速安装并使用 Harbor。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Harbor 源码浅析</title>
+      <link>https://www.qikqiak.com/post/harbor-code-analysis/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/harbor-code-analysis/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/harbor-code-analysis/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/Q2xt5X.jpg&#34; alt=&#34;harbor&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/goharbor/harbor&#34;&gt;Harbor&lt;/a&gt; 是一个&lt;code&gt;CNCF&lt;/code&gt;基金会托管的开源的可信的云原生&lt;code&gt;docker registry&lt;/code&gt;项目，可以用于存储、签名、扫描镜像内容，Harbor 通过添加一些常用的功能如安全性、身份权限管理等来扩展 docker registry 项目，此外还支持在 registry 之间复制镜像，还提供更加高级的安全功能，如用户管理、访问控制和活动审计等，在新版本中还添加了&lt;code&gt;Helm&lt;/code&gt;仓库托管的支持。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 部署策略详解</title>
+      <link>https://www.qikqiak.com/post/k8s-deployment-strategies/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-deployment-strategies/</guid>
+      <description>&lt;p&gt;在&lt;code&gt;Kubernetes&lt;/code&gt;中有几种不同的方式发布应用，所以为了让应用在升级期间依然平稳提供服务，选择一个正确的发布策略就非常重要了。&lt;/p&gt;
+
+&lt;p&gt;选择正确的部署策略是要依赖于我们的业务需求的，下面我们列出了一些可能会使用到的策略：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;重建(recreate)：停止旧版本部署新版本&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;滚动更新(rolling-update)：一个接一个地以滚动更新方式发布新版本&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;蓝绿(blue/green)：新版本与旧版本一起存在，然后切换流量&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;金丝雀(canary)：将新版本面向一部分用户发布，然后继续全量发布&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A/B测(a/b testing)：以精确的方式（HTTP 头、cookie、权重等）向部分用户发布新版本。&lt;code&gt;A/B测&lt;/code&gt;实际上是一种基于数据统计做出业务决策的技术。在 Kubernetes 中并不原生支持，需要额外的一些高级组件来完成改设置（比如Istio、Linkerd、Traefik、或者自定义 Nginx/Haproxy 等）。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Istio 实训免费视频课程</title>
+      <link>https://www.qikqiak.com/post/k8s-istio-course/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-istio-course/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/k8s-istio-course/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/BF9SiB.jpg&#34; alt=&#34;istio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Istio&lt;/code&gt;，是一个由 Google，Lyft，IBM 联合开发的开源项目，是服务网格（Service Mesh）技术的一个标准化的开源实现，致力于解决应用的微服务化组件之间的连接控制与安全、流量管理与可观测性。Istio 是云原生领域在 Kubernetes 之后最受关注的项目，帮助容器技术实践者从基础设施层的“容器编排“进阶到应用层的“服务治理”。Istio 先天与 Kubernetes 无缝衔接，了解并使用 Istio 可以极大地提升研发和运维的工作效率。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes CKA 实训免费视频课程</title>
+      <link>https://www.qikqiak.com/post/k8s-cka-course/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-cka-course/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/k8s-cka-course/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/kqPNDq.jpg&#34; alt=&#34;cka&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本系列课程参考 CKA (Certificted Kubernetes Administrator) 知识体系进行课程设计，并结合华为在 kubernetes 项目推广过程中的实践经验，理论+实践让用户快速掌握kubernetes的使用和维护技能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>办公环境下 kubernetes 网络互通方案</title>
+      <link>https://www.qikqiak.com/post/office-env-k8s-network/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/office-env-k8s-network/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/office-env-k8s-network/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/HbjHRJ.jpg&#34; alt=&#34;office-env-k8s-network&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;在 kubernetes 的网络模型中，基于官方默认的 CNI 网络插件 Flannel，这种 Overlay Network（覆盖网络）可以轻松的实现 pod 间网络的互通。当我们把基于 spring cloud 的微服务迁移到 k8s 中后，无须任何改动，微服务 pod 可以通过 Eureka 注册后可以互相轻松访问。除此之外，我们可以通过 ingress + ingress controller ，在每个节点上，把基于 http 80端口、https 443端口的用户请求流量引入到集群服务中。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes 日志架构</title>
+      <link>https://www.qikqiak.com/post/kubernetes-logs-architecture/</link>
+      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-logs-architecture/</guid>
+      <description>&lt;p&gt;前面的课程中和大家一起学习了 Kubernetes 集群中监控系统的搭建，除了对集群的监控报警之外，还有一项运维工作是非常重要的，那就是日志的收集。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>圣诞元旦课程优惠活动</title>
+      <link>https://www.qikqiak.com/post/shengdan-promotion/</link>
+      <pubDate>Sat, 22 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/shengdan-promotion/</guid>
+      <description>&lt;p&gt;学生A：今天冬至了，老师你们的课程有没有优惠活动啊？&lt;/p&gt;
+
+&lt;p&gt;老师：呃&amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;学生B：老师马上圣诞节了，课程可不可以优惠点啊？&lt;/p&gt;
+
+&lt;p&gt;老师：呃&amp;hellip;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;学生C：老师你看马上就是元旦节了哦，肯定会有优惠的吧？&lt;/p&gt;
+
+&lt;p&gt;老师：呃&amp;hellip;&amp;hellip;（为什么会有这么多节日呢？崩溃&amp;hellip;&amp;hellip;）&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prometheus Operator 高级配置</title>
+      <link>https://www.qikqiak.com/post/prometheus-operator-advance/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/prometheus-operator-advance/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/M47g8E3BHzb6IhLiI1P5oA&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/goc2kc.jpg&#34; alt=&#34;Prometheus Operator 高级配置&#34; /&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.qikqiak.com/post/prometheus-operator-monitor-etcd&#34;&gt;上节课我们一起学习了如何在 Prometheus Operator 下面自定义一个监控选项&lt;/a&gt;，以及&lt;a href=&#34;https://www.qikqiak.com/post/prometheus-operator-custom-alert&#34;&gt;自定义报警规则&lt;/a&gt;的使用。那么我们还能够直接使用前面课程中的自动发现功能吗？如果在我们的 Kubernetes 集群中有了很多的 Service/Pod，那么我们都需要一个一个的去建立一个对应的 ServiceMonitor 对象来进行监控吗？这样岂不是又变得麻烦起来了？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prometheus Operator 自定义报警</title>
+      <link>https://www.qikqiak.com/post/prometheus-operator-custom-alert/</link>
+      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/prometheus-operator-custom-alert/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/prometheus-operator-monitor-etcd&#34;&gt;上篇文章我们介绍了如何自定义一个 ServiceMonitor 对象&lt;/a&gt;，但是如果需要自定义一个报警规则的话呢？又该怎么去做呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prometheus Operator 监控 etcd 集群</title>
+      <link>https://www.qikqiak.com/post/prometheus-operator-monitor-etcd/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/prometheus-operator-monitor-etcd/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/first-use-prometheus-operator/&#34;&gt;上节课和大家讲解了 Prometheus Operator 的安装和基本使用方法&lt;/a&gt;，这节课给大家介绍如何在 Prometheus Operator 中添加一个自定义的监控项。&lt;/p&gt;
+
+&lt;p&gt;除了 Kubernetes 集群中的一些资源对象、节点以及组件需要监控，有的时候我们可能还需要根据实际的业务需求去添加自定义的监控项，添加一个自定义监控的步骤也是非常简单的。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;第一步建立一个 ServiceMonitor 对象，用于 Prometheus 添加监控项&lt;/li&gt;
+&lt;li&gt;第二步为 ServiceMonitor 对象关联 metrics 数据接口的一个 Service 对象&lt;/li&gt;
+&lt;li&gt;第三步确保 Service 对象可以正确获取到 metrics 数据&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Grafana 日志聚合工具 Loki</title>
+      <link>https://www.qikqiak.com/post/grafana-log-tool-loki/</link>
+      <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/grafana-log-tool-loki/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://www.qikqiak.com/img/posts/grafana-loki-cover.png&#34; alt=&#34;&#34; /&gt;
+&lt;code&gt;Loki&lt;/code&gt;是 Grafana Labs 团队最新的开源项目，是一个水平可扩展，高可用性，多租户的日志聚合系统。它的设计非常经济高效且易于操作，因为它不会为日志内容编制索引，而是为每个日志流编制一组标签。项目受 Prometheus 启发，官方的介绍就是：&lt;code&gt;Like Prometheus, but for logs.&lt;/code&gt;，类似于 Prometheus 的日志系统。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prometheus Operator 初体验</title>
+      <link>https://www.qikqiak.com/post/first-use-prometheus-operator/</link>
+      <pubDate>Tue, 11 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/first-use-prometheus-operator/</guid>
+      <description>&lt;p&gt;前面的课程中我们学习了&lt;a href=&#34;https://www.qikqiak.com/k8s-book/docs/52.Prometheus%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html&#34;&gt;用自定义的方式来对 Kubernetes 集群进行监控&lt;/a&gt;，但是还是有一些缺陷，比如 Prometheus、AlertManager 这些组件服务本身的高可用，当然我们也完全可以用自定义的方式来实现这些需求，我们也知道 Prometheus 在代码上就已经对 Kubernetes 有了原生的支持，可以通过服务发现的形式来自动监控集群，因此我们可以使用另外一种更加高级的方式来部署 Prometheus：&lt;code&gt;Operator&lt;/code&gt; 框架。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes API 资源使用</title>
+      <link>https://www.qikqiak.com/post/k8s-api-resources-group-and-version/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-api-resources-group-and-version/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Kubernetes&lt;/code&gt;使用声明式的 API 让系统更加健壮。但是这样也就意味着我们想要系统执行某些操作就需要通过使用&lt;code&gt;CLI&lt;/code&gt;或者&lt;code&gt;REST API&lt;/code&gt;来创建一个资源对象，为此，我们需要定义 API 资源的名称、组和版本等信息。但是很多用户就会为此感到困惑了，因为有太多的资源、太多的版本、太多的组了，这些都非常容易产生混淆。如果我们通过 YAML 文件定义过 Deployment 这样的资源清单文件的话，那么你应该会看到&lt;code&gt;apiVersion: apps/v1beta2&lt;/code&gt;、&lt;code&gt;apiVersion: apps/v1&lt;/code&gt;等等这样的信息，那么我们到底应该使用哪一个呢？哪一个才是正确的呢？如何检查&lt;code&gt;Kubernetes&lt;/code&gt;集群支持哪些？其实我们使用&lt;code&gt;kubectl&lt;/code&gt;工具就可以来解决我们的这些疑惑。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Ingress 自动化 HTTPS</title>
+      <link>https://www.qikqiak.com/post/automatic-kubernetes-ingress-https-with-lets-encrypt/</link>
+      <pubDate>Wed, 05 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/automatic-kubernetes-ingress-https-with-lets-encrypt/</guid>
+      <description>&lt;p&gt;我们知道&lt;code&gt;HTTPS&lt;/code&gt;的服务非常安全，Google 现在对非&lt;code&gt;HTTPS&lt;/code&gt;的服务默认是拒绝的，而且还能避免国内各种乱七八糟的劫持，所以启用&lt;code&gt;HTTPS&lt;/code&gt;服务是真的非常有必要的。一些正规机构颁发的&lt;code&gt;CA&lt;/code&gt;证书费用又特别高，不过比较幸运的是也有免费的午餐 - &lt;code&gt;Let&#39;s Encrypt&lt;/code&gt;，虽然只有90天的证书有效期，但是我们完全可以在证书失效之前，重新生成证书替换掉。在&lt;code&gt;Kubernetes&lt;/code&gt;集群中就更方便了，我们可以通过 Kubernetes Ingress 和 Let&amp;rsquo;s Encrypt 实现外部服务的自动化 HTTPS。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>360 开源 K8S Dashboard Wayne 的安装使用</title>
+      <link>https://www.qikqiak.com/post/kubernetes-dashboard-wayne-usage/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-dashboard-wayne-usage/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Kubernetes&lt;/code&gt; 官方本身就提供了一个管理集群的 Dashboard 插件，但是官方的 Dashboard 插件还是有一些局限性，近日360开源了内部使用的 Kubernetes Dashboard 插件：&lt;a href=&#34;https://github.com/Qihoo360/wayne/&#34;&gt;Wayne&lt;/a&gt;。 &lt;code&gt;Wayne&lt;/code&gt; 是一个通用的、基于 Web 的 Kubernetes 多集群管理平台。通过可视化 Kubernetes 对象模板编辑的方式，降低业务接入成本， 拥有完整的权限管理系统，适应多租户场景，是一款适合企业级集群使用的发布平台。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Grafana 在 Kubernetes 中的使用</title>
+      <link>https://www.qikqiak.com/post/grafana-usage-in-k8s/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/grafana-usage-in-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/ir3shARUPqjyBtDWcuzutQ&#34;&gt;&lt;img src=&#34;https://www.qikqiak.com/img/posts/grafana-cover.png&#34; alt=&#34;grafana in k8s &#34; /&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.qikqiak.com/k8s-book/docs/55.%E7%9B%91%E6%8E%A7Kubernetes%E5%B8%B8%E7%94%A8%E8%B5%84%E6%BA%90%E5%AF%B9%E8%B1%A1.html&#34;&gt;前面的课程中我们使用 Prometheus 采集了 Kubernetes 集群中的一些监控数据指标&lt;/a&gt;，我们也尝试使用&lt;code&gt;promQL&lt;/code&gt;语句查询出了一些数据，并且在 Prometheus 的 Dashboard 中进行了展示，但是明显可以感觉到 Prometheus 的图表功能相对较弱，所以一般情况下我们会一个第三方的工具来展示这些数据，今天我们要和大家使用到的就是&lt;code&gt;grafana&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>监控 Kubernetes 集群节点</title>
+      <link>https://www.qikqiak.com/post/promethues-monitor-k8s-nodes/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/promethues-monitor-k8s-nodes/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/JAOW9Zc8FSPk4xtIXVruag&#34;&gt;&lt;img src=&#34;https://www.qikqiak.com/img/posts/promethus-k8s-node-cover.png&#34; alt=&#34;prometheus monitor k8s node&#34; /&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.qikqiak.com/post/promethues-monitor-k8s-app/&#34;&gt;上节课我们和大家学习了怎样用 Promethues 来监控 Kubernetes 集群中的应用&lt;/a&gt;，但是对于 Kubernetes 集群本身的监控也是非常重要的，我们需要时时刻刻了解集群的运行状态。&lt;/p&gt;
+
+&lt;p&gt;对于集群的监控一般我们需要考虑以下几个方面：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Kubernetes 节点的监控：比如节点的 cpu、load、disk、memory 等指标&lt;/li&gt;
+&lt;li&gt;内部系统组件的状态：比如 kube-scheduler、kube-controller-manager、kubedns/coredns 等组件的详细运行状态&lt;/li&gt;
+&lt;li&gt;编排级的 metrics：比如 Deployment 的状态、资源请求、调度和 API 延迟等数据指标&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 应用监控</title>
+      <link>https://www.qikqiak.com/post/promethues-monitor-k8s-app/</link>
+      <pubDate>Sun, 28 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/promethues-monitor-k8s-app/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/cMy-ApGlIeYKIBnCanwwFQ&#34;&gt;&lt;img src=&#34;https://www.qikqiak.com/img/posts/promethus-k8s-cover.png&#34; alt=&#34;promethues monitor k8s app&#34; /&gt;&lt;/a&gt;
+&lt;a href=&#34;https://www.qikqiak.com/k8s-book/docs/52.Prometheus%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8.html&#34;&gt;上一节&lt;/a&gt;我们和大家介绍了&lt;code&gt;Prometheus&lt;/code&gt;的数据指标是通过一个公开的 HTTP(S) 数据接口获取到的，我们不需要单独安装监控的 agent，只需要暴露一个 metrics 接口，Prometheus 就会定期去拉取数据；对于一些普通的 HTTP 服务，我们完全可以直接重用这个服务，添加一个&lt;code&gt;/metrics&lt;/code&gt;接口暴露给 Prometheus；而且获取到的指标数据格式是非常易懂的，不需要太高的学习成本。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>重新理解 kubernetes 亲和性调度</title>
+      <link>https://www.qikqiak.com/post/kubernetes-affinity-scheduler/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-affinity-scheduler/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/HBxyO9k615x9--BVawOnSw&#34;&gt;&lt;img src=&#34;https://www.qikqiak.com/img/posts/affinity-schedule.png&#34; alt=&#34;亲和性调度&#34; /&gt;&lt;/a&gt;
+前面一篇文章&lt;a href=&#34;https://www.qikqiak.com/post/understand-kubernetes-affinity&#34;&gt;理解 Kubernetes 的亲和性调度&lt;/a&gt;，现在仔细回头去看看，发现有很多地方没有理解透彻，不够深入，今天我们重新来理解下亲和性调度这一块知识。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 调度器介绍</title>
+      <link>https://www.qikqiak.com/post/kube-scheduler-introduction/</link>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kube-scheduler-introduction/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/zXy5iYDTFxffzI7_IeLU7Q&#34;&gt;&lt;img src=&#34;https://www.qikqiak.com/img/posts/kube-scheduler-cover.png&#34; alt=&#34;kube-scheduler&#34; /&gt;&lt;/a&gt;
+&lt;code&gt;kube-scheduler&lt;/code&gt;是 kubernetes 系统的核心组件之一，主要负责整个集群资源的调度功能，根据特定的调度算法和策略，将 Pod 调度到最优的工作节点上面去，从而更加合理、更加充分的利用集群的资源，这也是我们选择使用 kubernetes 一个非常重要的理由。如果一门新的技术不能帮助企业节约成本、提供效率，我相信是很难推进的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Helm Hooks 的使用</title>
+      <link>https://www.qikqiak.com/post/helm-hooks-usage/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/helm-hooks-usage/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/S84k_PKAw3sjMnIO6D9O6Q&#34;&gt;&lt;img src=&#34;https://www.qikqiak.com/img/posts/helm-hooks.png&#34; alt=&#34;Helm Hooks&#34; /&gt;&lt;/a&gt;
+和&lt;code&gt;Kubernetes&lt;/code&gt;里面的容器一样，&lt;code&gt;Helm&lt;/code&gt;也提供了 &lt;a href=&#34;https://docs.helm.sh/developing_charts/#hooks&#34;&gt;Hook&lt;/a&gt; 的机制，允许 chart 开发人员在 release 的生命周期中的某些节点来进行干预，比如我们可以利用 Hooks 来做下面的这些事情：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;在加载任何其他 chart 之前，在安装过程中加载 ConfigMap 或 Secret&lt;/li&gt;
+&lt;li&gt;在安装新 chart 之前执行作业以备份数据库，然后在升级后执行第二个作业以恢复数据&lt;/li&gt;
+&lt;li&gt;在删除 release 之前运行作业，以便在删除 release 之前优雅地停止服务&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>国庆 K8S 课程特别活动</title>
+      <link>https://www.qikqiak.com/post/k8s-course-promotion/</link>
+      <pubDate>Thu, 27 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-course-promotion/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://mp.weixin.qq.com/s/HUvo61Gmu3U-sJLZYXA5gw&#34;&gt;&lt;img src=&#34;https://www.qikqiak.com/img/posts/k8s-course-promotion.png&#34; alt=&#34;k8s course&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;真真实实的实惠活动，没有乱七八糟的规矩、不需要扫码加群、不需要分享朋友圈，是不是非常良心？&lt;/p&gt;
+
+&lt;p&gt;为迎接祖国妈妈的生日，特地为我们的优点知识的会员朋友们提供一次优惠活动，将下面3个付费内容整体打包优惠，优惠后你将获得如下课程：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Helm 命名模板的使用</title>
+      <link>https://www.qikqiak.com/post/helm-name-template-usage/</link>
+      <pubDate>Sun, 23 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/helm-name-template-usage/</guid>
+      <description>&lt;p&gt;前面我们学习了一些&lt;code&gt;Helm&lt;/code&gt;模板中的一些常用使用方法，但是我们都是操作的一个模板文件，在实际的应用中，很多都是相对比较复杂的，往往会超过一个模板，如果有多个应用模板，我们应该如何进行处理呢？这就需要用到新的概念：&lt;strong&gt;命名模板&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;Helm 其他资料地址：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://k8s.qikqiak.com/docs/42.Helm安装.html&#34;&gt;Helm 的安装使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k8s.qikqiak.com/docs/43.Helm基本使用.html&#34;&gt;Helm 的基本使用&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k8s.qikqiak.com/docs/44.Helm模板之内置函数和Values.html&#34;&gt;Helm 模板之内置函数和Values&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k8s.qikqiak.com/docs/45.Helm模板之模板函数与管道.html&#34;&gt;Helm 模板之模板函数与管道&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://k8s.qikqiak.com/docs/46.Helm模板之控制流程.html&#34;&gt;Helm 模板之控制流程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dockerfile 最佳实践</title>
+      <link>https://www.qikqiak.com/post/dockerfile-best-practice/</link>
+      <pubDate>Wed, 12 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/dockerfile-best-practice/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Docker&lt;/code&gt;官方关于&lt;code&gt;Dockerfile&lt;/code&gt;最佳实践原文链接地址：&lt;a href=&#34;https://docs.docker.com/develop/develop-images/dockerfile_best-practices/&#34;&gt;https://docs.docker.com/develop/develop-images/dockerfile_best-practices/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Docker&lt;/code&gt;可以通过从&lt;code&gt;Dockerfile&lt;/code&gt;包含所有命令的文本文件中读取指令自动构建镜像，以便构建给定镜像。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Dockerfiles&lt;/code&gt;使用特定的格式并使用一组特定的指令。您可以在 &lt;a href=&#34;https://docs.docker.com/engine/reference/builder/&#34;&gt;Dockerfile Reference&lt;/a&gt; 页面上了解基础知识 。如果你是新手写作&lt;code&gt;Dockerfile&lt;/code&gt;，你应该从那里开始。&lt;/p&gt;
+
+&lt;p&gt;本文档介绍了由 Docker，Inc. 和 Docker 社区推荐的用于构建高效镜像的最佳实践和方法。要查看更多实践和建议，请查看 &lt;a href=&#34;https://github.com/docker-library/buildpack-deps/blob/master/jessie/Dockerfile&#34;&gt;Dockerfile for buildpack-deps&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 服务质量 Qos 解析</title>
+      <link>https://www.qikqiak.com/post/kubernetes-qos-usage/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-qos-usage/</guid>
+      <description>&lt;p&gt;&lt;code&gt;QoS&lt;/code&gt;是 Quality of Service 的缩写，即&lt;strong&gt;服务质量&lt;/strong&gt;。为了实现资源被有效调度和分配的同时提高资源利用率，&lt;code&gt;kubernetes&lt;/code&gt;针对不同服务质量的预期，通过 QoS（Quality of Service）来对 pod 进行服务质量管理。对于一个 pod 来说，服务质量体现在两个具体的指标：&lt;code&gt;CPU 和内存&lt;/code&gt;。当节点上内存资源紧张时，kubernetes 会根据预先设置的不同 QoS 类别进行相应处理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Helm 的基本使用</title>
+      <link>https://www.qikqiak.com/post/kubernetes-helm-usage/</link>
+      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-helm-usage/</guid>
+      <description>&lt;p&gt;上节课我们成功安装了&lt;code&gt;Helm&lt;/code&gt;的客户端以及服务端&lt;code&gt;Tiller Server&lt;/code&gt;，我们也自己尝试创建了我们的第一个 Helm Chart 包，这节课就来和大家一起学习下 Helm 中的一些常用的操作方法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>华为 CloudNativeLives K8S 系列课程</title>
+      <link>https://www.qikqiak.com/post/huawei-cloudnativelives-k8s-course/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/huawei-cloudnativelives-k8s-course/</guid>
+      <description>&lt;p&gt;前几天观看看华为&lt;code&gt;CloudNativeLives&lt;/code&gt;推出的&lt;code&gt;Kubernetes&lt;/code&gt;系列直播课程，有不少干货，这里推荐给大家。结尾有获取离线视频方式。
+&lt;img src=&#34;https://www.qikqiak.com/img/posts/cloudnativelives-video.png&#34; alt=&#34;cloudnativelives&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>外部服务发现之 ingress(二)</title>
+      <link>https://www.qikqiak.com/post/ingress-traefik2/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/ingress-traefik2/</guid>
+      <description>&lt;p&gt;上节课给大家展示了&lt;code&gt;traefik&lt;/code&gt;的安装使用以及简单的&lt;code&gt;ingress&lt;/code&gt;的配置方法，这节课我们来学习一下 ingress tls 以及 path 路径在 ingress 对象中的使用方法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何学习Kubernetes？</title>
+      <link>https://www.qikqiak.com/post/how-to-learn-kubernetes/</link>
+      <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/how-to-learn-kubernetes/</guid>
+      <description>&lt;p&gt;不管你是否意识到，在过去的几年时间里，以Docker、Kubernetes为代表的容器技术已经悄然发展成为一项通用技术。放眼国外，Google、Microsoft、IBM等互联网巨头们，仍在容器开源基础设施的技术市场上厮杀。回看国内，包括BAT、滴滴、京东、头条在内的大厂也都争相把容器和Kubernetes项目作为其技术重心，试图“放长线钓大鱼”。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ipvs 基本介绍</title>
+      <link>https://www.qikqiak.com/post/how-to-use-ipvs-in-kubernetes/</link>
+      <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/how-to-use-ipvs-in-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;ipvs (IP Virtual Server)&lt;/strong&gt; 实现了传输层负载均衡，也就是我们常说的4层&lt;code&gt;LAN&lt;/code&gt;交换，作为 Linux 内核的一部分。&lt;code&gt;ipvs&lt;/code&gt;运行在主机上，在真实服务器集群前充当负载均衡器。&lt;code&gt;ipvs&lt;/code&gt;可以将基于&lt;code&gt;TCP&lt;/code&gt;和&lt;code&gt;UDP&lt;/code&gt;的服务请求转发到真实服务器上，并使真实服务器的服务在单个 IP 地址上显示为虚拟服务。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes 如何发音？</title>
+      <link>https://www.qikqiak.com/post/kubernetes-how-to-pronunciation/</link>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-how-to-pronunciation/</guid>
+      <description>&lt;p&gt;有很多人不知道&lt;code&gt;kubernetes&lt;/code&gt;应该怎么发音，包括我之前也读错了，正确的发音是&lt;strong&gt;[kubə&amp;rsquo;netis]&lt;/strong&gt;，重音在第三个音节，读音：&lt;strong&gt;库伯耐踢死&lt;/strong&gt;，我们可以 github issue 上找到相关讨论：&lt;a href=&#34;https://github.com/kubernetes/kubernetes/issues/44308&#34;&gt;https://github.com/kubernetes/kubernetes/issues/44308&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;那么为什么&lt;code&gt;kubernetes&lt;/code&gt;又叫&lt;code&gt;k8s&lt;/code&gt;呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>外部服务发现之 ingress(一)</title>
+      <link>https://www.qikqiak.com/post/ingress-traefik1/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/ingress-traefik1/</guid>
+      <description>&lt;p&gt;上节课我们学习了在&lt;code&gt;Kubernetes&lt;/code&gt;集群内部使用&lt;code&gt;kube-dns&lt;/code&gt;实现服务发现的功能，那么我们部署在&lt;code&gt;Kubernetes&lt;/code&gt;集群中的应用如何暴露给外部的用户使用呢？我们知道前面我们使用 NodePort 和 LoadBlancer 类型的 Service 可以实现把应用暴露给外部用户使用，除此之外，Kubernetes 还为我们提供了一个非常重要的资源对象可以用来暴露服务给外部用户，那就是 &lt;code&gt;ingress&lt;/code&gt;。对于小规模的应用我们使用&lt;code&gt;NodePort&lt;/code&gt;或许能够满足我们的需求，但是当你的应用越来越多的时候，你就会发现对于 NodePort 的管理就非常麻烦了，这个时候使用 ingress 就非常方便了，可以避免管理大量的 Port。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>集群内部服务发现之 DNS</title>
+      <link>https://www.qikqiak.com/post/service-found-dns/</link>
+      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/service-found-dns/</guid>
+      <description>&lt;p&gt;前面我们给大家讲解了&lt;code&gt;Service&lt;/code&gt;的用法，我们可以通过 Service 生成的&lt;code&gt;ClusterIP(VIP)&lt;/code&gt;来访问 Pod 提供的服务，但是在使用的时候还有一个问题：我们怎么知道某个应用的 VIP 呢？比如我们有两个应用，一个是 api 应用，一个是 db 应用，两个应用都是通过&lt;code&gt;Deployment&lt;/code&gt;进行管理的，并且都通过 Service 暴露出了端口提供服务。api 需要连接到 db 这个应用，我们只知道 db 应用的名称和 db 对应的 Service 的名称，但是并不知道它的 VIP 地址，我们前面的 Service 课程中是不是学习到我们通过&lt;code&gt;ClusterIP&lt;/code&gt;就可以访问到后面的&lt;code&gt;Pod&lt;/code&gt;服务，如果我们知道了 VIP 的地址是不是就行了？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jenkins Blue Ocean 的使用</title>
+      <link>https://www.qikqiak.com/post/kubernetes-jenkins3/</link>
+      <pubDate>Thu, 02 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-jenkins3/</guid>
+      <description>&lt;p&gt;上节课我们讲解了使用&lt;code&gt;Jenkins Pipeline&lt;/code&gt;来自动化部署一个&lt;code&gt;Kubernetes&lt;/code&gt;应用的方法，在实际的项目中，往往一个代码仓库都会有很多分支的，比如开发、测试、线上这些分支都是分开的，一般情况下开发或者测试的分支我们希望提交代码后就直接进行&lt;code&gt;CI/CD&lt;/code&gt; 操作，而线上的话最好增加一个人工干预的步骤，这就需要&lt;code&gt;Jenkins&lt;/code&gt;对代码仓库有多分支的支持，当然这个特性是被&lt;code&gt;Jenkins&lt;/code&gt;支持的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jenkins Pipeline 部署 Kubernetes 应用(二)</title>
+      <link>https://www.qikqiak.com/post/kubernetes-jenkins2/</link>
+      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-jenkins2/</guid>
+      <description>&lt;p&gt;上节课我们实现了在&lt;code&gt;Kubernetes&lt;/code&gt;环境中动态生成&lt;code&gt;Jenkins Slave&lt;/code&gt; 的方法，这节课我们来给大家讲解下如何在 Jenkins 中来部署一个 Kubernetes 应用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>基于 kubernetes 的动态 jenkins slave</title>
+      <link>https://www.qikqiak.com/post/kubernetes-jenkins1/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-jenkins1/</guid>
+      <description>&lt;p&gt;前面的课程中我们学习了持久化数据存储在&lt;code&gt;Kubernetes&lt;/code&gt;中的使用方法，其实接下来按照我们的课程进度来说应该是讲解服务发现这一部分的内容的，但是最近有很多同学要求我先讲解下 CI/CD 这块的内容，所以我们先把这块内容提前来讲解了。提到基于&lt;code&gt;Kubernete&lt;/code&gt;的&lt;code&gt;CI/CD&lt;/code&gt;，可以使用的工具有很多，比如&lt;code&gt;Jenkins&lt;/code&gt;、&lt;code&gt;Gitlab CI&lt;/code&gt;已经新兴的&lt;code&gt;drone&lt;/code&gt;之类的，我们这里会使用大家最为熟悉的&lt;code&gt;Jenkins&lt;/code&gt;来做&lt;code&gt;CI/CD&lt;/code&gt;的工具。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pod 中挂载单个文件的方法</title>
+      <link>https://www.qikqiak.com/post/pod-mount-single-file/</link>
+      <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/pod-mount-single-file/</guid>
+      <description>&lt;p&gt;有很多同学发现在&lt;code&gt;Pod&lt;/code&gt;中通过&lt;code&gt;volume&lt;/code&gt;挂载数据的时候，如果挂载目录下原来有文件，挂载后将被覆盖掉。有的时候，我们希望将文件挂载到某个目录，但希望只是挂载该文件，不要影响挂载目录下的其他文件。有办法吗？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes 持久化存储(二)</title>
+      <link>https://www.qikqiak.com/post/kubernetes-persistent-volume2/</link>
+      <pubDate>Thu, 19 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-persistent-volume2/</guid>
+      <description>&lt;p&gt;前面的课程中我们学习了 &lt;code&gt;PV&lt;/code&gt; 和 &lt;code&gt;PVC&lt;/code&gt; 的使用方法，但是前面的 PV 都是静态的，什么意思？就是我要使用的一个 PVC 的话就必须手动去创建一个 PV，我们也说过这种方式在很大程度上并不能满足我们的需求，比如我们有一个应用需要对存储的并发度要求比较高，而另外一个应用对读写速度又要求比较高，特别是对于 &lt;code&gt;StatefulSet&lt;/code&gt; 类型的应用简单的来使用静态的 PV 就很不合适了，这种情况下我们就需要用到动态 PV，也就是我们今天要讲解的 &lt;code&gt;StorageClass&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes 持久化存储(一)</title>
+      <link>https://www.qikqiak.com/post/kubernetes-persistent-volume1/</link>
+      <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-persistent-volume1/</guid>
+      <description>&lt;p&gt;前面我们和大家一起学习了一些基本的资源对象的使用方法，前面我们也和大家讲到了有状态的应用和对数据有持久化的应用，我们有通过 &lt;code&gt;hostPath&lt;/code&gt; 或者 &lt;code&gt;emptyDir&lt;/code&gt; 的方式来持久化我们的数据，但是显然我们还需要更加可靠的存储来保存应用的持久化数据，这样容器在重建后，依然可以使用之前的数据。但是显然存储资源和 CPU 资源以及内存资源有很大不同，为了屏蔽底层的技术实现细节，让用户更加方便的使用，&lt;code&gt;Kubernetes&lt;/code&gt; 便引入了 &lt;code&gt;PV&lt;/code&gt; 和 &lt;code&gt;PVC&lt;/code&gt; 两个重要的资源对象来实现对存储的管理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes RBAC 详解</title>
+      <link>https://www.qikqiak.com/post/use-rbac-in-k8s/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-rbac-in-k8s/</guid>
+      <description>&lt;p&gt;前面两节课我们学习了&lt;code&gt;Kubernetes&lt;/code&gt;中的两个用于配置信息的重要资源对象：&lt;code&gt;ConfigMap&lt;/code&gt;和&lt;code&gt;Secret&lt;/code&gt;，其实到这里我们基本上学习的内容已经覆盖到&lt;code&gt;Kubernetes&lt;/code&gt;中一些重要的资源对象了，来部署一个应用程序是完全没有问题的了。在我们演示一个完整的示例之前，我们还需要给大家讲解一个重要的概念：&lt;code&gt;RBAC&lt;/code&gt; - 基于角色的访问控制。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Secret 的使用</title>
+      <link>https://www.qikqiak.com/post/use-secret-in-k8s/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-secret-in-k8s/</guid>
+      <description>&lt;p&gt;上节课我们学习了&lt;code&gt;ConfigMap&lt;/code&gt;的使用，我们说&lt;code&gt;ConfigMap&lt;/code&gt;这个资源对象是&lt;code&gt;Kubernetes&lt;/code&gt;当中非常重要的一个对象，一般情况下&lt;code&gt;ConfigMap&lt;/code&gt;是用来存储一些非安全的配置信息，如果涉及到一些安全相关的数据的话用&lt;code&gt;ConfigMap&lt;/code&gt;就非常不妥了，因为&lt;code&gt;ConfigMap&lt;/code&gt;是明文存储的，我们说这个时候我们就需要用到另外一个资源对象了：&lt;code&gt;Secret&lt;/code&gt;，&lt;code&gt;Secret&lt;/code&gt;用来保存敏感信息，例如密码、OAuth 令牌和 ssh key等等，将这些信息放在&lt;code&gt;Secret&lt;/code&gt;中比放在&lt;code&gt;Pod&lt;/code&gt;的定义中或者&lt;code&gt;docker&lt;/code&gt;镜像中来说更加安全和灵活。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Service 的使用</title>
+      <link>https://www.qikqiak.com/post/use-service-in-k8s/</link>
+      <pubDate>Wed, 13 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-service-in-k8s/</guid>
+      <description>&lt;p&gt;我们前面的课程中学习了&lt;code&gt;Pod&lt;/code&gt;的基本用法，我们也了解到&lt;code&gt;Pod&lt;/code&gt;的生命是有限的，死亡过后不会复活了。我们后面学习到的&lt;code&gt;RC&lt;/code&gt;和&lt;code&gt;Deployment&lt;/code&gt;可以用来动态的创建和销毁&lt;code&gt;Pod&lt;/code&gt;。尽管每个&lt;code&gt;Pod&lt;/code&gt;都有自己的&lt;code&gt;IP&lt;/code&gt;地址，但是如果&lt;code&gt;Pod&lt;/code&gt;重新启动了的话那么他的&lt;code&gt;IP&lt;/code&gt;很有可能也就变化了。这就会带来一个问题：比如我们有一些后端的&lt;code&gt;Pod&lt;/code&gt;的集合为集群中的其他前端的&lt;code&gt;Pod&lt;/code&gt;集合提供&lt;code&gt;API&lt;/code&gt;服务，如果我们在前端的&lt;code&gt;Pod&lt;/code&gt;中把所有的这些后端的&lt;code&gt;Pod&lt;/code&gt;的地址都写死，然后去某种方式去访问其中一个&lt;code&gt;Pod&lt;/code&gt;的服务，这样看上去是可以工作的，对吧？但是如果这个&lt;code&gt;Pod&lt;/code&gt;挂掉了，然后重新启动起来了，是不是&lt;code&gt;IP&lt;/code&gt;地址非常有可能就变了，这个时候前端就极大可能访问不到后端的服务了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Job和CronJob 的使用方法</title>
+      <link>https://www.qikqiak.com/post/use-job-cronjob/</link>
+      <pubDate>Sat, 09 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-job-cronjob/</guid>
+      <description>&lt;p&gt;上节课我们学习了&lt;code&gt;Pod&lt;/code&gt;自动伸缩的方法，我们使用到了&lt;code&gt;HPA&lt;/code&gt;这个资源对象，我们在后面的课程中还会和大家接触到&lt;code&gt;HPA&lt;/code&gt;的。今天我们来给大家介绍另外一类资源对象：Job，我们在日常的工作中经常都会遇到一些需要进行批量数据处理和分析的需求，当然也会有按时间来进行调度的工作，在我们的&lt;code&gt;Kubernetes&lt;/code&gt;集群中为我们提供了&lt;code&gt;Job&lt;/code&gt;和&lt;code&gt;CronJob&lt;/code&gt;两种资源对象来应对我们的这种需求。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RC、RS 使用方法</title>
+      <link>https://www.qikqiak.com/post/use-rc-rs-manage-pod/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-rc-rs-manage-pod/</guid>
+      <description>&lt;p&gt;前面&lt;a href=&#34;https://www.haimaxy.com/course/6n8xd6/&#34;&gt;我们的课程&lt;/a&gt;中学习了&lt;code&gt;Pod&lt;/code&gt;的一些基本使用方法，而且前面我们都是直接来操作的&lt;code&gt;Pod&lt;/code&gt;，假如我们现在有一个&lt;code&gt;Pod&lt;/code&gt;正在提供线上的服务，我们来想想一下我们可能会遇到的一些场景：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;某次运营活动非常成功，网站访问量突然暴增&lt;/li&gt;
+&lt;li&gt;运行当前&lt;code&gt;Pod&lt;/code&gt;的节点发生故障了，&lt;code&gt;Pod&lt;/code&gt;不能正常提供服务了&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第一种情况，可能比较好应对，一般活动之前我们会大概计算下会有多大的访问量，提前多启动几个&lt;code&gt;Pod&lt;/code&gt;，活动结束后再把多余的&lt;code&gt;Pod&lt;/code&gt;杀掉，虽然有点麻烦，但是应该还是能够应对这种情况的。&lt;/p&gt;
+
+&lt;p&gt;第二种情况，可能某天夜里收到大量报警说服务挂了，然后起来打开电脑在另外的节点上重新启动一个新的&lt;code&gt;Pod&lt;/code&gt;，问题也很好的解决了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>名称解释OCI、runc、containerd、Docker、CRI、CRI-O</title>
+      <link>https://www.qikqiak.com/post/what-is-oci-runc-containerd-cri-docker/</link>
+      <pubDate>Sat, 02 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/what-is-oci-runc-containerd-cri-docker/</guid>
+      <description>TODO</description>
+    </item>
+    
+    <item>
+      <title>初始化容器</title>
+      <link>https://www.qikqiak.com/post/pod-init-container/</link>
+      <pubDate>Tue, 29 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/pod-init-container/</guid>
+      <description>&lt;p&gt;上节课我们学习了容器的健康检查的两个探针：&lt;a href=&#34;https://www.haimaxy.com/course/6n8xd6/mg0106/&#34;&gt;liveness probe（存活探针）和 readiness probe（可读性探针）&lt;/a&gt;的使用方法，我们说在这两个探针是可以影响容器的生命周期的，包括我们之前提到的容器的&lt;a href=&#34;https://www.haimaxy.com/course/6n8xd6/m2kvjm/&#34;&gt;两个钩子函数 PostStart 和 PreStop &lt;/a&gt;。我们今天要给大家介绍的是&lt;code&gt;Init Container&lt;/code&gt;（初始化容器）。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Pod 工作流</title>
+      <link>https://www.qikqiak.com/post/pod-workflow/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/pod-workflow/</guid>
+      <description>&lt;p&gt;我们知道&lt;code&gt;Pod&lt;/code&gt;是&lt;code&gt;Kubernetes&lt;/code&gt;中最小的调度单元，平时我们操作&lt;code&gt;Pod&lt;/code&gt;的时间也是最多的，那么你知道&lt;code&gt;Pod&lt;/code&gt;是怎样被创建出来的吗？知道他的工作流程吗？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用kubeadm搭建kubernetes1.10集群</title>
+      <link>https://www.qikqiak.com/post/use-kubeadm-install-kubernetes-1.10/</link>
+      <pubDate>Sat, 14 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-kubeadm-install-kubernetes-1.10/</guid>
+      <description>&lt;p&gt;&lt;code&gt;kubeadm&lt;/code&gt;是&lt;code&gt;Kubernetes&lt;/code&gt;官方提供的用于快速安装 Kubernetes 集群的工具，通过将集群的各个组件进行容器化安装管理，通过&lt;code&gt;kubeadm&lt;/code&gt;的方式安装集群比二进制的方式安装要方便不少，但是目录&lt;code&gt;kubeadm&lt;/code&gt;还处于&lt;code&gt;beta&lt;/code&gt;状态，还不能用于生产环境，&lt;a href=&#34;https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/&#34;&gt;Using kubeadm to Create a Cluster&lt;/a&gt;文档中已经说明&lt;code&gt;kubeadm&lt;/code&gt;将会很快能够用于生产环境了。&lt;/p&gt;
+
+&lt;p&gt;所以现在来了解下&lt;code&gt;kubeadm&lt;/code&gt;的使用方式的话还是很有必要的，对于现阶段想要用于生产环境的，建议还是参考我们前面的文章：&lt;a href=&#34;https://www.qikqiak.com/post/manual-install-high-available-kubernetes-cluster/&#34;&gt;手动搭建高可用的kubernetes 集群&lt;/a&gt;或者&lt;a href=&#34;https://youdianzhishi.com/course/pjrqxm/?utm_source=blog&#34;&gt;视频教程&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>k8s技术圈一周精选[第3期]</title>
+      <link>https://www.qikqiak.com/post/k8s-tech-weekly-collection-phase3/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-tech-weekly-collection-phase3/</guid>
+      <description>&lt;p&gt;老规矩，本周的&lt;code&gt;k8s技术圈&lt;/code&gt;的几个精选的问题，分享给大家。另外，也欢迎大家加入我们的&lt;code&gt;【微信群】&lt;/code&gt;和&lt;code&gt;【知识星球】&lt;/code&gt;共同探讨，共同进步。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Skaffold-简化本地开发kubernetes应用的神器</title>
+      <link>https://www.qikqiak.com/post/skaffold-simple-local-develop-k8s-app-tools/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/skaffold-simple-local-develop-k8s-app-tools/</guid>
+      <description>&lt;p&gt;在我们开发&lt;code&gt;kubernetes&lt;/code&gt;应用的过程中，一般情况下是我们在本地开发调试测试完成以后，再通过&lt;code&gt;CI/CD&lt;/code&gt;的方式部署到&lt;code&gt;kubernetes&lt;/code&gt;的集群中，这个过程首先是非常繁琐的，而且效率非常低下，因为你想验证你的每次代码修改，就得提交代码重新走一遍&lt;code&gt;CI/CD&lt;/code&gt;的流程，我们知道编译打包成镜像这些过程就是很耗时的，即使我们在自己本地搭建一套开发&lt;code&gt;kubernetes&lt;/code&gt;集群，也同样的效率很低。在实践中，若不在本地运行那些服务，调试将变得颇具挑战。就在几天前，我遇到了&lt;code&gt;Skaffold&lt;/code&gt;，它是一款命令行工具，旨在促进&lt;code&gt;kubernetes&lt;/code&gt;应用的持续开发，&lt;code&gt;Skaffold&lt;/code&gt;可以将构建、推送及向&lt;code&gt;kubernetes&lt;/code&gt;集群部署应用程序的过程自动化，听上去是不是很舒服呀~~~&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>k8s技术圈一周精选[第2期]</title>
+      <link>https://www.qikqiak.com/post/k8s-tech-weekly-collection-phase2/</link>
+      <pubDate>Sun, 25 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-tech-weekly-collection-phase2/</guid>
+      <description>&lt;p&gt;上周我们发布了&lt;a href=&#34;https://www.qikqiak.com/post/k8s-tech-weekly-collection-phase1/&#34;&gt;k8s技术圈一周精选第1期&lt;/a&gt;，从后面的反馈来看非常不错，之前很多问题其实大家都遇到过，只是没有记录沉淀下来，导致后面很多同学去踩同样的坑，这其实是非常浪费时间浪费资源的。一周时间还是非常快的，这不我们的第2期又来了。&lt;/p&gt;
+
+&lt;p&gt;另外，也欢迎大家加入我们的&lt;code&gt;【微信群】&lt;/code&gt;和&lt;code&gt;【知识星球】&lt;/code&gt;共同探讨，共同进步。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes 的资源配额控制器</title>
+      <link>https://www.qikqiak.com/post/kubernetes-resource-quota-usage/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-resource-quota-usage/</guid>
+      <description>&lt;p&gt;有很多团队在使用&lt;code&gt;kubernetes&lt;/code&gt;的时候是将一个&lt;code&gt;namespace&lt;/code&gt;当成一个租户的，所以对&lt;code&gt;namespace&lt;/code&gt;的权限控制，资源控制就很重要了，你总是会担心你的某个租户使用的资源就超出了应有的配额。幸运的是&lt;code&gt;kubernetes&lt;/code&gt;本身就为我们提供了解决这一问题的工具：资源配额控制器(&lt;code&gt;ResourceQuotaController&lt;/code&gt;)&lt;/p&gt;
+
+&lt;p&gt;资源配额控制器确保了指定的资源对象始终不会超过配置的资源，能够有效的降低整个系统宕机的机率，增强系统的鲁棒性，对整个集群的稳定性有非常重要的作用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>k8s技术圈一周精选[第1期]</title>
+      <link>https://www.qikqiak.com/post/k8s-tech-weekly-collection-phase1/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-tech-weekly-collection-phase1/</guid>
+      <description>&lt;p&gt;一转眼都已经过了龙抬头的日子了，可能你自己没注意到，要是仔细一算的话，2018年已经过了1/4了，是不是今年的规划还没提上日程呢？总之，咱们还是需要撸起袖子加油继续干啊~~~&lt;/p&gt;
+
+&lt;p&gt;今天的文章是总结我们&lt;code&gt;知识星球&lt;/code&gt;在本周的一些精华的分享内容，同时，也欢迎大家加入我们的&lt;code&gt;【微信群】&lt;/code&gt;和&lt;code&gt;【知识星球】&lt;/code&gt;共同探讨，共同进步。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>理解 Kubernetes 的亲和性调度</title>
+      <link>https://www.qikqiak.com/post/understand-kubernetes-affinity/</link>
+      <pubDate>Thu, 08 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/understand-kubernetes-affinity/</guid>
+      <description>&lt;p&gt;一般情况下我们部署的 POD 是通过集群自动调度选择某个节点的，默认情况下调度器考虑的是资源足够，并且负载尽量平均，但是有的时候我们需要能够更加细粒度的去控制 POD 的调度，比如我们内部的一些服务 gitlab 之类的也是跑在&lt;code&gt;Kubernetes&lt;/code&gt;集群上的，我们就不希望对外的一些服务和内部的服务跑在同一个节点上了，害怕内部服务对外部的服务产生影响；有的时候呢我们两个服务直接交流比较频繁，又希望能够将这两个服务的 POD 调度到同样的节点上。这就需要用到 Kubernetes 里面的一个概念：亲和性，亲和性主要分为两类：&lt;code&gt;nodeAffinity&lt;/code&gt;和&lt;code&gt;podAffinity&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Downward API 基本用法</title>
+      <link>https://www.qikqiak.com/post/use-downward-api-get-pod-info/</link>
+      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-downward-api-get-pod-info/</guid>
+      <description>&lt;p&gt;前面在&lt;code&gt;k8s技术圈&lt;/code&gt;微信群里面有朋友问到如何在容器中获取 POD 的基本信息，其实&lt;code&gt;kubernetes&lt;/code&gt;原生就提供了支持的，那就是&lt;code&gt;Downward API&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes ConfigMap 和 Secrets</title>
+      <link>https://www.qikqiak.com/post/understand-kubernetes-configmap-and-secrets/</link>
+      <pubDate>Sat, 10 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/understand-kubernetes-configmap-and-secrets/</guid>
+      <description>&lt;p&gt;我们经常都需要为我们的应用程序配置一些特殊的数据，比如密钥、Token 、数据库连接地址或者其他私密的信息。你的应用可能会使用一些特定的配置文件进行配置，比如&lt;code&gt;settings.py&lt;/code&gt;文件，或者我们可以在应用的业务逻辑中读取环境变量或者某些标志来处理配置信息。&lt;/p&gt;
+
+&lt;p&gt;当然你可以直接将这些应用配置信息直接硬编码到你的应用程序中去，对于一个小型的应用，这或许是可以接受的，但是，对于一个相对较大的应用程序或者微服务的话，硬编码就会变得难以管理了。比如你现在有10个微服务，都连接了数据库A，如果现在需要更改数据库A的连接地址的话，就需要修改10个地方，显然这是难以忍受的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手摸手教你写 Kubernetes 的 golang 服务</title>
+      <link>https://www.qikqiak.com/post/write-kubernets-golang-service-step-by-step/</link>
+      <pubDate>Thu, 08 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/write-kubernets-golang-service-step-by-step/</guid>
+      <description>&lt;p&gt;我们前面介绍了很多关于&lt;code&gt;kubernetes&lt;/code&gt;本身的操作，但是对于如何写一个完整的&lt;code&gt;kubernetes&lt;/code&gt;应用还没有介绍过。在这篇文章中我们将介绍如何一步一步的写一个&lt;code&gt;kubernetes&lt;/code&gt;的&lt;code&gt;golang&lt;/code&gt;服务。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用YAML 文件创建 Kubernetes Deployment</title>
+      <link>https://www.qikqiak.com/post/use-yaml-create-kubernetes-deployment/</link>
+      <pubDate>Fri, 02 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/use-yaml-create-kubernetes-deployment/</guid>
+      <description>&lt;p&gt;在之前的文章中，我们一直在讨论如何使用&lt;code&gt;kubernetes&lt;/code&gt;，很多时候我们知道怎么使用&lt;code&gt;kubectl&lt;/code&gt;命令行工具来启动一个&lt;code&gt;POD&lt;/code&gt;，也看到我们在安装kubernetes 过程中使用了一些 YAML 文件来创建，但是发现很多朋友对 YAML 文件来创建一个 POD 还是非常陌生。所以我们来简单看看 YAML 文件是如何工作的，并使用 YAML 文件来定义一个 kubernetes pod，然后再来定义一个 kubernetes deployment吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Helm 初体验</title>
+      <link>https://www.qikqiak.com/post/first-use-helm-on-kubernetes/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/first-use-helm-on-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Helm&lt;/code&gt;这个东西其实早有耳闻，但是一直没有用在生产环境，而且现在对这货的评价也是褒贬不一。正好最近需要再次部署一套测试环境，对于单体服务，部署一套测试环境我相信还是非常快的，但是对于微服务架构的应用，要部署一套新的环境，就有点折磨人了，微服务越多、你就会越绝望的。虽然我们线上和测试环境已经都迁移到了&lt;code&gt;kubernetes&lt;/code&gt;环境，但是每个微服务也得维护一套&lt;code&gt;yaml&lt;/code&gt;文件，而且每个环境下的配置文件也不太一样，部署一套新的环境成本是真的很高。如果我们能使用类似于&lt;code&gt;yum&lt;/code&gt;的工具来安装我们的应用的话是不是就很爽歪歪了啊？&lt;code&gt;Helm&lt;/code&gt;就相当于&lt;code&gt;kubernetes&lt;/code&gt;环境下的&lt;code&gt;yum&lt;/code&gt;包管理工具。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes PodPreset 的使用</title>
+      <link>https://www.qikqiak.com/post/how-to-use-podpreset-in-kubernetes/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/how-to-use-podpreset-in-kubernetes/</guid>
+      <description>&lt;p&gt;最近在&lt;code&gt;kubernetes&lt;/code&gt;上安装 &lt;a href=&#34;https://github.com/cnych/k8s-repo/tree/master/sentry&#34;&gt;sentry&lt;/a&gt; 的时候，我将&lt;code&gt;sentry&lt;/code&gt;需要运行的3个服务放到同一个&lt;strong&gt;POD&lt;/strong&gt;中的，WEB、Celery Worker、Crontab 分别用一个独立的容器来运行的，但是这三个容器需要用到环境变量基本上都是一样的，比如数据库的配置、消息队列的配置，这样就造成一个问题是我需要把完全一模一样的环境配置复制3份，因为3个容器都需要使用，这样如果需要更改的话也要改3个地方。幸好&lt;code&gt;kubernetes&lt;/code&gt;给我们提供了一种新的特性：&lt;strong&gt;PodPreset&lt;/strong&gt;，该对象用来在 Pod 创建的时候向 Pod 中注入某些特定信息，可以包括 secret、volume、volume mount 和环境变量等。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>为kubernetes dashboard访问用户添加权限控制</title>
+      <link>https://www.qikqiak.com/post/add-authorization-for-kubernetes-dashboard/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/add-authorization-for-kubernetes-dashboard/</guid>
+      <description>&lt;p&gt;前面我们在&lt;a href=&#34;https://www.qikqiak.com/post/update-kubernetes-dashboard-more-secure&#34;&gt;kubernetes dashboard 升级之路&lt;/a&gt;一文中成功的将&lt;code&gt;Dashboard&lt;/code&gt;升级到最新版本了，增加了身份认证功能，之前为了方便增加了一个&lt;code&gt;admin&lt;/code&gt;用户，然后授予了&lt;code&gt;cluster-admin&lt;/code&gt;的角色绑定，而该角色绑定是系统内置的一个超级管理员权限，也就是用该用户的&lt;code&gt;token&lt;/code&gt;登录&lt;code&gt;Dashboard&lt;/code&gt;后会很&lt;strong&gt;强势&lt;/strong&gt;，什么权限都有，想干嘛干嘛，这样的操作显然是非常危险的。接下来我们来为一个新的用户添加访问权限控制。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TDD开发容器化的Python微服务应用(二)</title>
+      <link>https://www.qikqiak.com/post/tdd-develop-python-microservice-app-part2/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/tdd-develop-python-microservice-app-part2/</guid>
+      <description>&lt;p&gt;本节课我们将我们的项目拆分成3个工程，我们也会增加一些集成测试来确保每一个服务都能够正确的运行，引入持续集成概念，最后，我们还将添加一个&lt;code&gt;ReactJS&lt;/code&gt;的客户端。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TDD开发容器化的Python微服务应用(一)</title>
+      <link>https://www.qikqiak.com/post/tdd-develop-python-microservice-app/</link>
+      <pubDate>Thu, 28 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/tdd-develop-python-microservice-app/</guid>
+      <description>&lt;p&gt;在这个课程中，你将学习如何使用&lt;code&gt;Docker&lt;/code&gt;快速创建开发环境、管理多个微服务，应用程序在本地运行后，您将学习怎样在生产环境部署应用。我们也会练习&lt;code&gt;TDD&lt;/code&gt;(测试驱动开发)，在你的项目中测试先行，我们重点将放在服务端的单元测试、功能和集成测试以及端到端的测试上面，以确保整个系统按预期工作。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Prometheus报警AlertManager实战</title>
+      <link>https://www.qikqiak.com/post/alertmanager-of-prometheus-in-practice/</link>
+      <pubDate>Wed, 27 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/alertmanager-of-prometheus-in-practice/</guid>
+      <description>&lt;p&gt;在前面一文&lt;a href=&#34;https://www.qikqiak.com/post/kubernetes-monitor-prometheus-grafana/&#34;&gt;Kubernetes使用Prometheus搭建监控平台&lt;/a&gt;中我们知道了怎么使用&lt;code&gt;Prometheus&lt;/code&gt;来搭建监控平台，也了解了&lt;code&gt;grafana&lt;/code&gt;的使用。这篇文章就来说说报警系统的搭建，有人说报警用&lt;code&gt;grafana&lt;/code&gt;就行了，实际上&lt;code&gt;grafana&lt;/code&gt;对报警的支持真的很弱，而&lt;code&gt;Prometheus&lt;/code&gt;提供的报警系统就强大很多，今天我们的主角就是&lt;code&gt;AlertManager&lt;/code&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 下升级Prometheus2.0</title>
+      <link>https://www.qikqiak.com/post/update-prometheus-2-in-kubernetes/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/update-prometheus-2-in-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;code&gt;prometheus&lt;/code&gt;2.0正式版已经发布了，新增了很多特性，特别是底层存储性能提升了不少：&lt;a href=&#34;https://prometheus.io/blog/2017/11/08/announcing-prometheus-2-0/&#34;&gt;https://prometheus.io/blog/2017/11/08/announcing-prometheus-2-0/&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;在将之前监控平台升级到2.0 的过程中还是有一些坑的，因为有很多参数已经更改了，还不清除怎么在&lt;code&gt;kubernetes&lt;/code&gt;上搭建&lt;code&gt;prometheus&lt;/code&gt;监控平台的，可以查看前面的文章&lt;a href=&#34;https://www.qikqiak.com/post/kubernetes-monitor-prometheus-grafana/&#34;&gt;Kubernetes使用Prometheus搭建监控平台&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;本文章中涉及到的&lt;code&gt;yaml&lt;/code&gt;文件可以在&lt;a href=&#34;https://github.com/cnych/k8s-repo/tree/master/prometheus&#34;&gt;github&lt;/a&gt;中查看。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes 日志收集方案</title>
+      <link>https://www.qikqiak.com/post/kubernetes-logs-collect/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-logs-collect/</guid>
+      <description>&lt;p&gt;完善的日志系统是保证系统持续稳定运行的基石，帮助提升运维、运营效率，建立大数据时代的海量日志处理等能力都需要日志系统的支持，所以搭建一套行之有效的日志系统至关重要。&lt;/p&gt;
+
+&lt;p&gt;本文将介绍两种kubernetes 集群下日志收集的方案：阿里云日志服务或者&lt;code&gt;EFK&lt;/code&gt;方案&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes 下实现socket.io 的集群模式</title>
+      <link>https://www.qikqiak.com/post/socketio-multiple-nodes-in-kubernetes/</link>
+      <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/socketio-multiple-nodes-in-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;code&gt;socket.io&lt;/code&gt; 单节点模式是很容易部署的，但是往往在生产环境一个节点不能满足业务需求，况且还要保证节点挂掉的情况仍能正常提供服务，所以多节点模式就成为了生成环境的一种必须的部署模式。&lt;/p&gt;
+
+&lt;p&gt;本文将介绍如何在kubernetes 集群上部署多节点的&lt;code&gt;socket.io&lt;/code&gt;服务。&lt;/p&gt;
+
+&lt;p&gt;文章中涉及到的代码可以前往&lt;a href=&#34;https://github.com/cnych/k8s-socketio-cluster-demo&#34;&gt;https://github.com/cnych/k8s-socketio-cluster-demo&lt;/a&gt;查看。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在kubernetes 集群上搭建docker 私有仓库Harbor</title>
+      <link>https://www.qikqiak.com/post/install-docker-registry-harbor-in-kubernetes/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/install-docker-registry-harbor-in-kubernetes/</guid>
+      <description>&lt;p&gt;&lt;code&gt;Harbor&lt;/code&gt;是一个用于存储和分发Docker 镜像的企业级Registry 服务器，通过添加一些企业必需的功能特性，例如安全、标识和管理等，扩展了开源Docker Distribution。作为一个企业级私有Registry 服务器，Harbor 提供了更好的性能和安全。提升用户使用Registry构建和运行环境传输镜像的效率。Harbor 支持安装在多个Registry节点的镜像资源复制，镜像全部保存在私有Registry 中， 确保数据和知识产权在公司内部网络中管控。另外，Harbor也提供了高级的安全特性，诸如用户管理，访问控制和活动审计等。&lt;/p&gt;
+
+&lt;p&gt;本文将介绍如何在kubernetes 集群上搭建一个高可用的Harbor 服务。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes dashboard 升级之路</title>
+      <link>https://www.qikqiak.com/post/update-kubernetes-dashboard-more-secure/</link>
+      <pubDate>Mon, 13 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/update-kubernetes-dashboard-more-secure/</guid>
+      <description>&lt;p&gt;在前面&lt;a href=&#34;https://www.qikqiak.com/post/manual-install-high-available-kubernetes-cluster&#34;&gt;手动搭建高可用的kubernetes 集群&lt;/a&gt;一文中我们安装的&lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;kubernetes&lt;/a&gt;集群是&lt;code&gt;v1.8.2&lt;/code&gt;版本，该版本的&lt;code&gt;dashboard&lt;/code&gt;插件还是&lt;strong&gt;1.6.x&lt;/strong&gt;，如果你把&lt;code&gt;dashboard&lt;/code&gt;暴露在公网环境下面访问的话，是非常不安全的，因为该版本没有任何的安全登录之类的处理，在最新版本的&lt;strong&gt;1.7.x&lt;/strong&gt;中则新增了更多安全相关的特性，我们可以升级到该版本或以上来暴露我们的&lt;code&gt;dashboard&lt;/code&gt;到公网环境下面，当然安全都是相对的，能不暴露在公网环境下面当然是最好的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手动搭建高可用的kubernetes 集群</title>
+      <link>https://www.qikqiak.com/post/manual-install-high-available-kubernetes-cluster/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/manual-install-high-available-kubernetes-cluster/</guid>
+      <description>&lt;p&gt;之前按照&lt;a href=&#34;https://github.com/opsnull/follow-me-install-kubernetes-cluster&#34;&gt;和我一步步部署 kubernetes 集群&lt;/a&gt;的步骤一步一步的成功的使用二进制的方式安装了&lt;code&gt;kubernetes&lt;/code&gt;集群，在该文档的基础上重新部署了最新的&lt;code&gt;v1.8.2&lt;/code&gt;版本，实现了&lt;code&gt;kube-apiserver&lt;/code&gt;的高可用、&lt;code&gt;traefik ingress&lt;/code&gt; 的部署、在&lt;code&gt;kubernetes&lt;/code&gt;上安装&lt;code&gt;docker&lt;/code&gt;的私有仓库&lt;code&gt;harbor&lt;/code&gt;、容器化&lt;code&gt;kubernetes&lt;/code&gt;部分组建、使用阿里云日志服务收集日志。&lt;/p&gt;
+
+&lt;p&gt;部署完成后，你将理解系统各组件的交互原理，进而能快速解决实际问题，所以本文档主要适合于那些有一定&lt;code&gt;kubernetes&lt;/code&gt;基础，想通过一步步部署的方式来学习和了解系统配置、运行原理的人。&lt;/p&gt;
+
+&lt;p&gt;本系列系文档适用于 &lt;code&gt;CentOS 7&lt;/code&gt;、&lt;code&gt;Ubuntu 16.04&lt;/code&gt; 及以上版本系统，由于启用了 &lt;code&gt;TLS&lt;/code&gt; 双向认证、&lt;code&gt;RBAC&lt;/code&gt; 授权等严格的安全机制，建议&lt;strong&gt;从头开始部署&lt;/strong&gt;，否则可能会认证、授权等失败！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes Deployment滚动升级</title>
+      <link>https://www.qikqiak.com/post/kubernetes-rollout-update/</link>
+      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-rollout-update/</guid>
+      <description>&lt;p&gt;我们&lt;code&gt;k8s&lt;/code&gt;集群使用的是1.7.7版本的，该版本中官方已经推荐使用&lt;code&gt;Deployment&lt;/code&gt;代替&lt;code&gt;Replication Controller&lt;/code&gt;(rc)了，&lt;code&gt;Deployment&lt;/code&gt;继承了rc的全部功能外，还可以查看升级详细进度和状态，当升级出现问题的时候，可以使用回滚操作回滚到指定的版本，每一次对Deployment的操作，都会保存下来，变能方便的进行回滚操作了，另外对于每一次升级都可以随时暂停和启动，拥有多种升级方案：&lt;code&gt;Recreate&lt;/code&gt;删除现在的&lt;code&gt;Pod&lt;/code&gt;，重新创建；&lt;code&gt;RollingUpdate&lt;/code&gt;滚动升级，逐步替换现有&lt;code&gt;Pod&lt;/code&gt;，对于生产环境的服务升级，显然这是一种最好的方式。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes使用Prometheus搭建监控平台</title>
+      <link>https://www.qikqiak.com/post/kubernetes-monitor-prometheus-grafana/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/kubernetes-monitor-prometheus-grafana/</guid>
+      <description>&lt;p&gt;最近在测试环境搭建了&lt;code&gt;Kubernetes&lt;/code&gt;集群环境，迁移了部分测试环境的应用，由于测试集群性能不是很好，有时会遇到集群资源不够的情况，一般情况下我们是直接通过Dashboard的资源统计图标进行观察的，但是很显然如果要上到生产环境，就需要更自动化的方式来对集群、Pod甚至容器进行监控了。&lt;code&gt;Kubernetes&lt;/code&gt;内置了一套监控方案：influxdb+grafana+heapster。但由于之前我们的应用的业务监控使用的是&lt;code&gt;Prometheus&lt;/code&gt;，所以这里准备使用&lt;code&gt;Prometheus&lt;/code&gt;来完成k8s的集群监控。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

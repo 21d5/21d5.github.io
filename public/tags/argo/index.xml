@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>argo on 阳明的博客</title>
+    <link>https://www.qikqiak.com/tags/argo/</link>
+    <description>Recent content in argo on 阳明的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jul 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.qikqiak.com/tags/argo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用 GitLab CI 与 Argo CD 进行 GitOps 实践</title>
+      <link>https://www.qikqiak.com/post/gitlab-ci-argo-cd-gitops/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/gitlab-ci-argo-cd-gitops/</guid>
+      <description>&lt;p&gt;在现在的云原生世界里面 GitOps 不断的被提及，这种持续交付的模式越来越受到了大家的青睐，我们前面也有文章详细讲解了 GitOps 的相关概念，在网上也可以找到很多关于它的资源，但是关于 GitOps 相关的工作流实践的示例却并不多见，我们这里就将详细介绍一个使用示例，希望对大家实践 GitOps 有所帮助。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes 工作流引擎：Argo（1）</title>
+      <link>https://www.qikqiak.com/post/argo-workflow-engine-for-k8s/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/argo-workflow-engine-for-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://applatix.com/open-source/argo/&#34;&gt;Argo&lt;/a&gt; 是 &lt;a href=&#34;https://applatix.com/&#34;&gt;Applatix&lt;/a&gt; 推出的一个开源项目，为 Kubernetes 提供 container-native（工作流中的每个步骤是通过容器实现）工作流程。Argo 可以让用户用一个类似于传统的 YAML 文件定义的 DSL 来运行多个步骤的 Pipeline。该框架提供了复杂的循环、条件判断、依赖管理等功能，这有助于提高部署应用程序的灵活性以及配置和依赖的灵活性。使用 Argo，用户可以定义复杂的依赖关系，以编程方式构建复杂的工作流、制品管理，可以将任何步骤的输出结果作为输入链接到后续的步骤中去，并且可以在可视化 UI 界面中监控调度的作业任务。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/argo-workflow-engine-for-k8s/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/argo-k8s.png&#34; alt=&#34;Argo&#34; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

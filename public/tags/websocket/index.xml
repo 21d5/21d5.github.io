@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>websocket on 阳明的博客</title>
+    <link>https://www.qikqiak.com/tags/websocket/</link>
+    <description>Recent content in websocket on 阳明的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.qikqiak.com/tags/websocket/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>对 Kubernetes 应用进行自定义指标扩缩容</title>
+      <link>https://www.qikqiak.com/post/build-k8s-app-with-custom-metrics/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/build-k8s-app-with-custom-metrics/</guid>
+      <description>&lt;p&gt;前面我们学习了很多关于 Prometheus 的内容，也学习了 HPA 对象的使用，但是一直没有对自定义指标来对应用进行扩缩容做过讲解，本篇文章我们就来了解下如何通过自定义指标来做应用的动态伸缩功能。当前前提是你需要熟悉 &lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;Kubernetes&lt;/a&gt; 和 &lt;a href=&#34;https://www.qikqiak.com/tags/prometheus/&#34;&gt;Prometheus&lt;/a&gt;，如果不熟悉的话可以查看我们前面的一系列文章，或者直接查看我们的 &lt;a href=&#34;https://www.qikqiak.com/post/promotion-51&#34;&gt;Kubernetes 进阶视频课程&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>使用 inlets 和 kubernetes 访问本地服务</title>
+      <link>https://www.qikqiak.com/post/k8s-inlets-local-endpoinsts/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-inlets-local-endpoinsts/</guid>
+      <description>&lt;p&gt;我们经常有在外网访问我们本地服务的需求，特别是在开发调试阶段，比如做微信登录或者微信支付的时候就需要使用外网正式的域名，然而我们很多时候都是在本地进行开发，我们不可能频繁的部署到外网环境去进行测试，因为这样效率太低了，这是我们开发会经常面临的一个问题。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

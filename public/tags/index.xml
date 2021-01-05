@@ -1,0 +1,1887 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 阳明的博客</title>
+    <link>https://www.qikqiak.com/tags/</link>
+    <description>Recent content in Tags on 阳明的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.qikqiak.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>go</title>
+      <link>https://www.qikqiak.com/tags/go/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>helm</title>
+      <link>https://www.qikqiak.com/tags/helm/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/helm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://www.qikqiak.com/tags/kubernetes/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kustomize</title>
+      <link>https://www.qikqiak.com/tags/kustomize/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kustomize/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yaml</title>
+      <link>https://www.qikqiak.com/tags/yaml/</link>
+      <pubDate>Sun, 08 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/yaml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ingress</title>
+      <link>https://www.qikqiak.com/tags/ingress/</link>
+      <pubDate>Fri, 06 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/ingress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>service</title>
+      <link>https://www.qikqiak.com/tags/service/</link>
+      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>https://www.qikqiak.com/tags/kafka/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pod</title>
+      <link>https://www.qikqiak.com/tags/pod/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/pod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://www.qikqiak.com/tags/docker/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kind</title>
+      <link>https://www.qikqiak.com/tags/kind/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kind/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>goland</title>
+      <link>https://www.qikqiak.com/tags/goland/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/goland/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://www.qikqiak.com/tags/golang/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://www.qikqiak.com/tags/vscode/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubeadm</title>
+      <link>https://www.qikqiak.com/tags/kubeadm/</link>
+      <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kubeadm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>证书</title>
+      <link>https://www.qikqiak.com/tags/%E8%AF%81%E4%B9%A6/</link>
+      <pubDate>Wed, 26 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E8%AF%81%E4%B9%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>grafana</title>
+      <link>https://www.qikqiak.com/tags/grafana/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/grafana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>loki</title>
+      <link>https://www.qikqiak.com/tags/loki/</link>
+      <pubDate>Wed, 19 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/loki/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>argo</title>
+      <link>https://www.qikqiak.com/tags/argo/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/argo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://www.qikqiak.com/tags/devops/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitlab</title>
+      <link>https://www.qikqiak.com/tags/gitlab/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/gitlab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitops</title>
+      <link>https://www.qikqiak.com/tags/gitops/</link>
+      <pubDate>Wed, 15 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/gitops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>APM</title>
+      <link>https://www.qikqiak.com/tags/apm/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/apm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kibana</title>
+      <link>https://www.qikqiak.com/tags/kibana/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kibana/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenTracing</title>
+      <link>https://www.qikqiak.com/tags/opentracing/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/opentracing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elastic</title>
+      <link>https://www.qikqiak.com/tags/elastic/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/elastic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>filebeat</title>
+      <link>https://www.qikqiak.com/tags/filebeat/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/filebeat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metricbeat</title>
+      <link>https://www.qikqiak.com/tags/metricbeat/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/metricbeat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prometheus</title>
+      <link>https://www.qikqiak.com/tags/prometheus/</link>
+      <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/prometheus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ops</title>
+      <link>https://www.qikqiak.com/tags/ops/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/ops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sealed</title>
+      <link>https://www.qikqiak.com/tags/sealed/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/sealed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>secrets</title>
+      <link>https://www.qikqiak.com/tags/secrets/</link>
+      <pubDate>Sat, 20 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/secrets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pv</title>
+      <link>https://www.qikqiak.com/tags/pv/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/pv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pvc</title>
+      <link>https://www.qikqiak.com/tags/pvc/</link>
+      <pubDate>Sun, 14 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/pvc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wsl</title>
+      <link>https://www.qikqiak.com/tags/wsl/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/wsl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alertmanager</title>
+      <link>https://www.qikqiak.com/tags/alertmanager/</link>
+      <pubDate>Sat, 06 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/alertmanager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tekton</title>
+      <link>https://www.qikqiak.com/tags/tekton/</link>
+      <pubDate>Fri, 29 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/tekton/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jenkins</title>
+      <link>https://www.qikqiak.com/tags/jenkins/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/jenkins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shared library</title>
+      <link>https://www.qikqiak.com/tags/shared-library/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/shared-library/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>共享库</title>
+      <link>https://www.qikqiak.com/tags/%E5%85%B1%E4%BA%AB%E5%BA%93/</link>
+      <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E5%85%B1%E4%BA%AB%E5%BA%93/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EFK</title>
+      <link>https://www.qikqiak.com/tags/efk/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/efk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coredns</title>
+      <link>https://www.qikqiak.com/tags/coredns/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/coredns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>elk</title>
+      <link>https://www.qikqiak.com/tags/elk/</link>
+      <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/elk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>okteto</title>
+      <link>https://www.qikqiak.com/tags/okteto/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/okteto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pycharm</title>
+      <link>https://www.qikqiak.com/tags/pycharm/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/pycharm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>微服务</title>
+      <link>https://www.qikqiak.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dockerfile</title>
+      <link>https://www.qikqiak.com/tags/dockerfile/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/dockerfile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>https://www.qikqiak.com/tags/elasticsearch/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fluentd</title>
+      <link>https://www.qikqiak.com/tags/fluentd/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/fluentd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cdk8s</title>
+      <link>https://www.qikqiak.com/tags/cdk8s/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/cdk8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>python</title>
+      <link>https://www.qikqiak.com/tags/python/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hpa</title>
+      <link>https://www.qikqiak.com/tags/hpa/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/hpa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>envoy</title>
+      <link>https://www.qikqiak.com/tags/envoy/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/envoy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>istio</title>
+      <link>https://www.qikqiak.com/tags/istio/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/istio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ingress-nginx</title>
+      <link>https://www.qikqiak.com/tags/ingress-nginx/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/ingress-nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nginx</title>
+      <link>https://www.qikqiak.com/tags/nginx/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operator</title>
+      <link>https://www.qikqiak.com/tags/operator/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/operator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>descheduler</title>
+      <link>https://www.qikqiak.com/tags/descheduler/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/descheduler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scheduler</title>
+      <link>https://www.qikqiak.com/tags/scheduler/</link>
+      <pubDate>Mon, 16 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/scheduler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubevious</title>
+      <link>https://www.qikqiak.com/tags/kubevious/</link>
+      <pubDate>Tue, 10 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kubevious/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cobra</title>
+      <link>https://www.qikqiak.com/tags/cobra/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/cobra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>changelog</title>
+      <link>https://www.qikqiak.com/tags/changelog/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/changelog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>课程</title>
+      <link>https://www.qikqiak.com/tags/%E8%AF%BE%E7%A8%8B/</link>
+      <pubDate>Wed, 04 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E8%AF%BE%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vault</title>
+      <link>https://www.qikqiak.com/tags/vault/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/vault/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>consul</title>
+      <link>https://www.qikqiak.com/tags/consul/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/consul/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spinnaker</title>
+      <link>https://www.qikqiak.com/tags/spinnaker/</link>
+      <pubDate>Tue, 18 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/spinnaker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cli</title>
+      <link>https://www.qikqiak.com/tags/cli/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>github</title>
+      <link>https://www.qikqiak.com/tags/github/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rolling-update</title>
+      <link>https://www.qikqiak.com/tags/rolling-update/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/rolling-update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>traefik</title>
+      <link>https://www.qikqiak.com/tags/traefik/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/traefik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rules</title>
+      <link>https://www.qikqiak.com/tags/rules/</link>
+      <pubDate>Sat, 14 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/rules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blackbox</title>
+      <link>https://www.qikqiak.com/tags/blackbox/</link>
+      <pubDate>Fri, 13 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/blackbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deployment</title>
+      <link>https://www.qikqiak.com/tags/deployment/</link>
+      <pubDate>Tue, 10 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oam</title>
+      <link>https://www.qikqiak.com/tags/oam/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/oam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rudr</title>
+      <link>https://www.qikqiak.com/tags/rudr/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/rudr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Capabilities</title>
+      <link>https://www.qikqiak.com/tags/capabilities/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/capabilities/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gloo</title>
+      <link>https://www.qikqiak.com/tags/gloo/</link>
+      <pubDate>Fri, 15 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/gloo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ceph</title>
+      <link>https://www.qikqiak.com/tags/ceph/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/ceph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rook</title>
+      <link>https://www.qikqiak.com/tags/rook/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/rook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k8s技术圈</title>
+      <link>https://www.qikqiak.com/tags/k8s%E6%8A%80%E6%9C%AF%E5%9C%88/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/k8s%E6%8A%80%E6%9C%AF%E5%9C%88/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>知识星球</title>
+      <link>https://www.qikqiak.com/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>灰度</title>
+      <link>https://www.qikqiak.com/tags/%E7%81%B0%E5%BA%A6/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E7%81%B0%E5%BA%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>https</title>
+      <link>https://www.qikqiak.com/tags/https/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tcp</title>
+      <link>https://www.qikqiak.com/tags/tcp/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/tcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jetbrains</title>
+      <link>https://www.qikqiak.com/tags/jetbrains/</link>
+      <pubDate>Sun, 06 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/jetbrains/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>websocket</title>
+      <link>https://www.qikqiak.com/tags/websocket/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/websocket/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inlets</title>
+      <link>https://www.qikqiak.com/tags/inlets/</link>
+      <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/inlets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>psp</title>
+      <link>https://www.qikqiak.com/tags/psp/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/psp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rbac</title>
+      <link>https://www.qikqiak.com/tags/rbac/</link>
+      <pubDate>Sun, 15 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/rbac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>workflow</title>
+      <link>https://www.qikqiak.com/tags/workflow/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/workflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mash</title>
+      <link>https://www.qikqiak.com/tags/mash/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/mash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Octant</title>
+      <link>https://www.qikqiak.com/tags/octant/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/octant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmware</title>
+      <link>https://www.qikqiak.com/tags/vmware/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/vmware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>calico</title>
+      <link>https://www.qikqiak.com/tags/calico/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/calico/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ipvs</title>
+      <link>https://www.qikqiak.com/tags/ipvs/</link>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/ipvs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CD</title>
+      <link>https://www.qikqiak.com/tags/cd/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/cd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI</title>
+      <link>https://www.qikqiak.com/tags/ci/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/ci/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pipeline</title>
+      <link>https://www.qikqiak.com/tags/pipeline/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/pipeline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>KubeSphere</title>
+      <link>https://www.qikqiak.com/tags/kubesphere/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kubesphere/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>drone</title>
+      <link>https://www.qikqiak.com/tags/drone/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/drone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubectl</title>
+      <link>https://www.qikqiak.com/tags/kubectl/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kubectl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>modules</title>
+      <link>https://www.qikqiak.com/tags/modules/</link>
+      <pubDate>Tue, 16 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/modules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>admission</title>
+      <link>https://www.qikqiak.com/tags/admission/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/admission/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>webhook</title>
+      <link>https://www.qikqiak.com/tags/webhook/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/webhook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dex</title>
+      <link>https://www.qikqiak.com/tags/dex/</link>
+      <pubDate>Fri, 28 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/dex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>101</title>
+      <link>https://www.qikqiak.com/tags/101/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/101/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metrics-server</title>
+      <link>https://www.qikqiak.com/tags/metrics-server/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/metrics-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubelet</title>
+      <link>https://www.qikqiak.com/tags/kubelet/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kubelet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Groovy</title>
+      <link>https://www.qikqiak.com/tags/groovy/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/groovy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://www.qikqiak.com/tags/java/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>harbor</title>
+      <link>https://www.qikqiak.com/tags/harbor/</link>
+      <pubDate>Sat, 04 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/harbor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Netfilter</title>
+      <link>https://www.qikqiak.com/tags/netfilter/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/netfilter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iptables</title>
+      <link>https://www.qikqiak.com/tags/iptables/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/iptables/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tcpdump</title>
+      <link>https://www.qikqiak.com/tags/tcpdump/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/tcpdump/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OSS</title>
+      <link>https://www.qikqiak.com/tags/oss/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/oss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>图床</title>
+      <link>https://www.qikqiak.com/tags/%E5%9B%BE%E5%BA%8A/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E5%9B%BE%E5%BA%8A/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>微博</title>
+      <link>https://www.qikqiak.com/tags/%E5%BE%AE%E5%8D%9A/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E5%BE%AE%E5%8D%9A/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>阿里云</title>
+      <link>https://www.qikqiak.com/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</link>
+      <pubDate>Thu, 25 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E9%98%BF%E9%87%8C%E4%BA%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>https://www.qikqiak.com/tags/mac/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>highlight</title>
+      <link>https://www.qikqiak.com/tags/highlight/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/highlight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>keynote</title>
+      <link>https://www.qikqiak.com/tags/keynote/</link>
+      <pubDate>Wed, 24 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/keynote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://www.qikqiak.com/tags/hugo/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pipes</title>
+      <link>https://www.qikqiak.com/tags/pipes/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/pipes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>webpack</title>
+      <link>https://www.qikqiak.com/tags/webpack/</link>
+      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/webpack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adsense</title>
+      <link>https://www.qikqiak.com/tags/adsense/</link>
+      <pubDate>Mon, 15 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/adsense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>oauth</title>
+      <link>https://www.qikqiak.com/tags/oauth/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/oauth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redis</title>
+      <link>https://www.qikqiak.com/tags/redis/</link>
+      <pubDate>Thu, 07 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>metaclass</title>
+      <link>https://www.qikqiak.com/tags/metaclass/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/metaclass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AI</title>
+      <link>https://www.qikqiak.com/tags/ai/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>机器学习</title>
+      <link>https://www.qikqiak.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Mon, 18 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>django</title>
+      <link>https://www.qikqiak.com/tags/django/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://www.qikqiak.com/tags/mysql/</link>
+      <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CKA</title>
+      <link>https://www.qikqiak.com/tags/cka/</link>
+      <pubDate>Tue, 15 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/cka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dns</title>
+      <link>https://www.qikqiak.com/tags/dns/</link>
+      <pubDate>Fri, 11 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>StorageClass</title>
+      <link>https://www.qikqiak.com/tags/storageclass/</link>
+      <pubDate>Thu, 20 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/storageclass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>etcd</title>
+      <link>https://www.qikqiak.com/tags/etcd/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/etcd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>日志</title>
+      <link>https://www.qikqiak.com/tags/%E6%97%A5%E5%BF%97/</link>
+      <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E6%97%A5%E5%BF%97/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dive</title>
+      <link>https://www.qikqiak.com/tags/dive/</link>
+      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/dive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>镜像</title>
+      <link>https://www.qikqiak.com/tags/%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E9%95%9C%E5%83%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>api</title>
+      <link>https://www.qikqiak.com/tags/api/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wayne</title>
+      <link>https://www.qikqiak.com/tags/wayne/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/wayne/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AlertManger</title>
+      <link>https://www.qikqiak.com/tags/alertmanger/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/alertmanger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monitor</title>
+      <link>https://www.qikqiak.com/tags/monitor/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/monitor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>affinity</title>
+      <link>https://www.qikqiak.com/tags/affinity/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/affinity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodeSelector</title>
+      <link>https://www.qikqiak.com/tags/nodeselector/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/nodeselector/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>亲和性</title>
+      <link>https://www.qikqiak.com/tags/%E4%BA%B2%E5%92%8C%E6%80%A7/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E4%BA%B2%E5%92%8C%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>容忍</title>
+      <link>https://www.qikqiak.com/tags/%E5%AE%B9%E5%BF%8D/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E5%AE%B9%E5%BF%8D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>污点</title>
+      <link>https://www.qikqiak.com/tags/%E6%B1%A1%E7%82%B9/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E6%B1%A1%E7%82%B9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>调度</title>
+      <link>https://www.qikqiak.com/tags/%E8%B0%83%E5%BA%A6/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E8%B0%83%E5%BA%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>并发</title>
+      <link>https://www.qikqiak.com/tags/%E5%B9%B6%E5%8F%91/</link>
+      <pubDate>Mon, 17 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E5%B9%B6%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qos</title>
+      <link>https://www.qikqiak.com/tags/qos/</link>
+      <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/qos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudNative</title>
+      <link>https://www.qikqiak.com/tags/cloudnative/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/cloudnative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k8s</title>
+      <link>https://www.qikqiak.com/tags/k8s/</link>
+      <pubDate>Wed, 29 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>发音</title>
+      <link>https://www.qikqiak.com/tags/%E5%8F%91%E9%9F%B3/</link>
+      <pubDate>Sun, 19 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E5%8F%91%E9%9F%B3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>haproxy</title>
+      <link>https://www.qikqiak.com/tags/haproxy/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/haproxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kong</title>
+      <link>https://www.qikqiak.com/tags/kong/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubends</title>
+      <link>https://www.qikqiak.com/tags/kubends/</link>
+      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/kubends/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blueocean</title>
+      <link>https://www.qikqiak.com/tags/blueocean/</link>
+      <pubDate>Thu, 02 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/blueocean/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slave</title>
+      <link>https://www.qikqiak.com/tags/slave/</link>
+      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/slave/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ConfigMap</title>
+      <link>https://www.qikqiak.com/tags/configmap/</link>
+      <pubDate>Tue, 24 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/configmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nfs</title>
+      <link>https://www.qikqiak.com/tags/nfs/</link>
+      <pubDate>Thu, 19 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/nfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>secret</title>
+      <link>https://www.qikqiak.com/tags/secret/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/secret/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CronJob</title>
+      <link>https://www.qikqiak.com/tags/cronjob/</link>
+      <pubDate>Sat, 09 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/cronjob/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Job</title>
+      <link>https://www.qikqiak.com/tags/job/</link>
+      <pubDate>Sat, 09 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/job/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>实战</title>
+      <link>https://www.qikqiak.com/tags/%E5%AE%9E%E6%88%98/</link>
+      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E5%AE%9E%E6%88%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>一点知识</title>
+      <link>https://www.qikqiak.com/tags/%E4%B8%80%E7%82%B9%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E4%B8%80%E7%82%B9%E7%9F%A5%E8%AF%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>上线</title>
+      <link>https://www.qikqiak.com/tags/%E4%B8%8A%E7%BA%BF/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E4%B8%8A%E7%BA%BF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>海马学院</title>
+      <link>https://www.qikqiak.com/tags/%E6%B5%B7%E9%A9%AC%E5%AD%A6%E9%99%A2/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E6%B5%B7%E9%A9%AC%E5%AD%A6%E9%99%A2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CI/CD</title>
+      <link>https://www.qikqiak.com/tags/ci/cd/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/ci/cd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>skaffold</title>
+      <link>https://www.qikqiak.com/tags/skaffold/</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/skaffold/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>quato</title>
+      <link>https://www.qikqiak.com/tags/quato/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/quato/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resource</title>
+      <link>https://www.qikqiak.com/tags/resource/</link>
+      <pubDate>Fri, 23 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/resource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gitment</title>
+      <link>https://www.qikqiak.com/tags/gitment/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/gitment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>downward</title>
+      <link>https://www.qikqiak.com/tags/downward/</link>
+      <pubDate>Fri, 02 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/downward/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algolia</title>
+      <link>https://www.qikqiak.com/tags/algolia/</link>
+      <pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/algolia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secretes</title>
+      <link>https://www.qikqiak.com/tags/secretes/</link>
+      <pubDate>Sat, 10 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/secretes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alpine</title>
+      <link>https://www.qikqiak.com/tags/alpine/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/alpine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PodPreset</title>
+      <link>https://www.qikqiak.com/tags/podpreset/</link>
+      <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/podpreset/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dashboard</title>
+      <link>https://www.qikqiak.com/tags/dashboard/</link>
+      <pubDate>Thu, 18 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/dashboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TDD</title>
+      <link>https://www.qikqiak.com/tags/tdd/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/tdd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flask</title>
+      <link>https://www.qikqiak.com/tags/flask/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/flask/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microservice</title>
+      <link>https://www.qikqiak.com/tags/microservice/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/microservice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react</title>
+      <link>https://www.qikqiak.com/tags/react/</link>
+      <pubDate>Sat, 13 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/react/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pyenv</title>
+      <link>https://www.qikqiak.com/tags/pyenv/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/pyenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualenv</title>
+      <link>https://www.qikqiak.com/tags/virtualenv/</link>
+      <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/virtualenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>django2.0</title>
+      <link>https://www.qikqiak.com/tags/django2.0/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/django2.0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>视频</title>
+      <link>https://www.qikqiak.com/tags/%E8%A7%86%E9%A2%91/</link>
+      <pubDate>Tue, 26 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E8%A7%86%E9%A2%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>https://www.qikqiak.com/tags/git/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>log</title>
+      <link>https://www.qikqiak.com/tags/log/</link>
+      <pubDate>Wed, 20 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/log/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cluster</title>
+      <link>https://www.qikqiak.com/tags/cluster/</link>
+      <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/cluster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>socket.io</title>
+      <link>https://www.qikqiak.com/tags/socket.io/</link>
+      <pubDate>Tue, 21 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/socket.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>集群</title>
+      <link>https://www.qikqiak.com/tags/%E9%9B%86%E7%BE%A4/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E9%9B%86%E7%BE%A4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>高可用</title>
+      <link>https://www.qikqiak.com/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PDF</title>
+      <link>https://www.qikqiak.com/tags/pdf/</link>
+      <pubDate>Mon, 30 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/pdf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service Mesh</title>
+      <link>https://www.qikqiak.com/tags/service-mesh/</link>
+      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/service-mesh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>服务网格</title>
+      <link>https://www.qikqiak.com/tags/%E6%9C%8D%E5%8A%A1%E7%BD%91%E6%A0%BC/</link>
+      <pubDate>Sat, 21 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E6%9C%8D%E5%8A%A1%E7%BD%91%E6%A0%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>influxdb</title>
+      <link>https://www.qikqiak.com/tags/influxdb/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/influxdb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>装饰器</title>
+      <link>https://www.qikqiak.com/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/</link>
+      <pubDate>Mon, 14 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E8%A3%85%E9%A5%B0%E5%99%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>awk</title>
+      <link>https://www.qikqiak.com/tags/awk/</link>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/awk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://www.qikqiak.com/tags/linux/</link>
+      <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>301</title>
+      <link>https://www.qikqiak.com/tags/301/</link>
+      <pubDate>Sat, 27 Feb 2016 21:21:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/301/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>csv</title>
+      <link>https://www.qikqiak.com/tags/csv/</link>
+      <pubDate>Tue, 05 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/csv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>action</title>
+      <link>https://www.qikqiak.com/tags/action/</link>
+      <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/action/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>admin</title>
+      <link>https://www.qikqiak.com/tags/admin/</link>
+      <pubDate>Wed, 02 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>url</title>
+      <link>https://www.qikqiak.com/tags/url/</link>
+      <pubDate>Fri, 13 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/url/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Memcached</title>
+      <link>https://www.qikqiak.com/tags/memcached/</link>
+      <pubDate>Wed, 28 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/memcached/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>国际化</title>
+      <link>https://www.qikqiak.com/tags/%E5%9B%BD%E9%99%85%E5%8C%96/</link>
+      <pubDate>Wed, 28 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E5%9B%BD%E9%99%85%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>标签</title>
+      <link>https://www.qikqiak.com/tags/%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Wed, 28 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/tags/%E6%A0%87%E7%AD%BE/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

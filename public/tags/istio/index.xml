@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>istio on 阳明的博客</title>
+    <link>https://www.qikqiak.com/tags/istio/</link>
+    <description>Recent content in istio on 阳明的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.qikqiak.com/tags/istio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Envoy 简单入门示例</title>
+      <link>https://www.qikqiak.com/post/envoy-usage-demo/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/envoy-usage-demo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.envoyproxy.io/&#34;&gt;Envoy&lt;/a&gt; 是为云原生应用而设计的开源边缘和服务代理，也是 Istio Service Mesh 默认的数据平面，本文我们通过一个简单的示例来介绍 Envoy 的基本使用。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Traefik 团队开源的轻量级 Service Mesh 工具 Maesh</title>
+      <link>https://www.qikqiak.com/post/maesh-service-mesh-by-trafik/</link>
+      <pubDate>Thu, 05 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/maesh-service-mesh-by-trafik/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/maesh-service-mesh-by-trafik/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/maesh.jpg&#34; alt=&#34;Maesh&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Containous（Traefik 团队）推出了全新设计的轻量级 service mesh（服务网格）工具：&lt;a href=&#34;http://mae.sh/&#34;&gt;Maesh&lt;/a&gt;，Maesh 允许对 Kubernetes 集群内流动的流量进行管理，这与入流量和出流量同样很重要。&lt;/p&gt;
+
+&lt;p&gt;Maesh 构建在 Traefk 之上，是一个简单但功能齐全的服务网格，支持最新的服务网格接口规范 &lt;a href=&#34;https://smi-spec.io/&#34;&gt;SMI&lt;/a&gt;，有助于与现有的一些解决方案进行集成。此外，Maesh 默认是需要开启使用的，这意味着在你决定将它们添加到网格之前，你的现有服务不会受到影响。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>在现有 Kubernetes 集群上安装 KubeSphere</title>
+      <link>https://www.qikqiak.com/post/install-kubesphere-on-k8s/</link>
+      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/install-kubesphere-on-k8s/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://kubesphere.io&#34;&gt;KubeSphere&lt;/a&gt;是在 Kubernetes 之上构建的企业级分布式多租户容器管理平台，提供简单易用的操作界面以及向导式操作方式，在降低用户使用容器调度平台学习成本的同时，极大减轻开发、测试、运维的日常工作的复杂度，旨在解决 Kubernetes 本身存在的存储、网络、安全和易用性等痛点。除此之外，平台已经整合并优化了多个适用于容器场景的功能模块，以完整的解决方案帮助企业轻松应对敏捷开发与自动化运维、微服务治理、多租户管理、工作负载和集群管理、服务与网络管理、应用编排与管理、镜像仓库管理和存储管理等业务场景。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>深入理解 Kubernetes Admission Webhook</title>
+      <link>https://www.qikqiak.com/post/k8s-admission-webhook/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-admission-webhook/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;Kubernetes&lt;/a&gt; 提供了需要扩展其内置功能的方法，最常用的可能是自定义资源类型和自定义控制器了，除此之外，&lt;a href=&#34;https://www.qikqiak.com/tags/kubernetes/&#34;&gt;Kubernetes&lt;/a&gt; 还有一些其他非常有趣的功能，比如 &lt;a href=&#34;https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#admission-webhooks&#34;&gt;admission webhooks&lt;/a&gt; 或者 &lt;a href=&#34;https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#initializers&#34;&gt;initializers&lt;/a&gt;，这些也可以用于扩展 API，它们可以用于修改某些 Kubernetes 资源的基本行为，接下来我们来看看那些引入了 admission webhooks 的动态准入控制。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Istio 实训免费视频课程</title>
+      <link>https://www.qikqiak.com/post/k8s-istio-course/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.qikqiak.com/post/k8s-istio-course/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.qikqiak.com/post/k8s-istio-course/&#34;&gt;&lt;img src=&#34;https://bxdc-static.oss-cn-beijing.aliyuncs.com/images/BF9SiB.jpg&#34; alt=&#34;istio&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Istio&lt;/code&gt;，是一个由 Google，Lyft，IBM 联合开发的开源项目，是服务网格（Service Mesh）技术的一个标准化的开源实现，致力于解决应用的微服务化组件之间的连接控制与安全、流量管理与可观测性。Istio 是云原生领域在 Kubernetes 之后最受关注的项目，帮助容器技术实践者从基础设施层的“容器编排“进阶到应用层的“服务治理”。Istio 先天与 Kubernetes 无缝衔接，了解并使用 Istio 可以极大地提升研发和运维的工作效率。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
